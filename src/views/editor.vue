@@ -1,9 +1,9 @@
 <template>
   <div class="main container max-w-7xl mx-auto pb-8">
-    <FormAaif />
+    <Form />
   </div>
 </template>
 
 <script setup>
-import FormAaif from "../components/FormAaif.vue";
+import Form from "../components/Form.vue";
 </script>

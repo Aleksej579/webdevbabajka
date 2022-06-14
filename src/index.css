@@ -17,33 +17,14 @@ nav {
 
 
 @layer base {
-    /* h1 {
-        @apply text-4xl my-5;
+    h1 {
+        @apply my-2;
     }
-
-    h2 {
-        @apply text-3xl my-5;
-    }
-
-    h3 {
-        @apply text-2xl my-5;
-    }
-
-    h4 {
-        @apply text-lg my-5;
-    }
-
-    h5 {
-        @apply text-sm my-5;
-    }
-
-    h6 {
-        @apply text-xs my-5;
-    }*/
 
     p {
         @apply my-5;
     }
+
 
     .main__form label {
         @apply flex flex-col mb-3;
@@ -78,18 +59,6 @@ nav {
     ::-webkit-selection {
         background: #1f1f28;
         color: #48a65b;
-    }
-
-    tr>td {
-        border: 1px dashed transparent;
-    }
-
-    tr:hover td {
-        background-color: #1f1f28;
-    }
-
-    .main a {
-        /* position: relative; */
     }
 
     .tooltip {

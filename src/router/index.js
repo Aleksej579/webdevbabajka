@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import home from '../views/home.vue'
-import viewer from '../views/viewer.vue'
 import editor from '../views/editor.vue'
 import programming from '../views/programming.vue'
 import library from '../views/library.vue'
@@ -19,7 +18,6 @@ const routes = [
     { path: "/programming", name: "programming", component: programming },
     { path: "/library", name: "library", component: library },
     { path: "/cv", name: "cv", component: cv },
-    { path: "/viewer", name: "viewer", component: viewer },
     { path: "/editor", name: "editor", component: editor }
 ]
 

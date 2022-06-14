@@ -1,7 +1,7 @@
 <template>
-    <div class="main container max-w-7xl mx-auto pb-8">
+    <div class="main container max-w-7xl mx-auto p-3 pb-8">
         <h1 class="text-2xl text-center">INFO</h1>
-        <details>
+        <details class="border border-slate-600">
             <summary>Предоставление информации в HTML</summary>
             <ul>
                 <li>Текст</li>
@@ -12,7 +12,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>Предоставление информации в CSS</summary>
             <ul>
                 <li>STYLUS</li>
@@ -24,7 +24,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>SMACSS</summary>
             <ul>
                 <li>base</li>
@@ -35,7 +35,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>BEM</summary>
             <ul>
                 <li>Блок</li>
@@ -61,7 +61,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>USER STORY and USE CASE</summary>
             <ul>
                 <li>USER STORY "что нужно сделать (пожелание)"<ul>
@@ -79,7 +79,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>ЖИЗНЕННЫЙ ЦИКЛ ПО</summary>
             <ul>
                 <li>СODE AND FIX "разработка по до валидации заказчика"</li>
@@ -132,7 +132,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>АРХИТЕКТУРА ПО</summary>
             <ul>
                 <li>MVC "модель-представление-контроллер"</li>
@@ -154,7 +154,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>ООП</summary>
             <ul>
                 <li>Инкапсуляция</li>
@@ -166,7 +166,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>АЛГОРИТМ</summary>
             <ul>
                 <li>Линейные "а.линейный"</li>
@@ -175,7 +175,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>ПАТТЕРНЫ</summary>
             <ul>
                 <li>GRASP "новые обобщенные"
@@ -252,7 +252,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>БЛОК СХЕМА</summary>
             <ul>
                 <table>
@@ -307,7 +307,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>UML</summary>
             <ul>
                 <li>Структурные "элементы диаграммы"
@@ -348,7 +348,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>ПРОТОТИПЫ ПРОЕКТА</summary>
             <ul>
                 <li>WIREFRAME "каркас приложения"</li>
@@ -357,7 +357,7 @@
             </ul>
         </details>
 
-        <details>
+        <details class="border border-slate-600">
             <summary>ТЕСТИРОВАНИЕ</summary>
             <ul>
                 <li>UNIT TEST</li>
@@ -374,7 +374,6 @@
 
 <style>
 details {
-    border: 1px solid #aaa;
     border-radius: 4px;
     padding: .5em .5em 0;
     margin-bottom: 10px;
@@ -391,7 +390,7 @@ details[open] {
 }
 
 details[open] summary {
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid rgb(71 85 105);
     margin-bottom: .5em;
 }
 </style>
