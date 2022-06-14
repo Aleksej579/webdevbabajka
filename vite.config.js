@@ -9,5 +9,8 @@ export default defineConfig({
   plugins: [
     vue(),
     vueI18n({ enableInSFC: true })
-  ]
+  ],
+  build: {
+    chunkSizeWarningLimit: 2200,
+  },
 })

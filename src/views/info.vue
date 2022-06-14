@@ -25,18 +25,6 @@
         </details>
 
         <details>
-            <summary>Предоставление информации в Javascript</summary>
-            <ul>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-                <li>-</li>
-            </ul>
-        </details>
-
-        <details>
             <summary>SMACSS</summary>
             <ul>
                 <li>base</li>

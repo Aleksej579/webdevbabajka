@@ -1,23 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import main from '../views/main.vue'
+import home from '../views/home.vue'
 import viewer from '../views/viewer.vue'
 import editor from '../views/editor.vue'
 import programming from '../views/programming.vue'
 import library from '../views/library.vue'
 import cv from '../views/cv.vue'
-import plan from '../views/plan.vue'
-import tools from '../views/tools.vue'
+import methodology from '../views/methodology.vue'
+import roadmap from '../views/roadmap.vue'
 import info from '../views/info.vue'
-import html from '../views/html.vue'
-import css from '../views/css.vue'
+import html_css from '../views/html_css.vue'
 
 const routes = [
-    { path: "/", name: "main", component: main },
-    { path: "/plan", name: "plan", component: plan },
-    { path: "/tools", name: "tools", component: tools },
+    { path: "/", name: "home", component: home },
+    { path: "/methodology", name: "methodology", component: methodology },
+    { path: "/roadmap", name: "roadmap", component: roadmap },
     { path: "/info", name: "info", component: info },
-    { path: "/html", name: "html", component: html },
-    { path: "/css", name: "css", component: css },
+    { path: "/html_css", name: "html_css", component: html_css },
     { path: "/programming", name: "programming", component: programming },
     { path: "/library", name: "library", component: library },
     { path: "/cv", name: "cv", component: cv },

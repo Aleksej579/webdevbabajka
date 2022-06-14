@@ -34,21 +34,18 @@
           </select>
         </form>
         <nav class="header__menu flex justify-between w-full">
-          <router-link to="/" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">{{ t('main') }}</router-link>
-          <router-link to="/plan" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
-            {{ t('plan') }}
+          <router-link to="/" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">{{ t('home') }}</router-link>
+          <router-link to="/methodology" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
+            {{ t('methodology') }}
           </router-link>
-          <router-link to="/tools" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
-            {{ t('tools') }}
+          <router-link to="/roadmap" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
+            {{ t('roadmap') }}
           </router-link>
           <router-link to="/info" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
             {{ t('info') }}
           </router-link>
-          <router-link to="/html" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
-            {{ t('html') }}
-          </router-link>
-          <router-link to="/css" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
-            {{ t('css') }}
+          <router-link to="/html_css" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
+            {{ t('html_css') }}
           </router-link>
           <router-link to="/programming" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">{{
               t('programming')
@@ -100,10 +97,10 @@
 
 
 <script>
-import axios from "axios";
 import VueFinalModal from 'vue-final-modal'
 import { useI18n } from 'vue-i18n'
 import Popup from './Popup.vue'
+
 const { VueFinalModal: VueFinalModalComponent } = VueFinalModal
 // import { store } from "../stores/counter.js";
 
@@ -116,9 +113,6 @@ export default {
     showModal: false,
     showModalTwitter: false,
     showModalLi: false,
-    allArticleId: [],
-    lastArticleID: [],
-    html: [],
   }),
 
   setup() {
@@ -128,27 +122,7 @@ export default {
     // const str = store()
     // return { locale, t, str, localeChange: str.localeChange }
     return { locale, t }
-  },
-
-  created: function () {
-    axios
-      .get(`http://localhost:3001/api/article`)
-      .then(resId => {
-        this.allArticleId = resId.data;
-        this.lastArticleID = Object.values(this.allArticleId[this.allArticleId.length - 1])
-
-        axios
-          .get(`http://localhost:3001/api/article/${this.lastArticleID}`)
-          .then(resJson => {
-            this.html = new Set(Object.values(JSON.parse(resJson.data[0].data)));
-          });
-      });
-  },
-  computed: {
-    lastArticleHeader: function () {
-      return this.html.values().next().value
-    },
-  },
+  }
 };
 </script>
 

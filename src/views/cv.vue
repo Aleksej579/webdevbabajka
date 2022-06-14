@@ -7,6 +7,5 @@
             loading="lazy" allowfullscreen="true">
         </iframe>
 
-
     </div>
 </template>
