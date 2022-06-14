@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #2c303b;
+}
+
+.header__top,
+.footer {
+    background-color: #1f1f28;
+}
+
+nav {
+    color: #48a65b;
+}
+
+
+@layer base {
+    /* h1 {
+        @apply text-4xl my-5;
+    }
+
+    h2 {
+        @apply text-3xl my-5;
+    }
+
+    h3 {
+        @apply text-2xl my-5;
+    }
+
+    h4 {
+        @apply text-lg my-5;
+    }
+
+    h5 {
+        @apply text-sm my-5;
+    }
+
+    h6 {
+        @apply text-xs my-5;
+    }*/
+
+    p {
+        @apply my-5;
+    }
+
+    .main__form label {
+        @apply flex flex-col mb-3;
+    }
+
+    .main__form input,
+    .main__form textarea {
+        @apply border border-slate-800 rounded-md p-2.5;
+    }
+
+    textarea {
+        width: 80%;
+        height: 300px;
+        background-color: #1f1f28;
+        color: #48a65b;
+        border: none;
+        border: 1px solid rgba(70, 70, 70, 0.6);
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    ::selection {
+        background: #1f1f28;
+        color: #48a65b;
+    }
+
+    ::-moz-selection {
+        background: #1f1f28;
+        color: #48a65b;
+    }
+
+    ::-webkit-selection {
+        background: #1f1f28;
+        color: #48a65b;
+    }
+
+    tr>td {
+        border: 1px dashed transparent;
+    }
+
+    tr:hover td {
+        background-color: #1f1f28;
+    }
+
+    .main a {
+        /* position: relative; */
+    }
+
+    .tooltip {
+        position: relative;
+    }
+
+    *[tooltip]:hover:after {
+        content: attr(tooltip);
+        color: #48a65b;
+        border: 1px solid #48a65b;
+        border-radius: 3px;
+        padding: 3px;
+        font-size: 80%;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: max-content;
+    }
+
+    .main {
+        color: #90a4ae;
+    }
+
+    .main a {
+        text-decoration: none;
+        color: #f48e70;
+    }
+
+}
