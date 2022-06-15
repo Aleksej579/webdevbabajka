@@ -29,6 +29,28 @@
                 <router-link to="/editor" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">{{ t('editor') }}
                 </router-link>
             </nav>
+
+            <nav class="header__menu flex justify-between w-full mx-2.5">
+                <router-link to="/" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">home
+                </router-link>
+                <router-link to="/methodology" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
+                    methodology</router-link>
+                <router-link to="/roadmap" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
+                    roadmap</router-link>
+                <router-link to="/info" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
+                    info</router-link>
+                <router-link to="/html_css" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">
+                    html_css</router-link>
+                <router-link to="/programming" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">programming
+                </router-link>
+                <router-link to="/library" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">library
+                </router-link>
+                <router-link to="/cv" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">cv
+                </router-link>
+                <router-link to="/editor" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">editor
+                </router-link>
+            </nav>
+
         </div>
     </div>
 </template>
