@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/js/all.js'
 import VueSplide from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
 import { vfmPlugin } from 'vue-final-modal';
-import { createPinia } from 'pinia'
+// import { createPinia } from 'pinia'
 import { createI18n } from 'vue-i18n'
 import translationInterface from './translation/translationInterface.js'
 
@@ -16,4 +16,5 @@ const i18n = createI18n({
     messages: translationInterface,
 })
 
-createApp(App).use(router).use(VueSplide).use(vfmPlugin).use(createPinia()).use(i18n).mount('#app')
+// createApp(App).use(router).use(VueSplide).use(vfmPlugin).use(createPinia()).use(i18n).mount('#app')
+createApp(App).use(router).use(VueSplide).use(vfmPlugin).use(i18n).mount('#app')

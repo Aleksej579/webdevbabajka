@@ -1,11 +1,13 @@
 <script setup>
 import Header from "./components/Header.vue";
+import HeaderBottom from "./components/HeaderBottom.vue";
 import Footer from "./components/Footer.vue";
 
 </script>
 
 <template>
   <Header />
+  <HeaderBottom />
   <router-view></router-view>
   <a class="topbutton" href="#" title="Go to top">Наверх</a>
   <Footer />

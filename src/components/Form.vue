@@ -98,12 +98,6 @@ export default {
       axios.post(`http://localhost:3001/api/article`, {
         data: dataSendToDB
       })
-        .then(response => {
-          console.log(data)
-        })
-        .catch(e => {
-          this.errors.push(e)
-        })
     }
   },
   created: function () {
@@ -111,7 +105,6 @@ export default {
       .get(`http://localhost:3001/api/article/`)
       .then(resJson => {
         this.html = JSON.parse(Object.values(resJson.data));
-        console.log(this.html)
       });
   },
 }

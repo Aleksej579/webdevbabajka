@@ -13,7 +13,7 @@ export default defineConfig({
     splitVendorChunkPlugin()
   ],
   build: {
-    chunkSizeWarningLimit: 1600,
+    chunkSizeWarningLimit: 1700,
     rollupOptions: {
       output: {
         manualChunks(id) {
