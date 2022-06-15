@@ -17,4 +17,4 @@ const i18n = createI18n({
 })
 
 // createApp(App).use(router).use(VueSplide).use(vfmPlugin).use(createPinia()).use(i18n).mount('#app')
-createApp(App).use(router).use(VueSplide).use(vfmPlugin).use(i18n).mount('#app')
+createApp(App).use(VueSplide).use(vfmPlugin).use(i18n).use(router).mount('#app')
