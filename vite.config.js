@@ -9,7 +9,7 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    vueI18n({ enableInSFC: true }),
+    vueI18n({ enableInSFC: true, enableLegacy: false, runtimeOnly: false }),
     splitVendorChunkPlugin()
   ],
   build: {
