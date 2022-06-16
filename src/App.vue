@@ -8,8 +8,10 @@ import Footer from "./components/Footer.vue";
 <template>
   <Header />
   <HeaderBottom />
-  <router-view></router-view>
-  <a class="topbutton" href="#" title="Go to top">Наверх</a>
+  <div class="main-container">
+    <router-view></router-view>
+    <a class="topbutton" href="#" title="Go to top">Наверх</a>
+  </div>
   <Footer />
 </template>
 

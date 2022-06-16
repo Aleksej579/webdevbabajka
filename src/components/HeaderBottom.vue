@@ -1,5 +1,5 @@
 <template>
-    <div class="header__bottom flex items-center m-auto container max-w-7xl">
+    <div class="header__bottom flex items-center">
         <div class="flex items-center m-auto container max-w-7xl">
             <img class="header__logo h-12" src="/src/assets/logo.jpg" alt="WebDev">
             <form class="mx-2.5">
@@ -48,7 +48,10 @@ export default {
 
 <style>
 .header__bottom {
-    background-color: #1f1f28;
+    margin-top: 184px;
+    z-index: 3;
+    position: sticky;
+    top: 0;
 }
 
 .router-link-active {

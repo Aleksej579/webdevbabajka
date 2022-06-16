@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+.main-container {
     background-color: #2c303b;
+    z-index: 2;
 }
 
 .header__top,
+.header__bottom,
 .footer {
     background-color: #1f1f28;
 }
@@ -14,7 +16,6 @@ body {
 nav {
     color: #48a65b;
 }
-
 
 @layer base {
     h1 {

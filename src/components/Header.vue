@@ -40,7 +40,7 @@
       <button class="modal-close" @click="showModalLi = false"><i class="fa-solid fa-xmark"></i></button>
       <Popup />
       <div class="flex justify-center">
-        <a href="https://www.linkedin.com/in/aleksej579/">
+        <a href="https://github.com/Aleksej579/webdevbabajka">
           <i class="fa-brands fa-linkedin fa-5x"></i>
         </a>
       </div>
@@ -90,6 +90,13 @@ export default {
 </script>
 
 <style>
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .modal-container {
   display: flex;
   justify-content: center;
