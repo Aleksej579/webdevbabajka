@@ -2,29 +2,22 @@
     <div class="main container max-w-7xl mx-auto pb-8">
         <h1 class="text-2xl text-center">PATTERNS</h1>
 
-        <div class="relative rounded-xl overflow-hidden bg-slate-800/25 w-4/5 mx-auto">
-            <div style="background-position:10px 10px;"
-                class="absolute inset-0 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.6))] bg-grid-slate-700/25 [mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]">
-            </div>
-            <div class="relative rounded-xl overflow-auto p-8">
-                <div class="grid lg:grid-cols-3 gap-4 text-white text-sm text-center font-bold leading-6">
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            OOP</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+        <section class="relative sm:px-3 md:px-5">
+            <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <ul class="space-y-8">
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">OOP</h3>
+                        <ul>
                             <li><b>Инкапсуляция</b><i> - изменение объекта его же методами.</i></li>
                             <li><b>Наследование</b><i> - переиспользование полей и методов другого класса.</i></li>
                             <li><b>Полиморфизм</b><i> - способность функции работать с данными разных типов.</i>
                             </li>
-                            <li><b>Абстракция</b><i>?</i></li>
+                            <li><b>Абстракция</b></li>
                         </ul>
-                    </article>
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            SOLID</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                    </li>
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">SOLID</h3>
+                        <ul>
                             <li><b>SRP</b><i> - объект отвечает только за одно дело.</i></li>
                             <li><b>OCP</b><i> - программные сущности открыты для расширения но закрыты для
                                     модификации.</i></li>
@@ -36,12 +29,10 @@
                             </li>
                             <li><b>DIP</b><i> - использовать все классы через интерфейсы.</i></li>
                         </ul>
-                    </article>
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            GRASP</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                    </li>
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">GRASP</h3>
+                        <ul>
                             <li><b>Information Expert</b><i> - информация должна обрабатываться там где находится.</i>
                             </li>
                             <li><b>Creator</b><i> - объект создаваться там где его используют.</i></li>
@@ -60,12 +51,10 @@
                             <li><b>Protected Variations</b><i> - любые изменения в коде должны минимально его
                                     ломать.</i></li>
                         </ul>
-                    </article>
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            GOF - Creation</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                    </li>
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">GOF - Creation</h3>
+                        <ul>
                             <li><b>Information Expert</b><i> - создает семейство взаимосвязанных объектов.</i></li>
                             <li><b>Builder</b><i> - поэтапное создание сложного объекта.</i></li>
                             <li><b>Factory Method</b><i> - определяет интерфейс для создания объекта, при этом его тип
@@ -77,12 +66,10 @@
                             <li><b>Singleton</b><i> - создает единственный экземпляр некоторого класса и предоставляет к
                                     нему доступ.</i></li>
                         </ul>
-                    </article>
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            GOF - Structural</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                    </li>
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">GOF - Structural</h3>
+                        <ul>
                             <li><b>Adapter</b><i> - преобразует интерфейс существующего класса к виду, подходящему для
                                     использования.</i></li>
                             <li><b>Bridge</b><i> - делает абстракцию и реализацию независимыми друг от друга.</i></li>
@@ -94,12 +81,10 @@
                             </li>
                             <li><b>Proxy</b><i> - подменяет другой объект для контроля доступа к нему.</i></li>
                         </ul>
-                    </article>
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            GOF - Behavioral</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                    </li>
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">GOF - Behavioral</h3>
+                        <ul>
                             <li><b>Chain of Responsibility</b><i> - предоставляет способ передачи запроса по цепочке
                                     получателей.</i>
                             </li>
@@ -123,12 +108,13 @@
                                     некоторые из них.</i></li>
                             <li><b>Visitor</b><i> - определяет новую операцию в классе без его изменения.</i></li>
                         </ul>
-                    </article>
+                    </li>
+                </ul>
 
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            Акроним</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                <ul class="space-y-8">
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">Акроним</h3>
+                        <ul>
                             <li><b>KISS</b><i> делай проще</i></li>
                             <li><b>DRY</b><i> не повторяйся</i></li>
                             <li><b>YAGNI</b><i> тебе это не понадобиться</i></li>
@@ -143,12 +129,10 @@
                                 </ul>
                             </li>
                         </ul>
-                    </article>
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            Software architecture pattern</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                    </li>
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">Software architecture pattern</h3>
+                        <ul>
                             <li><b>MVC</b><i>Model-View-Controller</i></li>
                             <li><b>HMVC</b><i>Hierarchical model–view–controller</i></li>
                             <li><b>MVVM</b><i>Model-View-View Model</i></li>
@@ -157,12 +141,10 @@
                             <li><b>Flux</b><i>(State) dispatcher, stores, views</i></li>
                             <li><b>Microservice architecture</b><i></i></li>
                         </ul>
-                    </article>
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            Agile</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                    </li>
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">Agile</h3>
+                        <ul>
                             <li><b>Scrum</b><i> итерации, наращивание функциональности</i></li>
                             <li><b>Lean</b><i> бережливое производство</i></li>
                             <li><b>Kanban</b><i> перемещение задач по статусам</i></li>
@@ -170,12 +152,10 @@
                             <li><b>XP</b><i> работа в паре и тестирование</i></li>
                             <li><b>RAD</b><i> rapid application development</i></li>
                         </ul>
-                    </article>
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            Programming models</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                    </li>
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">Programming models</h3>
+                        <ul>
                             <li><b>Императивный</b><i> что?</i></li>
                             <li><b>Декларативный</b><i> как?</i></li>
                             <li><b>Структурное</b></li>
@@ -196,12 +176,13 @@
                                 </ul>
                             </li>
                         </ul>
-                    </article>
+                    </li>
+                </ul>
 
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            Data structures</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                <ul class="space-y-8">
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">Data structures</h3>
+                        <ul>
                             <li><b>number, string, boolean, NaN, undefined, infinity, BigInt;</b></li>
                             <li><b>Array</b></li>
                             <li><b>Stack</b><i> LIFO</i></li>
@@ -214,12 +195,10 @@
                             <li><b>Map</b></li>
                             <li><b>Hash table</b></li>
                         </ul>
-                    </article>
-
-                    <article class="flex flex-col items-center shrink-0">
-                        <h2 class="text-2xl font-medium font-mono text-center mb-3 text-slate-400">
-                            Network protocols</h2>
-                        <ul class="p-4 shadow-sm bg-slate-900 border-indigo-500/100 border-4 text-left">
+                    </li>
+                    <li class="rounded-lg p-6 bg-slate-800">
+                        <h3 class="text-base font-semibold text-center">Network protocols</h3>
+                        <ul>
                             <li>
                                 <b>RESTful</b>
                                 <ul>
@@ -239,9 +218,9 @@
                             <li>CRUD create, read, update, delete</li>
                             <li>ACID Atomicity | Consistency | Isolation | Durability</li>
                         </ul>
-                    </article>
-                </div>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </section>
     </div>
 </template>
