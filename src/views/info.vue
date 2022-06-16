@@ -3,7 +3,8 @@
         <h1 class="text-2xl text-center">INFO</h1>
         <section class="bg-slate-800/25 w-4/5 mx-auto rounded-xl p-8">
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">Предоставление информации в HTML
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    Предоставление информации в HTML
                 </summary>
                 <ul class="text-white text-sm font-bold">
                     <li>Текст</li>
@@ -15,7 +16,8 @@
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">Предоставление информации в CSS
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    Предоставление информации в CSS
                 </summary>
                 <ul class="text-white text-sm font-bold">
                     <li>STYLUS</li>
@@ -65,7 +67,9 @@
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">USER STORY and USE CASE</summary>
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    USER STORY and USE CASE
+                </summary>
                 <ul class="text-white text-sm font-bold">
                     <li>USER STORY "что нужно сделать (пожелание)"<ul>
                             <li>что</li>
@@ -83,7 +87,9 @@
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">ЖИЗНЕННЫЙ ЦИКЛ ПО</summary>
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    ЖИЗНЕННЫЙ ЦИКЛ ПО
+                </summary>
                 <ul class="text-white text-sm font-bold">
                     <li>СODE AND FIX "разработка по до валидации заказчика"</li>
                     <li>RUP "методология каскадная (Rational Unified Process)"<ul>
@@ -136,13 +142,16 @@
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">АРХИТЕКТУРА ПО</summary>
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    АРХИТЕКТУРА ПО
+                </summary>
                 <ul class="text-white text-sm font-bold">
                     <li>MVC "модель-представление-контроллер"</li>
                     <li>MVP "модель-представление-презентатор"</li>
                     <li>MVVM "модель-представление-модель-представление"</li>
                     <li>BEM-методологии "блок, элемент, модификатор"</li>
-                    <li>SMACSS-методологии "масштабируемая и модульная архитектура для CSS + namespace !!!"<ul>
+                    <li>SMACSS-методологии "масштабируемая и модульная архитектура для CSS + namespace !!!"
+                        <ul>
                             <li>основа "стили по умолчанию для базовых селекторов"</li>
                             <li>структура "структура вёрстки, размеры элементов, их выравнивание"</li>
                             <li>модуль "элементы, из которых строится модуль"</li>
@@ -170,16 +179,20 @@
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">АЛГОРИТМ</summary>
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    АЛГОРИТМ
+                </summary>
                 <ul class="text-white text-sm font-bold">
-                    <li>Линейные "а.линейный"</li>
-                    <li>Выбора "а.выбора"</li>
-                    <li>Цикла "а.цикла"</li>
+                    <li>Линейный</li>
+                    <li>Выбора</li>
+                    <li>Цикла</li>
                 </ul>
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">ПАТТЕРНЫ</summary>
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    ПАТТЕРНЫ
+                </summary>
                 <ul class="text-white text-sm font-bold">
                     <li>GRASP "новые обобщенные"
                         <ul>
@@ -256,7 +269,9 @@
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">БЛОК СХЕМА</summary>
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    БЛОК СХЕМА
+                </summary>
                 <ul class="text-white text-sm font-bold">
                     <table>
                         <tbody>
@@ -311,7 +326,9 @@
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">UML</summary>
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    UML
+                </summary>
                 <ul class="text-white text-sm font-bold">
                     <li>Структурные "элементы диаграммы"
                         <ul>
@@ -352,7 +369,9 @@
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">ПРОТОТИПЫ ПРОЕКТА</summary>
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    ПРОТОТИПЫ ПРОЕКТА
+                </summary>
                 <ul class="text-white text-sm font-bold">
                     <li>WIREFRAME "каркас приложения"</li>
                     <li>PROTOTYPE "минимум стилей"</li>
@@ -361,7 +380,9 @@
             </details>
 
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">ТЕСТИРОВАНИЕ</summary>
+                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+                    ТЕСТИРОВАНИЕ
+                </summary>
                 <ul class="text-white text-sm font-bold">
                     <li>UNIT TEST</li>
                     <li>ТЕСТИРОВАНИЕ</li>

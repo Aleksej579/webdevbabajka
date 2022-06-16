@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header bg-slate-800">
     <div class="header__top h-8">
       <div class="container max-w-7xl h-8 m-auto text-white flex items-center">
         <button @click="showModalTwitter = true">
@@ -23,8 +23,6 @@
         <SplideSlide>VUE</SplideSlide>
       </Splide>
     </div>
-
-
 
     <vue-final-modal v-model="showModalTwitter" classes="modal-container" content-class="modal-content">
       <button class="modal-close" @click="showModalTwitter = false"><i class="fa-solid fa-xmark"></i></button>
@@ -57,7 +55,6 @@
     </vue-final-modal>
   </div>
 </template>
-
 
 <script>
 import VueFinalModal from 'vue-final-modal'

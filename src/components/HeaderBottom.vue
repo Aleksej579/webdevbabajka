@@ -1,5 +1,5 @@
 <template>
-    <div class="header__bottom flex items-center">
+    <div class="header__bottom flex items-center bg-slate-800">
         <div class="flex items-center m-auto container max-w-7xl">
             <img class="header__logo h-12" src="/src/assets/logo.jpg" alt="WebDev">
             <form class="mx-2.5">

@@ -74,7 +74,7 @@ export default {
 
 .glitch:after {
     animation: glitch-animation 2s infinite linear alternate-reverse;
-    background: #2c303b;
+    background: #0f172a;
     clip: rect(0, 900px, 0, 0);
     color: white;
     content: attr(data-text);
@@ -87,7 +87,7 @@ export default {
 
 .glitch:before {
     animation: glitch-animation-2 3s infinite linear alternate-reverse;
-    background: #2c303b;
+    background: #0f172a;
     clip: rect(0, 900px, 0, 0);
     color: white;
     content: attr(data-text);

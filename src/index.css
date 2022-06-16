@@ -6,16 +6,6 @@
     z-index: 2;
 }
 
-.header__top,
-.header__bottom,
-.footer {
-    background-color: #1e293a;
-}
-
-nav {
-    color: #48a65b;
-}
-
 @layer base {
     h1 {
         @apply my-8 mx-auto text-5xl w-max font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
@@ -24,7 +14,6 @@ nav {
     p {
         @apply my-5;
     }
-
 
     .main__form label {
         @apply flex flex-col mb-3;
@@ -35,30 +24,16 @@ nav {
         @apply border border-slate-800 rounded-md p-2.5;
     }
 
-    textarea {
-        width: 80%;
-        height: 300px;
-        background-color: #1f1f28;
-        color: #48a65b;
-        border: none;
-        border: 1px solid rgba(70, 70, 70, 0.6);
-        margin-top: 10px;
-        padding: 10px;
-    }
-
     ::selection {
-        background: #1f1f28;
-        color: #48a65b;
+        @apply text-fuchsia-500 bg-purple-400/10;
     }
 
     ::-moz-selection {
-        background: #1f1f28;
-        color: #48a65b;
+        @apply text-fuchsia-500 bg-purple-400/10;
     }
 
     ::-webkit-selection {
-        background: #1f1f28;
-        color: #48a65b;
+        @apply text-fuchsia-500 bg-purple-400/10;
     }
 
     .tooltip {
@@ -67,24 +42,15 @@ nav {
 
     *[tooltip]:hover:after {
         content: attr(tooltip);
-        color: #48a65b;
-        border: 1px solid #48a65b;
-        border-radius: 3px;
-        padding: 3px;
         font-size: 80%;
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        width: max-content;
+        @apply text-sky-500 border border-sky-500 rounded p-1 absolute bottom-5 left-0 w-max;
     }
 
     .main {
-        color: #90a4ae;
+        @apply text-slate-400;
     }
 
     .main a {
-        text-decoration: none;
-        color: #f48e70;
+        @apply text-sky-500 no-underline;
     }
-
 }
