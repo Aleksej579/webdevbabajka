@@ -15,8 +15,8 @@
         </div>
 
         <div class="wrapper_2 elementanm">
-            <div class="grid-wrap">
-                <div class="grid anim"></div>
+            <div class="grid_lib-wrap">
+                <div class="grid_lib anim"></div>
             </div>
         </div>
     </div>
@@ -375,12 +375,12 @@ export default {
     border-radius: 50%;
 }
 
-.grid-wrap {
+.grid_lib-wrap {
     position: relative;
     transform: rotateX(70deg) scale3d(4, 4, 1) translateZ(-750px) translateY(-500px) translateX(-50px);
 }
 
-.grid {
+.grid_lib {
     height: 500px;
     width: 500px;
     color: white;

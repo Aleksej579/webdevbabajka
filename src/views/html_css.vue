@@ -1,7 +1,8 @@
 <template>
     <div class="main container max-w-7xl mx-auto pb-8">
-        <h2 class="text-2xl text-center">HTML</h2>
+        <h1 class="text-2xl text-center">MARKUP & STYLING</h1>
 
+        <h2 class="text-2xl text-center">HTML</h2>
         <iframe height="300" style="width: 100%;" scrolling="no" title="HTML tags"
             src="https://codepen.io/Aleksej579/embed/PoKZrXM?default-tab=html%2Cresult" frameborder="no" loading="lazy"
             allowtransparency="true" allowfullscreen="true">
@@ -21,7 +22,6 @@
         </iframe>
 
         <h2 class="text-2xl text-center">CSS</h2>
-
         <iframe height="300" style="width: 100%;" scrolling="no" title="CSS notes"
             src="https://codepen.io/Aleksej579/embed/dydwRGg?default-tab=html%2Cresult" frameborder="no" loading="lazy"
             allowtransparency="true" allowfullscreen="true">

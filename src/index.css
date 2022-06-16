@@ -3,14 +3,13 @@
 @tailwind utilities;
 
 .main-container {
-    background-color: #2c303b;
     z-index: 2;
 }
 
 .header__top,
 .header__bottom,
 .footer {
-    background-color: #1f1f28;
+    background-color: #1e293a;
 }
 
 nav {
@@ -19,7 +18,7 @@ nav {
 
 @layer base {
     h1 {
-        @apply my-2;
+        @apply my-8 mx-auto text-5xl w-max font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
     }
 
     p {

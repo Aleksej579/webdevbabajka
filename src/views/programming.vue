@@ -1,5 +1,6 @@
 <template>
     <div class="main container max-w-7xl mx-auto pb-8">
+        <h1 class="text-2xl text-center">PROGRAMMING</h1>
 
         <h2 class="text-2xl text-center">JavaScript</h2>
         <iframe height="300" style="width: 100%;" scrolling="no" title="JS notes"

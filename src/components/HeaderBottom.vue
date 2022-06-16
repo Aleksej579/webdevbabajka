@@ -8,7 +8,7 @@
                     <option value="ru">Russian</option>
                 </select>
             </form>
-            <nav class="header__menu flex justify-between w-full mx-2.5">
+            <nav class="header__menu flex justify-between w-full mx-2.5 text-slate-400 font-extrabold">
                 <router-link to="/" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">{{ t('home') }}
                 </router-link>
                 <router-link to="/methodology" class="rounded px-1.5 hover:bg-slate-800 hover:text-white">

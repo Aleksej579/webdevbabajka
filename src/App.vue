@@ -8,7 +8,7 @@ import Footer from "./components/Footer.vue";
 <template>
   <Header />
   <HeaderBottom />
-  <div class="main-container">
+  <div class="main-container bg-slate-900">
     <router-view></router-view>
     <a class="topbutton" href="#" title="Go to top">Наверх</a>
   </div>
