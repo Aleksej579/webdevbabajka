@@ -1,5 +1,5 @@
 <template>
-    <div class="header__bottom flex items-center bg-slate-800 z-30 border-b-4 border-slate-900">
+    <div class="header-bottom sticky top-0 mt-[124px] flex items-center bg-slate-800 z-20 border-b-4 border-slate-900">
         <div class="flex items-center m-auto container max-w-7xl justify-between">
             <img class="header__logo h-12" src="/src/assets/logo.jpg" alt="WebDev">
             <nav class="header__menu flex justify-between w-3/4 mx-2.5 text-slate-400 font-extrabold">
@@ -58,12 +58,6 @@ export default {
 </script>
 
 <style>
-.header__bottom {
-    margin-top: 164px;
-    position: sticky;
-    top: 0;
-}
-
 .router-link-active {
     @apply text-green-500;
 }
