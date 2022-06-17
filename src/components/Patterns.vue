@@ -5,107 +5,204 @@
             <div class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <ul class="space-y-8">
                     <li class="rounded-lg p-6 bg-slate-800">
-                        <h3 class="text-base font-semibold text-center">OOP</h3>
+                        <h3 class="text-base font-semibold text-center">{{ t('oop') }}</h3>
                         <ul>
-                            <li><b>Инкапсуляция</b><i> - изменение объекта его же методами.</i></li>
-                            <li><b>Наследование</b><i> - переиспользование полей и методов другого класса.</i></li>
-                            <li><b>Полиморфизм</b><i> - способность функции работать с данными разных типов.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">{{ t('oopEnc')
+                            }}</span> - {{ t('oopEncDesc') }}</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Наследование</span> - переиспользование полей и
+                                методов другого класса.
                             </li>
-                            <li><b>Абстракция</b></li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Полиморфизм</span> - способность функции
+                                работать с данными разных типов.
+                            </li>
+                            <li><span class="text-sky-400 font-mono">Абстракция</span></li>
                         </ul>
                     </li>
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">SOLID</h3>
                         <ul>
-                            <li><b>SRP</b><i> - объект отвечает только за одно дело.</i></li>
-                            <li><b>OCP</b><i> - программные сущности открыты для расширения но закрыты для
-                                    модификации.</i></li>
-                            <li><b>LSP</b><i> - где используется базовый класс должен подходить и его наследуемый
-                                    класс.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">SRP</span> -
+                                объект отвечает только за одно
+                                дело.</li>
+                            <li class=" border-b border-slate-400/10"><span class="text-sky-400 font-mono">OCP</span> -
+                                программные сущности открыты
+                                для
+                                расширения но закрыты для
+                                модификации.</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">LSP</span> -
+                                где используется базовый класс
+                                должен подходить и его наследуемый
+                                класс.
                             </li>
-                            <li><b>ISP</b><i> - много интерфейсов для клиента лучше чем один интерфейс общего
-                                    назначения.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">ISP</span> -
+                                много интерфейсов для клиента
+                                лучше чем один интерфейс общего
+                                назначения.
                             </li>
-                            <li><b>DIP</b><i> - использовать все классы через интерфейсы.</i></li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">DIP</span> -
+                                использовать все классы через
+                                интерфейсы.</li>
                         </ul>
                     </li>
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">GRASP</h3>
                         <ul>
-                            <li><b>Information Expert</b><i> - информация должна обрабатываться там где находится.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Information
+                                    Expert</span> - информация должна
+                                обрабатываться там где
+                                находится
                             </li>
-                            <li><b>Creator</b><i> - объект создаваться там где его используют.</i></li>
-                            <li><b>Controller</b><i> - ловить многопоточность на входе и превращать в один поток.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Creator</span>
+                                - объект создаваться там где
+                                его используют.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Controller</span> - ловить многопоточность на
+                                входе и превращать в один
+                                поток.
                             </li>
-                            <li><b>Low Coupling</b><i> - между разными объектами должно быть минимум связей.</i></li>
-                            <li><b>High Cohesion</b><i> - в одном объекте должны быть идентичные сущности, а непохожие в
-                                    другом
-                                    месте.</i></li>
-                            <li><b>Polymorphism</b><i> - разное поведение объектов можно программировать на основе
-                                    разного код
-                                    класса.</i></li>
-                            <li><b>Pure Fabrication</b><i></i></li>
-                            <li><b>Indirection</b><i> - объект зависит не от другого объекта а от его интерфейса.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Low
+                                    Coupling</span> - между разными объектами
+                                должно быть минимум связей.
                             </li>
-                            <li><b>Protected Variations</b><i> - любые изменения в коде должны минимально его
-                                    ломать.</i></li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">High
+                                    Cohesion</span> - в одном объекте должны
+                                быть идентичные сущности, а
+                                непохожие в
+                                другом
+                                месте.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Polymorphism</span> - разное поведение
+                                объектов можно программировать на основе
+                                разного код
+                                класса.</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Pure
+                                    Fabrication</span></li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Indirection</span> - объект зависит не от
+                                другого объекта а от его
+                                интерфейса.
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Protected
+                                    Variations</span> - любые изменения
+                                в коде должны минимально его
+                                ломать.</li>
                         </ul>
                     </li>
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">GOF - Creation</h3>
                         <ul>
-                            <li><b>Information Expert</b><i> - создает семейство взаимосвязанных объектов.</i></li>
-                            <li><b>Builder</b><i> - поэтапное создание сложного объекта.</i></li>
-                            <li><b>Factory Method</b><i> - определяет интерфейс для создания объекта, при этом его тип
-                                    определяется подклассами.</i></li>
-                            <li><b>Object Pool</b><i> - создание "затратных" объектов за счет их многократного
-                                    использования.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Information
+                                    Expert</span> - создает семейство
+                                взаимосвязанных объектов.
                             </li>
-                            <li><b>Prototype</b><i> - создание объектов на основе прототипов.</i></li>
-                            <li><b>Singleton</b><i> - создает единственный экземпляр некоторого класса и предоставляет к
-                                    нему доступ.</i></li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Builder</span>
+                                - поэтапное создание сложного
+                                объекта.</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Factory
+                                    Method</span> - определяет интерфейс
+                                для создания объекта, при этом его
+                                тип
+                                определяется подклассами.</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Object
+                                    Pool</span> - создание "затратных"
+                                объектов за счет их многократного
+                                использования.
+                            </li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Prototype</span> - создание объектов на
+                                основе прототипов.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Singleton</span> - создает единственный
+                                экземпляр некоторого класса и
+                                предоставляет к
+                                нему доступ.</li>
                         </ul>
                     </li>
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">GOF - Structural</h3>
                         <ul>
-                            <li><b>Adapter</b><i> - преобразует интерфейс существующего класса к виду, подходящему для
-                                    использования.</i></li>
-                            <li><b>Bridge</b><i> - делает абстракцию и реализацию независимыми друг от друга.</i></li>
-                            <li><b>Composite</b><i> - группирует схожие объекты в древовидные структуры.</i></li>
-                            <li><b>Decorator</b><i> - динамически добавляет объекту новую функциональность.</i></li>
-                            <li><b>Facade</b><i> - предоставляет унифицированный интерфейс вместо набора интерфейсов
-                                    некоторой системы.</i></li>
-                            <li><b>Flyweight</b><i> - использует разделение для поддержки множества мелких объектов.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Adapter</span>
+                                - преобразует интерфейс
+                                существующего класса к виду, подходящему
+                                для
+                                использования.</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Bridge</span>
+                                - делает абстракцию и
+                                реализацию независимыми друг от друга.
                             </li>
-                            <li><b>Proxy</b><i> - подменяет другой объект для контроля доступа к нему.</i></li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Composite</span> - группирует схожие объекты
+                                в древовидные структуры.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Decorator</span> - динамически добавляет
+                                объекту новую функциональность.
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Facade</span>
+                                - предоставляет унифицированный
+                                интерфейс вместо набора
+                                интерфейсов
+                                некоторой системы.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Flyweight</span> - использует разделение для
+                                поддержки множества мелких
+                                объектов.
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Proxy</span> -
+                                подменяет другой объект для
+                                контроля доступа к нему.</li>
                         </ul>
                     </li>
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">GOF - Behavioral</h3>
                         <ul>
-                            <li><b>Chain of Responsibility</b><i> - предоставляет способ передачи запроса по цепочке
-                                    получателей.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Chain of
+                                    Responsibility</span> -
+                                предоставляет способ передачи запроса по
+                                цепочке
+                                получателей.
                             </li>
-                            <li><b>Command</b><i> - инкапсулирует запрос в виде объекта.</i></li>
-                            <li><b>Interpreter</b><i> - для языка определяет его грамматику и интерпретатор,
-                                    использующий эту
-                                    грамматику.</i></li>
-                            <li><b>Iterator</b><i> - предоставляет механизм обхода элементов коллекции.</i></li>
-                            <li><b>Mediator</b><i> - инкапсулирует взаимодействие между множеством объектов в
-                                    объект-посредник.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Command</span>
+                                - инкапсулирует запрос в виде
+                                объекта.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Interpreter</span> - для языка определяет его
+                                грамматику и интерпретатор,
+                                использующий эту
+                                грамматику.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Iterator</span> - предоставляет механизм
+                                обхода элементов коллекции.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Mediator</span> - инкапсулирует
+                                взаимодействие между множеством объектов в
+                                объект-посредник.
                             </li>
-                            <li><b>Memento</b><i> - сохраняет и восстанавливает состояние объекта.</i></li>
-                            <li><b>Observer</b><i> - при изменении объекта извещает всех зависимые объекты для их
-                                    обновления.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Memento</span>
+                                - сохраняет и восстанавливает
+                                состояние объекта.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Observer</span> - при изменении объекта
+                                извещает всех зависимые объекты для их
+                                обновления.
                             </li>
-                            <li><b>State</b><i> - изменяет поведение объекта при изменении его состояния.</i></li>
-                            <li><b>Strategy</b><i>- переносит алгоритмы в отдельную иерархию классов, делая их
-                                    взаимозаменяемыми.</i>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">State</span> -
+                                изменяет поведение объекта при
+                                изменении его состояния.</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Strategy</span>- переносит алгоритмы в
+                                отдельную иерархию классов, делая их
+                                взаимозаменяемыми.
                             </li>
-                            <li><b>Template method</b><i> - определяет шаги алгоритма, позволяя подклассам изменить
-                                    некоторые из них.</i></li>
-                            <li><b>Visitor</b><i> - определяет новую операцию в классе без его изменения.</i></li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Template
+                                    method</span> - определяет шаги
+                                алгоритма, позволяя подклассам
+                                изменить
+                                некоторые из них.</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Visitor</span>
+                                - определяет новую операцию в
+                                классе без его изменения.</li>
                         </ul>
                     </li>
                 </ul>
@@ -114,17 +211,20 @@
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">Акроним</h3>
                         <ul>
-                            <li><b>KISS</b><i> делай проще</i></li>
-                            <li><b>DRY</b><i> не повторяйся</i></li>
-                            <li><b>YAGNI</b><i> тебе это не понадобиться</i></li>
-                            <li>
-                                <b>SMART</b>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">KISS</span>
+                                делай проще</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">DRY</span> не
+                                повторяйся</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">YAGNI</span>
+                                тебе это не понадобиться</li>
+                            <li class="border-b border-slate-400/10">
+                                <span class="text-sky-400 font-mono">SMART</span>
                                 <ul>
-                                    <li>specific <i>конкретная</i></li>
-                                    <li>measurable <i>измеримая</i></li>
-                                    <li>attainable <i>достижимая</i></li>
-                                    <li>relevant <i>уместная или актуальная</i></li>
-                                    <li>time-bound <i>ограниченная по времени</i></li>
+                                    <li>specific конкретная</li>
+                                    <li>measurable измеримая</li>
+                                    <li>attainable достижимая</li>
+                                    <li>relevant уместная или актуальная</li>
+                                    <li>time-bound ограниченная по времени</li>
                                 </ul>
                             </li>
                         </ul>
@@ -132,36 +232,60 @@
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">Software architecture pattern</h3>
                         <ul>
-                            <li><b>MVC</b><i>Model-View-Controller</i></li>
-                            <li><b>HMVC</b><i>Hierarchical model–view–controller</i></li>
-                            <li><b>MVVM</b><i>Model-View-View Model</i></li>
-                            <li><b>MVP</b><i>Model-View-Presenter</i></li>
-                            <li><b>CQRS</b><i>comand or request in unit time</i></li>
-                            <li><b>Flux</b><i>(State) dispatcher, stores, views</i></li>
-                            <li><b>Microservice architecture</b><i></i></li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">MVC</span>Model-View-Controller</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">HMVC</span>Hierarchical model–view–controller
+                            </li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">MVVM</span>Model-View-View Model</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">MVP</span>Model-View-Presenter</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">CQRS</span>comand or request in unit time
+                            </li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Flux</span>(State) dispatcher, stores, views
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Microservice
+                                    architecture</span></li>
                         </ul>
                     </li>
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">Agile</h3>
                         <ul>
-                            <li><b>Scrum</b><i> итерации, наращивание функциональности</i></li>
-                            <li><b>Lean</b><i> бережливое производство</i></li>
-                            <li><b>Kanban</b><i> перемещение задач по статусам</i></li>
-                            <li><b>RUP</b><i> inception | elaboration | construction | transition</i></li>
-                            <li><b>XP</b><i> работа в паре и тестирование</i></li>
-                            <li><b>RAD</b><i> rapid application development</i></li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Scrum</span>
+                                итерации, наращивание
+                                функциональности</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Lean</span>
+                                бережливое производство</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Kanban</span>
+                                перемещение задач по статусам
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">RUP</span>
+                                inception | elaboration |
+                                construction | transition</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">XP</span>
+                                работа в паре и тестирование</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">RAD</span>
+                                rapid application development</li>
                         </ul>
                     </li>
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">Programming models</h3>
                         <ul>
-                            <li><b>Императивный</b><i> что?</i></li>
-                            <li><b>Декларативный</b><i> как?</i></li>
-                            <li><b>Структурное</b></li>
-                            <li><b>Реактивное</b></li>
-                            <li><b>Контрактное</b></li>
-                            <li>
-                                <b>Функциональное 'BigO'</b>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Императивный</span> что?</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Декларативный</span> как?</li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Структурное</span></li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Реактивное</span></li>
+                            <li class="border-b border-slate-400/10"><span
+                                    class="text-sky-400 font-mono">Контрактное</span></li>
+                            <li class="border-b border-slate-400/10">
+                                <span class="text-sky-400 font-mono">Функциональное 'BigO'</span>
                                 <ul>
                                     <li>чистые функции детерминированые, без побочных эффектов</li>
                                     <li>функции высших порядков функция принимающая другую функцию</li>
@@ -182,24 +306,36 @@
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">Data structures</h3>
                         <ul>
-                            <li><b>number, string, boolean, NaN, undefined, infinity, BigInt;</b></li>
-                            <li><b>Array</b></li>
-                            <li><b>Stack</b><i> LIFO</i></li>
-                            <li><b>Queue</b><i> FIFO</i></li>
-                            <li><b>Linked list</b></li>
-                            <li><b>Tree</b></li>
-                            <li><b>Trie</b></li>
-                            <li><b>Graph</b></li>
-                            <li><b>Set</b></li>
-                            <li><b>Map</b></li>
-                            <li><b>Hash table</b></li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">number,
+                                    string, boolean, NaN, undefined,
+                                    infinity, BigInt;</span></li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Array</span>
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Stack</span>
+                                LIFO</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Queue</span>
+                                FIFO</li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Linked
+                                    list</span></li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Tree</span>
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Trie</span>
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Graph</span>
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Set</span>
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Map</span>
+                            </li>
+                            <li class="border-b border-slate-400/10"><span class="text-sky-400 font-mono">Hash
+                                    table</span></li>
                         </ul>
                     </li>
                     <li class="rounded-lg p-6 bg-slate-800">
                         <h3 class="text-base font-semibold text-center">Network protocols</h3>
                         <ul>
-                            <li>
-                                <b>RESTful</b>
+                            <li class="border-b border-slate-400/10">
+                                <span class="text-sky-400 font-mono">RESTful</span>
                                 <ul>
                                     <li>модель клиент-сервер</li>
                                     <li>отсутствие состояния</li>
@@ -209,13 +345,14 @@
                                     <li>код по требованию</li>
                                 </ul>
                             </li>
-                            <li>GraphQl</li>
-                            <li>Web APIs</li>
-                            <li>Web sockets - Протоколы</li>
-                            <li>Web Workers фоновый поток выполнения</li>
-                            <li>JWT JSON Web Token</li>
-                            <li>CRUD create, read, update, delete</li>
-                            <li>ACID Atomicity | Consistency | Isolation | Durability</li>
+                            <li class="border-b border-slate-400/10">GraphQl</li>
+                            <li class="border-b border-slate-400/10">Web APIs</li>
+                            <li class="border-b border-slate-400/10">Web sockets - Протоколы</li>
+                            <li class="border-b border-slate-400/10">Web Workers фоновый поток выполнения</li>
+                            <li class="border-b border-slate-400/10">JWT JSON Web Token</li>
+                            <li class="border-b border-slate-400/10">CRUD create, read, update, delete</li>
+                            <li class="border-b border-slate-400/10">ACID Atomicity | Consistency | Isolation |
+                                Durability</li>
                         </ul>
                     </li>
                 </ul>
@@ -223,3 +360,14 @@
         </section>
     </div>
 </template>
+
+<script>
+import { useI18n } from 'vue-i18n'
+
+export default {
+    setup() {
+        const { locale, t } = useI18n()
+        return { locale, t }
+    },
+}
+</script>

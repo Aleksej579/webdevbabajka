@@ -11,6 +11,9 @@ const translationInterface = {
         editor: "EDITOR",
         warning: "WARNING",
         suggested_alternatives: "You follow an external link",
+        oop: "OOP",
+        oopEnc: "Encapsulation",
+        oopEncDesc: "changing an object by its own methods.",
     },
     ru: {
         home: "ГЛАВНАЯ",
@@ -24,6 +27,9 @@ const translationInterface = {
         editor: "РЕДАКТОР",
         warning: "ПРЕДУПРЕЖДЕНИЕ",
         suggested_alternatives: "Вы переходите по внешней сслке",
+        oop: "ООП",
+        oopEnc: "Инкапсуляция",
+        oopEncDesc: "изменение объекта его же методами.",
     }
 }
 

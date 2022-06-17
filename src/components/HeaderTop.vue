@@ -24,7 +24,8 @@
             </div>
         </div>
 
-        <vue-final-modal v-model="showModalTwitter" classes="modal-container" content-class="modal-content">
+        <vue-final-modal v-model="showModalTwitter" classes="modal-container"
+            content-class="modal-content bg-slate-800 text-slate-400">
             <button class="modal-close" @click="showModalTwitter = false"><i class="fa-solid fa-xmark"></i></button>
             <Popup />
             <div class="flex justify-center">
@@ -34,7 +35,8 @@
             </div>
         </vue-final-modal>
 
-        <vue-final-modal v-model="showModalLi" classes="modal-container" content-class="modal-content">
+        <vue-final-modal v-model="showModalLi" classes="modal-container"
+            content-class="modal-content bg-slate-800 text-slate-400">
             <button class="modal-close" @click="showModalLi = false"><i class="fa-solid fa-xmark"></i></button>
             <Popup />
             <div class="flex justify-center">
@@ -44,7 +46,8 @@
             </div>
         </vue-final-modal>
 
-        <vue-final-modal v-model="showModal" classes="modal-container" content-class="modal-content">
+        <vue-final-modal v-model="showModal" classes="modal-container"
+            content-class="modal-content bg-slate-800 text-slate-400">
             <button class="modal-close" @click="showModal = false"><i class="fa-solid fa-xmark"></i></button>
             <Popup />
             <div class="flex justify-center">
