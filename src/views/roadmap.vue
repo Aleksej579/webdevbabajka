@@ -58,7 +58,7 @@
             <a href="https://expressjs.com/">Express.js</a>,
             <strong>REST</strong>,
             database like <strong>PostgreSQL</strong>,
-            some operations like <strong class="tooltip" tooltip="Create, Repeat Update, Delete">CRUD</strong>.
+            some operations like <strong class="tooltip" tooltip="Create, Read, Update, Delete">CRUD</strong>.
         </p>
 
         <p>Knowledge of cloud platforms

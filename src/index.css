@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-container {
-    z-index: 2;
-}
-
 @layer base {
     h1 {
         @apply my-8 mx-auto text-5xl w-max font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
