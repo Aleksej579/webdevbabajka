@@ -7,10 +7,6 @@
         @apply my-8 mx-auto text-5xl w-max font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
     }
 
-    p {
-        @apply my-5;
-    }
-
     .main__form label {
         @apply flex flex-col mb-3;
     }

@@ -1,14 +1,8 @@
 <template>
-    <div class="header__bottom flex items-center bg-slate-800 z-30">
-        <div class="flex items-center m-auto container max-w-7xl">
+    <div class="header__bottom flex items-center bg-slate-800 z-30 border-b-4 border-slate-900">
+        <div class="flex items-center m-auto container max-w-7xl justify-between">
             <img class="header__logo h-12" src="/src/assets/logo.jpg" alt="WebDev">
-            <form class="mx-2.5">
-                <select v-model="locale" class="rounded p-2 bg-slate-800 text-white mx-1.5">
-                    <option value="en" selected>English</option>
-                    <option value="ru">Russian</option>
-                </select>
-            </form>
-            <nav class="header__menu flex justify-between w-full mx-2.5 text-slate-400 font-extrabold">
+            <nav class="header__menu flex justify-between w-3/4 mx-2.5 text-slate-400 font-extrabold">
                 <router-link to="/" class="group hover:text-green-400">
                     {{ t('home') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block	h-1 w-0 group-hover:w-full"></span>
@@ -65,7 +59,7 @@ export default {
 
 <style>
 .header__bottom {
-    margin-top: 184px;
+    margin-top: 164px;
     position: sticky;
     top: 0;
 }

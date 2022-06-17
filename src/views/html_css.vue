@@ -1,5 +1,5 @@
 <template>
-    <div class="main container max-w-7xl mx-auto pb-8">
+    <div class="main container max-w-7xl mx-auto p-3">
         <h1 class="text-2xl text-center">MARKUP & STYLING</h1>
 
         <iframe height="300" style="width: 100%;" scrolling="no" title="HTML tags"

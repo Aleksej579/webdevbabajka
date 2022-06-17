@@ -1,5 +1,5 @@
 <template>
-    <div class="main container max-w-7xl mx-auto pb-8">
+    <div class="main container max-w-7xl mx-auto p-3">
         <div class="glitch" data-text="GLITCH">GLITCH</div>
         <div class="box3d_wrp">
             <div id="box3d">

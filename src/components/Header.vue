@@ -1,26 +1,43 @@
 <template>
   <div class="header bg-slate-800">
-    <div class="header__top h-8">
-      <div class="container max-w-7xl h-8 m-auto text-white flex items-center">
-        <button @click="showModalTwitter = true">
-          <i class="fa-brands fa-twitter"></i>
-        </button>
-        <button @click="showModalLi = true">
-          <i class="fa-brands fa-linkedin ml-6"></i>
-        </button>
-        <button @click="showModal = true">
-          <i class="fa-brands fa-github ml-6"></i>
-        </button>
+    <div class="header__top h-8 max-w-7xl">
+      <div class="h-8 m-auto text-slate-400 flex items-center justify-between">
+
+        <div>
+          <button @click="showModalTwitter = true">
+            <i class="fa-brands fa-twitter"></i>
+          </button>
+          <button @click="showModalLi = true">
+            <i class="fa-brands fa-linkedin ml-6"></i>
+          </button>
+          <button @click="showModal = true">
+            <i class="fa-brands fa-github ml-6"></i>
+          </button>
+        </div>
+
+        <form class="border-l-2 border-slate-400">
+          <select v-model="locale" class="p-1 bg-slate-800 text-slate-400">
+            <option value="en" selected>English</option>
+            <option value="ru">Russian</option>
+          </select>
+        </form>
+
       </div>
     </div>
 
-    <div class="header__middle">
+    <div class="header__middle text-center p-5 text-6xl font-extrabold uppercase">
       <p class="header__middle-text">Front-end developer</p>
-      <Splide :options="{ rewind: true, autoplay: true, pagination: false, }" aria-label="My Favorite Images">
-        <SplideSlide>HTML5</SplideSlide>
-        <SplideSlide>CSS3</SplideSlide>
+      <Splide :options="{ rewind: true, autoplay: true, pagination: false, }" aria-label="My Favorite Images"
+        class="font-bold tracking-widest text-2xl">
+        <SplideSlide>HTML-5</SplideSlide>
+        <SplideSlide>CSS-3</SplideSlide>
+        <SplideSlide>SASS</SplideSlide>
+        <SplideSlide>BEM</SplideSlide>
         <SplideSlide>JAVASCRIPT</SplideSlide>
+        <SplideSlide>ES6+</SplideSlide>
         <SplideSlide>VUE</SplideSlide>
+        <SplideSlide>VITE</SplideSlide>
+        <SplideSlide>PINIA</SplideSlide>
       </Splide>
     </div>
 
@@ -126,41 +143,24 @@ export default {
   color: gray;
 }
 
-.lastArticleTitle * {
-  font-size: inherit;
-  display: inherit;
-  font-weight: 400;
+/* .lastArticleTitle * {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 200px;
   display: block;
-}
+} */
 
 .header__middle {
-  text-align: center;
-  padding: 20px;
   background-color: #53e3a6;
   background-image: linear-gradient(to bottom right, #50a3a2 0, #53e3a6 100%);
-  font-size: 60px;
   color: #5fd1b4;
-  font-family: 'Kanit', Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 0.8;
-  text-transform: uppercase;
   text-shadow: 0.045em 0.045em 0.04em rgb(0 0 0 / 21%);
   box-shadow: 0px 20px 20px -10px rgb(0 0 0 / 30%) inset;
-  position: relative;
 }
 
 .splide {
-  text-align: center;
-  color: #5fd1b4;
-  font-family: 'Kanit', Helvetica, Arial, sans-serif;
   text-shadow: 0.045em 0.045em 0.04em rgb(0 0 0 / 21%);
-  font-weight: 400;
-  font-size: 30px;
 }
 
 .splide__arrows {

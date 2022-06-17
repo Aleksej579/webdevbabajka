@@ -1,5 +1,5 @@
 <template>
-    <div class="main container max-w-7xl mx-auto pb-8">
+    <div class="main container max-w-7xl mx-auto p-3">
         <h1 class="text-2xl text-center">INFO</h1>
         <section class="bg-slate-800/25 w-4/5 mx-auto rounded-xl p-8">
             <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
