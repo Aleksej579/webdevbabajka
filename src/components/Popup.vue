@@ -1,7 +1,7 @@
 <template>
-  <p class="text-center">
+  <p class="text-center mb-10">
     {{ t('warning') }} <br>
-    <span class="text-orange-600">{{ t('suggested_alternatives') }}</span><br>
+    <span class="text-green-500">{{ t('suggested_alternatives') }}</span><br>
   </p>
 </template>
 

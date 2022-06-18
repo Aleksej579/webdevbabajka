@@ -1,6 +1,6 @@
 <template>
     <div class="header-top bg-slate-800 z-30">
-        <div class="h-7 max-w-7xl">
+        <div class="h-7 max-w-7xl m-auto">
             <div class="h-7 m-auto text-slate-400 flex items-center justify-between">
 
                 <div>
@@ -28,7 +28,7 @@
             content-class="modal-content bg-slate-800 text-slate-400">
             <button class="modal-close" @click="showModalTwitter = false"><i class="fa-solid fa-xmark"></i></button>
             <Popup />
-            <div class="flex justify-center">
+            <div class="flex justify-center mb-10">
                 <a href="https://twitter.com/Aleksej579">
                     <i class="fa-brands fa-twitter-square fa-5x"></i>
                 </a>
@@ -39,7 +39,7 @@
             content-class="modal-content bg-slate-800 text-slate-400">
             <button class="modal-close" @click="showModalLi = false"><i class="fa-solid fa-xmark"></i></button>
             <Popup />
-            <div class="flex justify-center">
+            <div class="flex justify-center mb-10">
                 <a href="https://github.com/Aleksej579/webdevbabajka">
                     <i class="fa-brands fa-linkedin fa-5x"></i>
                 </a>
@@ -50,7 +50,7 @@
             content-class="modal-content bg-slate-800 text-slate-400">
             <button class="modal-close" @click="showModal = false"><i class="fa-solid fa-xmark"></i></button>
             <Popup />
-            <div class="flex justify-center">
+            <div class="flex justify-center mb-10">
                 <a href="https://github.com/Aleksej579">
                     <i class="fa-brands fa-github fa-5x"></i>
                 </a>
