@@ -1,5 +1,5 @@
 <template>
-    <div class="header-top bg-slate-800 z-30">
+    <div class="header-top bg-slate-800/50 z-30 px-1">
         <div class="h-7 max-w-7xl m-auto">
             <div class="h-7 m-auto text-slate-400 flex items-center justify-between">
 
@@ -16,7 +16,7 @@
                 </div>
 
                 <form class="border-l-2 border-slate-400">
-                    <select v-model="locale" class="p-1 bg-slate-800 text-slate-400">
+                    <select v-model="locale" class="p-1 bg-slate-800/50 text-slate-400">
                         <option value="en" selected>English</option>
                         <option value="ru">Russian</option>
                     </select>

@@ -1,8 +1,13 @@
 <template>
-    <div class="header-bottom sticky top-0 mt-[124px] flex items-center bg-slate-800 z-20 border-b-4 border-slate-900">
-        <div class="flex items-center m-auto container max-w-7xl justify-between">
-            <img class="header__logo h-12" src="/src/assets/logo.jpg" alt="WebDev">
-            <nav class="header__menu flex justify-between w-3/4 mx-2.5 text-slate-400 font-extrabold">
+    <div
+        class="header-bottom sticky top-0 mt-[124px] sm:mt-24 flex items-center bg-slate-800 z-20 border-b-4 border-slate-900">
+        <div class="flex items-center m-auto container max-w-7xl justify-between p-1.5">
+            <img class="header__logo h-12 rounded-lg" src="/src/assets/logo.jpg" alt="WebDev">
+            <span @click="openMobileMenu" class="cursor-pointer text-slate-400 text-xl sm:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <nav :class="{ mobile_menu: isActive }" @click="closeMobileMenu"
+                class="header__menu hidden sm:flex justify-between ml-3 w-full text-slate-400 font-extrabold sm:text-xs lg:text-base gap-4">
                 <router-link to="/" class="group hover:text-green-400">
                     {{ t('home') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block	h-1 w-0 group-hover:w-full"></span>
@@ -48,11 +53,24 @@
 import { useI18n } from 'vue-i18n'
 
 export default {
+    data() {
+        return {
+            isActive: false,
+        }
+    },
     setup() {
         const { locale, t } = useI18n({
             useScope: 'global'
         })
         return { locale, t }
+    },
+    methods: {
+        openMobileMenu() {
+            this.isActive = true;
+        },
+        closeMobileMenu() {
+            this.isActive = false;
+        }
     }
 };
 </script>
@@ -60,5 +78,15 @@ export default {
 <style>
 .router-link-active {
     @apply text-green-500;
+}
+
+.mobile_menu {
+    display: block !important;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    margin-left: 0 !important;
 }
 </style>

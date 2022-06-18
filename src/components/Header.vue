@@ -1,8 +1,8 @@
 <template>
-  <div class="header-middle text-center p-5 text-6xl font-extrabold uppercase pt-10">
-    <p class="header-middle-text">Front-end developer</p>
+  <div class="header-middle text-center p-5 text-3xl xsm:text-4xl xsm:h-80 sm:text-5xl font-extrabold uppercase pt-10">
+    <p class="header-middle-text mx-auto">Front-end developer</p>
     <Splide :options="{ rewind: true, autoplay: true, pagination: false, }" aria-label="My Favorite Images"
-      class="font-bold tracking-widest text-2xl">
+      class="font-bold tracking-widest text-lg sm:text-2xl mx-auto">
       <SplideSlide>HTML-5</SplideSlide>
       <SplideSlide>CSS-3</SplideSlide>
       <SplideSlide>SASS</SplideSlide>
