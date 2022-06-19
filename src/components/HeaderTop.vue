@@ -4,11 +4,17 @@
             <div class="h-7 m-auto text-slate-400 flex items-center justify-between">
 
                 <div>
-                    <button @click="showModalTwitter = true">
-                        <i class="fa-brands fa-twitter"></i>
-                    </button>
+                    <a href="https://www.instagram.com/eremenko_579">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://t.me/Aleksej579">
+                        <i class="fa-brands fa-telegram ml-6"></i>
+                    </a>
                     <button @click="showModalLi = true">
                         <i class="fa-brands fa-linkedin ml-6"></i>
+                    </button>
+                    <button @click="showModalTwitter = true">
+                        <i class="fa-brands fa-twitter ml-6"></i>
                     </button>
                     <button @click="showModal = true">
                         <i class="fa-brands fa-github ml-6"></i>
