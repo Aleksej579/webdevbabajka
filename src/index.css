@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+
+    html,
+    body,
+    #app {
+        height: 100%;
+    }
+
+    .main-container {
+        flex: 1 0 auto;
+    }
+
     h1 {
         @apply my-8 mx-auto text-5xl w-max font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
     }
@@ -44,5 +55,9 @@
 
     .main a {
         @apply text-sky-500 no-underline;
+    }
+
+    .footer {
+        flex-shrink: 0;
     }
 }
