@@ -3,7 +3,7 @@
         <h1 class="text-2xl text-center">PATTERNS</h1>
         <section class="sm:px-3 md:px-5 grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div class=" space-y-8">
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">{{ t('oop') }}</h2>
                     <ul>
                         <li class="border-b border-slate-400/10 mb-3">
@@ -24,7 +24,7 @@
                     </ul>
 
                 </article>
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">SOLID</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -49,7 +49,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">GRASP</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -89,7 +89,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">GOF - Creation</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -118,7 +118,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">GOF - Structural</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -151,7 +151,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">GOF - Behavioral</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -203,7 +203,7 @@
             </div>
 
             <div class="space-y-8">
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">Акроним</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -230,7 +230,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">Software architecture pattern</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -262,7 +262,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">Agile</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -291,7 +291,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">Programming models</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -330,7 +330,7 @@
             </div>
 
             <div class="space-y-8">
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">Data structures</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -372,7 +372,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="rounded-lg p-6 bg-slate-800">
+                <article class="dark:bg-slate-800">
                     <h2 class="text-base font-semibold text-center">Network protocols</h2>
                     <ul>
                         <li class="border-b border-slate-400/10">
@@ -412,3 +412,9 @@ export default {
     },
 }
 </script>
+
+<style>
+article {
+    @apply rounded-lg p-6 bg-slate-300;
+}
+</style>

@@ -10,7 +10,7 @@ import Footer from "./components/Footer.vue";
   <HeaderTop />
   <Header />
   <HeaderBottom />
-  <div class="main-container bg-slate-900 z-10">
+  <div class="main-container bg-slate-200 dark:bg-slate-900 text-slate-800 dark:text-slate-400 z-10">
     <router-view></router-view>
     <a class="text-green-500 hover:text-green-400 cursor-pointer fixed bottom-12 right-12" href="#" title="Go to top">
       <i class="fa-solid fa-circle-arrow-up fa-2xl"></i>

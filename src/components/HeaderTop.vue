@@ -1,7 +1,7 @@
 <template>
     <div class="header-top bg-slate-800/50 z-30 px-1">
         <div class="h-7 max-w-7xl m-auto">
-            <div class="h-7 m-auto text-slate-400 flex items-center justify-between">
+            <div class="h-7 m-auto text-slate-300 dark:text-slate-400 flex items-center justify-between">
 
                 <div>
                     <a href="https://www.instagram.com/eremenko_579">
@@ -21,12 +21,23 @@
                     </button>
                 </div>
 
-                <form class="border-l-2 border-slate-400">
-                    <select v-model="locale" class="p-1 bg-slate-800/50 text-slate-400">
-                        <option value="en" selected>English</option>
-                        <option value="ru">Russian</option>
-                    </select>
-                </form>
+                <div class="flex">
+                    <button class="mr-2" @click="changeThemMode">
+                        <span v-if="themMode">
+                            <i class="fa-solid fa-moon"></i>
+                        </span>
+                        <span v-else>
+                            <i class="fa-solid fa-sun"></i>
+                        </span>
+                    </button>
+
+                    <form class="border-l-2 border-slate-400">
+                        <select v-model="locale" class="p-1 bg-slate-800/50 text-slate-400">
+                            <option value="en" selected>English</option>
+                            <option value="ru">Russian</option>
+                        </select>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -82,6 +93,7 @@ export default {
         showModal: false,
         showModalTwitter: false,
         showModalLi: false,
+        themMode: false,
     }),
 
     setup() {
@@ -91,6 +103,12 @@ export default {
         // const str = store()
         // return { locale, t, str, localeChange: str.localeChange }
         return { locale, t }
+    },
+    methods: {
+        changeThemMode() {
+            document.body.classList.toggle('dark');
+            this.themMode = !this.themMode
+        }
     }
 };
 </script>
