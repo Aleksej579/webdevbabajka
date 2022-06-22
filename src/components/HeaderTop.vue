@@ -1,8 +1,7 @@
 <template>
-    <div class="header-top bg-slate-800/50 z-30 px-1">
+    <div class="header-top bg-slate-50/30 dark:bg-slate-800/50 z-30 px-1">
         <div class="h-7 max-w-7xl m-auto">
-            <div class="h-7 m-auto text-slate-300 dark:text-slate-400 flex items-center justify-between">
-
+            <div class="h-7 m-auto text-slate-600 dark:text-slate-400 flex items-center justify-between">
                 <div>
                     <a href="https://www.instagram.com/eremenko_579">
                         <i class="fa-brands fa-instagram"></i>
@@ -31,8 +30,8 @@
                         </span>
                     </button>
 
-                    <form class="border-l-2 border-slate-400">
-                        <select v-model="locale" class="p-1 bg-slate-800/50 text-slate-400">
+                    <form class="border-l-1 border-slate-600 dark:border-slate-400">
+                        <select v-model="locale" class="p-1 bg-transparent text-slate-600 dark:text-slate-400">
                             <option value="en" selected>English</option>
                             <option value="ru">Russian</option>
                         </select>
