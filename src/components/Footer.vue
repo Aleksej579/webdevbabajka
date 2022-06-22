@@ -1,3 +1,42 @@
 <template>
-  <div class="footer h-24 bg-slate-800"></div>
+  <div class="footer h-24 z-10 text-slate-800 dark:text-slate-400 bg-slate-300 dark:bg-slate-800 flex items-center">
+    <div class="container max-w-7xl flex items-center m-auto">
+      <span class="mr-5">
+        Show Adaptive Grid
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </span>
+      <button @click="showGrid">
+        <i class="fa-solid fa-grip-vertical fa-lg"></i>
+      </button>
+    </div>
+  </div>
 </template>
+
+
+<script>
+import { useI18n } from 'vue-i18n'
+
+export default {
+  data() {
+    return {
+      // isActive: false,
+    }
+  },
+  setup() {
+    const { locale, t } = useI18n({
+      useScope: 'global'
+    })
+    return { locale, t }
+  },
+  methods: {
+    showGrid() {
+      // this.isActive = true;
+      // console.log(true)
+      document.getElementById('app').classList.toggle('gridbg');
+    },
+    // closeMobileMenu() {
+    //     this.isActive = false;
+    // }
+  }
+};
+</script>
