@@ -1,12 +1,12 @@
 <template>
     <div class="main container max-w-7xl mx-auto p-3">
         <h1 class="text-2xl text-center">INFO</h1>
-        <section class="bg-slate-800/25 w-4/5 mx-auto rounded-xl p-8">
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+        <section class="w-4/5 mx-auto">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     Предоставление информации в HTML
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>Текст</li>
                     <li>Выпадающий список</li>
                     <li>Слайдер</li>
@@ -15,11 +15,11 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     Предоставление информации в CSS
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>STYLUS</li>
                     <li>переменные</li>
                     <li>вложенности</li>
@@ -29,9 +29,9 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">SMACSS</summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>base</li>
                     <li>layout</li>
                     <li>modules</li>
@@ -40,9 +40,9 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">BEM</summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>Блок</li>
                     <li>Элемент</li>
                     <li>Модификатор<ul>
@@ -66,11 +66,11 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     USER STORY and USE CASE
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>USER STORY "что нужно сделать (пожелание)"<ul>
                             <li>что</li>
                             <li>зачем </li>
@@ -86,11 +86,11 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     ЖИЗНЕННЫЙ ЦИКЛ ПО
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>СODE AND FIX "разработка по до валидации заказчика"</li>
                     <li>RUP "методология каскадная (Rational Unified Process)"<ul>
                             <li>v-образная "паралельное тестирование"<ul>
@@ -141,11 +141,11 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     АРХИТЕКТУРА ПО
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>MVC "модель-представление-контроллер"</li>
                     <li>MVP "модель-представление-презентатор"</li>
                     <li>MVVM "модель-представление-модель-представление"</li>
@@ -166,9 +166,9 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">ООП</summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>Инкапсуляция</li>
                     <li>Наследование</li>
                     <li>Полиморфизм</li>
@@ -178,22 +178,22 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     АЛГОРИТМ
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>Линейный</li>
                     <li>Выбора</li>
                     <li>Цикла</li>
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     ПАТТЕРНЫ
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>GRASP "новые обобщенные"
                         <ul>
                             <li>Information expert "информационный эксперт"</li>
@@ -268,11 +268,11 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     БЛОК СХЕМА
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <table>
                         <tbody>
                             <tr>
@@ -325,11 +325,11 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     UML
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>Структурные "элементы диаграммы"
                         <ul>
                             <li>классов</li>
@@ -368,22 +368,22 @@
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     ПРОТОТИПЫ ПРОЕКТА
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>WIREFRAME "каркас приложения"</li>
                     <li>PROTOTYPE "минимум стилей"</li>
                     <li>MOCKUP "для демонстрации"</li>
                 </ul>
             </details>
 
-            <details class="border bg-slate-800 border-indigo-500/100 mb-2.5 rounded">
+            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
                 <summary class="text-slate-400 font-medium font-mono text-center p-2">
                     ТЕСТИРОВАНИЕ
                 </summary>
-                <ul class="text-white text-sm font-bold">
+                <ul>
                     <li>UNIT TEST</li>
                     <li>ТЕСТИРОВАНИЕ</li>
                     <li>функциональное тестирование</li>
@@ -411,7 +411,7 @@ details[open] {
 }
 
 details[open] summary {
-    border-bottom: 1px solid rgb(99 102 241);
+    border-bottom: 1px solid grey;
     margin-bottom: .5em;
 }
 </style>

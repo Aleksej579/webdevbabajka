@@ -3,7 +3,7 @@
         <h1 class="text-2xl text-center">PATTERNS</h1>
         <section class="pattern sm:px-3 md:px-5 grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div class=" space-y-8">
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>{{ t('oop') }}</h2>
                     <ul>
                         <li>
@@ -23,7 +23,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>SOLID</h2>
                     <ul>
                         <li>
@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>GRASP</h2>
                     <ul>
                         <li>
@@ -88,7 +88,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>GOF - Creation</h2>
                     <ul>
                         <li>
@@ -117,7 +117,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>GOF - Structural</h2>
                     <ul>
                         <li>
@@ -150,7 +150,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>GOF - Behavioral</h2>
                     <ul>
                         <li>
@@ -202,7 +202,7 @@
             </div>
 
             <div class="space-y-8">
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>Акроним</h2>
                     <ul>
                         <li>
@@ -229,7 +229,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>Software architecture pattern</h2>
                     <ul>
                         <li>
@@ -261,7 +261,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>Agile</h2>
                     <ul>
                         <li>
@@ -290,7 +290,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>Programming models</h2>
                     <ul>
                         <li>
@@ -329,7 +329,7 @@
             </div>
 
             <div class="space-y-8">
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>Data structures</h2>
                     <ul>
                         <li>
@@ -371,7 +371,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="dark:bg-slate-800 dark:border-slate-700">
+                <article class="dark:bg-slate-800 hover:drop-shadow-md">
                     <h2>Network protocols</h2>
                     <ul>
                         <li>
@@ -414,7 +414,7 @@ export default {
 
 <style>
 .pattern article {
-    @apply rounded-lg p-6 bg-white border;
+    @apply p-6 bg-white;
 }
 
 .pattern h2 {
@@ -426,6 +426,7 @@ export default {
 }
 
 .pattern span {
-    @apply text-sky-500 font-mono;
+    /* @apply text-sky-500 font-mono; */
+    @apply text-teal-500 font-mono;
 }
 </style>

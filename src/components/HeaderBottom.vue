@@ -8,39 +8,39 @@
             </span>
             <nav :class="{ mobile_menu: isActive }" @click="closeMobileMenu"
                 class="header__menu hidden sm:flex justify-between ml-3 w-full text-slate-500 font-extrabold sm:text-xs lg:text-base gap-4">
-                <router-link to="/" class="group hover:text-sky-400">
+                <router-link to="/" class="group hover:text-teal-500">
                     {{ t('home') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block	h-px w-0 group-hover:w-full"></span>
                 </router-link>
-                <router-link to="/methodology" class="group hover:text-sky-400">
+                <router-link to="/methodology" class="group hover:text-teal-500">
                     {{ t('methodology') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block	h-px w-0 group-hover:w-full"></span>
                 </router-link>
-                <router-link to="/roadmap" class="group hover:text-sky-400">
+                <router-link to="/roadmap" class="group hover:text-teal-500">
                     {{ t('roadmap') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block	h-px w-0 group-hover:w-full"></span>
                 </router-link>
-                <router-link to="/info" class="group hover:text-sky-400">
+                <router-link to="/info" class="group hover:text-teal-500">
                     {{ t('info') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block	h-px w-0 group-hover:w-full"></span>
                 </router-link>
-                <router-link to="/html_css" class="group hover:text-sky-400">
+                <router-link to="/html_css" class="group hover:text-teal-500">
                     {{ t('html_css') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block	h-px w-0 group-hover:w-full"></span>
                 </router-link>
-                <router-link to="/programming" class="group hover:text-sky-400">
+                <router-link to="/programming" class="group hover:text-teal-500">
                     {{ t('programming') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block h-px w-0 group-hover:w-full"></span>
                 </router-link>
-                <router-link to="/library" class="group hover:text-sky-400">
+                <router-link to="/library" class="group hover:text-teal-500">
                     {{ t('library') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block h-px w-0 group-hover:w-full"></span>
                 </router-link>
-                <router-link to="/cv" class="group hover:text-sky-400">
+                <router-link to="/cv" class="group hover:text-teal-500">
                     {{ t('cv') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block h-px w-0 group-hover:w-full"></span>
                 </router-link>
-                <router-link to="/editor" class="group hover:text-sky-400">
+                <router-link to="/editor" class="group hover:text-teal-500">
                     {{ t('editor') }}
                     <span class="bg-gradient-to-r from-pink-500 to-violet-500 block h-px w-0 group-hover:w-full"></span>
                 </router-link>
@@ -77,7 +77,7 @@ export default {
 
 <style>
 .router-link-active {
-    @apply text-sky-400;
+    @apply text-teal-500;
 }
 
 .mobile_menu {

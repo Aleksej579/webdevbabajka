@@ -10,7 +10,7 @@ import Footer from "./components/Footer.vue";
   <HeaderTop />
   <Header />
   <HeaderBottom />
-  <div class="main-container bg-slate-50 dark:bg-slate-900 text-slate-600 dark:text-slate-400 z-10">
+  <div class="main-container bg-gray-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 z-10">
     <router-view></router-view>
   </div>
   <a class="text-slate-500  hover:text-slate-400 cursor-pointer fixed bottom-12 right-12 z-30" href="#"

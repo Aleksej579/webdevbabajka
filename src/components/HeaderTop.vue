@@ -1,27 +1,27 @@
 <template>
-    <div class="header-top bg-slate-50/30 dark:bg-slate-800/50 z-30 px-1">
+    <div class="header-top z-30">
         <div class="h-7 max-w-7xl m-auto">
-            <div class="h-7 m-auto text-slate-600 dark:text-slate-400 flex items-center justify-between">
+            <div class="h-7 m-auto text-teal-400 flex items-center justify-between">
                 <div>
-                    <a href="https://www.instagram.com/eremenko_579">
+                    <button class="w-9 hover:bg-slate-500/50" @click="showModalInst = true">
                         <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://t.me/Aleksej579">
-                        <i class="fa-brands fa-telegram ml-6"></i>
-                    </a>
-                    <button @click="showModalLi = true">
-                        <i class="fa-brands fa-linkedin ml-6"></i>
                     </button>
-                    <button @click="showModalTwitter = true">
-                        <i class="fa-brands fa-twitter ml-6"></i>
+                    <button class="w-9 hover:bg-slate-500/50" @click="showModalTg = true">
+                        <i class="fa-brands fa-telegram"></i>
                     </button>
-                    <button @click="showModal = true">
-                        <i class="fa-brands fa-github ml-6"></i>
+                    <button class="w-9 hover:bg-slate-500/50" @click="showModalLi = true">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </button>
+                    <button class="w-9 hover:bg-slate-500/50" @click="showModalTwitter = true">
+                        <i class="fa-brands fa-twitter"></i>
+                    </button>
+                    <button class="w-9 hover:bg-slate-500/50" @click="showModal = true">
+                        <i class="fa-brands fa-github"></i>
                     </button>
                 </div>
 
                 <div class="flex">
-                    <button class="mr-2" @click="changeThemMode">
+                    <button class="w-9 hover:bg-slate-500/50" @click="changeThemMode">
                         <span v-if="themMode">
                             <i class="fa-solid fa-moon"></i>
                         </span>
@@ -30,8 +30,8 @@
                         </span>
                     </button>
 
-                    <form class="border-l-1 border-slate-600 dark:border-slate-400">
-                        <select v-model="locale" class="p-1 bg-transparent text-slate-600 dark:text-slate-400">
+                    <form>
+                        <select v-model="locale" class="h-full bg-transparent hover:bg-slate-500/50">
                             <option value="en" selected>English</option>
                             <option value="ru">Russian</option>
                         </select>
@@ -40,8 +40,30 @@
             </div>
         </div>
 
+        <vue-final-modal v-model="showModalInst" classes="modal-container"
+            content-class="modal-content bg-gray-100 dark:bg-slate-800 text-slate-400">
+            <button class="modal-close" @click="showModalInst = false"><i class="fa-solid fa-xmark"></i></button>
+            <Popup />
+            <div class="flex justify-center mb-10">
+                <a href="https://www.instagram.com/eremenko_579">
+                    <i class="fa-brands fa-instagram fa-5x"></i>
+                </a>
+            </div>
+        </vue-final-modal>
+
+        <vue-final-modal v-model="showModalTg" classes="modal-container"
+            content-class="modal-content bg-gray-100 dark:bg-slate-800 text-slate-400">
+            <button class="modal-close" @click="showModalTg = false"><i class="fa-solid fa-xmark"></i></button>
+            <Popup />
+            <div class="flex justify-center mb-10">
+                <a href="https://t.me/Aleksej579">
+                    <i class="fa-brands fa-telegram fa-5x"></i>
+                </a>
+            </div>
+        </vue-final-modal>
+
         <vue-final-modal v-model="showModalTwitter" classes="modal-container"
-            content-class="modal-content bg-slate-800 text-slate-400">
+            content-class="modal-content bg-gray-100 dark:bg-slate-800 text-slate-400">
             <button class="modal-close" @click="showModalTwitter = false"><i class="fa-solid fa-xmark"></i></button>
             <Popup />
             <div class="flex justify-center mb-10">
@@ -52,7 +74,7 @@
         </vue-final-modal>
 
         <vue-final-modal v-model="showModalLi" classes="modal-container"
-            content-class="modal-content bg-slate-800 text-slate-400">
+            content-class="modal-content bg-gray-100 dark:bg-slate-800 text-slate-400">
             <button class="modal-close" @click="showModalLi = false"><i class="fa-solid fa-xmark"></i></button>
             <Popup />
             <div class="flex justify-center mb-10">
@@ -63,7 +85,7 @@
         </vue-final-modal>
 
         <vue-final-modal v-model="showModal" classes="modal-container"
-            content-class="modal-content bg-slate-800 text-slate-400">
+            content-class="modal-content bg-gray-100 dark:bg-slate-800 text-slate-400">
             <button class="modal-close" @click="showModal = false"><i class="fa-solid fa-xmark"></i></button>
             <Popup />
             <div class="flex justify-center mb-10">
@@ -92,6 +114,8 @@ export default {
         showModal: false,
         showModalTwitter: false,
         showModalLi: false,
+        showModalTg: false,
+        showModalInst: false,
         themMode: false,
     }),
 

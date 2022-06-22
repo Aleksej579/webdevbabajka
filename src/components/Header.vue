@@ -43,7 +43,7 @@ export default {
 
 .header-middle {
   background-color: #53e3a6;
-  background-image: linear-gradient(to bottom right, #50a3a2 0, #53e3a6 100%);
+  background-image: linear-gradient(to bottom, #50a3a2 0, #53e3a6 100%);
   color: #5fd1b4;
   text-shadow: 0.045em 0.045em 0.04em rgb(0 0 0 / 21%);
   box-shadow: 0px 20px 20px -10px rgb(0 0 0 / 30%) inset;
