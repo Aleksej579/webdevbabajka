@@ -2,33 +2,43 @@
     <div class="main container cv max-w-7xl mx-auto  p-3">
         <h1 class="text-2xl text-center ">ALEKSEJ EREMENKO</h1>
         <h2 class="text-2xl text-center ">Front-end developer</h2>
-        <section class="flex gap-5">
-            <aside class="cv__aside--left w-1/4">
+        <section class="flex flex-col md:flex-row gap-5">
+            <aside class="cv__aside--left w-full md:w-1/4">
                 <article class="hover:drop-shadow-md">
                     <img src="/src/assets/ava_sq.jpg" width="200" height="auto" alt="Aleksej Eremenko photo"
                         class="rounded">
                 </article>
 
-                <article class="hover:drop-shadow-md">
+                <article class="hover:drop-shadow-md overflow-auto">
                     <ul>
-                        <li>
-                            <span><i class="fa-solid fa-house"></i></span>
+                        <li class="flex-col md:flex-row items-center md:items-start">
+                            <span class="w-7 xl:text-center">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
                             Kharkiv, Ukraine
                         </li>
-                        <li>
-                            <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+                        <li class="flex-col md:flex-row items-center md:items-start">
+                            <span class="w-7 xl:text-center">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </span>
                             +380 (97) 337-14-28
                         </li>
-                        <li>
-                            <span><i class="fa-brands fa-github"></i></span>
+                        <li class="flex-col md:flex-row items-center md:items-start">
+                            <span class="w-7 xl:text-center">
+                                <i class="fa-brands fa-github"></i>
+                            </span>
                             github.com/aleksej579
                         </li>
-                        <li>
-                            <span><i class="fa-solid fa-envelope"></i></span>
+                        <li class="flex-col md:flex-row items-center md:items-start">
+                            <span class="w-7 xl:text-center">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
                             aleksej.eremenko579@gmail.com
                         </li>
-                        <li>
-                            <span><i class="fa-brands fa-linkedin"></i></span>
+                        <li class="flex-col md:flex-row items-center md:items-start">
+                            <span class="w-7 xl:text-center">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </span>
                             linkedin.com/in/aleksje579
                         </li>
                     </ul>
@@ -36,7 +46,7 @@
 
             </aside>
 
-            <aside class="cv__aside--right w-3/4">
+            <aside class="cv__aside--right w-full md:w-3/4">
                 <article class="hover:drop-shadow-md">
                     <h3>GOAL</h3>
                     <p>Main area of activity - HTML/CSS coding. Also developing SPA in Vue.js.</p>
@@ -106,6 +116,6 @@
 }
 
 .cv__aside--left li span {
-    @apply block w-7 text-teal-500 text-center;
+    @apply block text-teal-500 mr-2;
 }
 </style>
