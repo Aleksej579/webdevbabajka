@@ -1,7 +1,6 @@
 <template>
     <div class="main container cv max-w-7xl mx-auto  p-3">
         <h1 class="text-2xl text-center ">ALEKSEJ EREMENKO</h1>
-        <h2 class="text-2xl text-center ">Front-end developer</h2>
         <section class="flex flex-col md:flex-row gap-5">
             <aside class="cv__aside--left w-full md:w-1/4">
                 <article class="hover:drop-shadow-md">
@@ -10,7 +9,13 @@
                 </article>
 
                 <article class="hover:drop-shadow-md overflow-auto">
-                    <ul>
+                    <ul class="divide-y divide-slate-200">
+                        <li class="flex-col md:flex-row items-center md:items-start">
+                            <span class="w-7 xl:text-center">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            Front-end developer
+                        </li>
                         <li class="flex-col md:flex-row items-center md:items-start">
                             <span class="w-7 xl:text-center">
                                 <i class="fa-solid fa-house"></i>
@@ -48,43 +53,76 @@
 
             <aside class="cv__aside--right w-full md:w-3/4">
                 <article class="hover:drop-shadow-md">
-                    <h3>GOAL</h3>
-                    <p>Main area of activity - HTML/CSS coding. Also developing SPA in Vue.js.</p>
+                    <h3>SKILLS</h3>
+                    <table class="mx-auto">
+                        <tbody>
+                            <tr class="flex">
+                                <td class="flex flex-col items-center p-6">
+                                    Markup 75%
+                                    <meter value="0.75"></meter>
+                                </td>
+                                <td class="flex flex-col items-center p-6">
+                                    Programming 25%
+                                    <meter value="0.25"></meter>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </article>
 
                 <article class="hover:drop-shadow-md">
-                    <h3>SKILLS & KNOWLEDGE </h3>
-                    <p>HTML (BEM-naming), CSS (Sass, Tailwind, SMACSS), Javascript ES6+, Vue, Vite/Gulp, Git, Jira,
-                        Figma.
-                    </p>
-                </article>
-
-                <article class="hover:drop-shadow-md">
-                    <h3>WORKING EXPERIENCE</h3>
-                    <p>Experience of 3 years in companies “Coralmedia”, “Intechsoft”, “Intertool”, freelance.</p>
-                    <ul>
+                    <h3>KNOWLEDGE </h3>
+                    <ul class="list-disc list-inside">
+                        <li>Programming in Javascript (ES6+), jQuery, basic PHP skills.</li>
+                        <li>SPA development on Vue3, Vite.</li>
+                        <li>HTML/CSS coding, BEM, Sass and TailwindCSS. SMACSS. Responsive.</li>
+                        <li>Some experience with Twig, Liquid templating engines and Gulp.</li>
+                        <li>Teamwork using Jira and Git.</li>
+                        <li>Working with REST and CRUD.</li>
+                        <li>CMS development on Drupal, Shopify and cloud services Firebase.</li>
                         <li>Prototyping in Figma.</li>
-                        <li>Familiar with Twig, Liquid, templating engines.</li>
-                        <li>Writing styles in Css/Sass, frameworks TailwindCSS, Element+, UiKit.</li>
-                        <li>Using BEM-naming, SMACSS methodology, Responsive.</li>
-                        <li>Automation and build - Vite, Gulp.</li>
-                        <li>Javascript programming, ES6+. Working with DOM in jQuery. Simple work with PHP in HTML.</li>
-                        <li>SPA development on Vue3 using router, state, translation, editor.</li>
-                        <li>Experience in team development in Jira (task, report), Git (GitLab).</li>
-                        <li>Working with REST (endpoints Drupal, test Postman) and CRUD (Axios, Express, Postgresql).
-                        </li>
-                        <li>Using cloud services Firebase (deployment, authentication, database).</li>
-                        <li>CMS development on Drupal, Shopify.</li>
                     </ul>
                 </article>
 
                 <article class="hover:drop-shadow-md">
+                    <h3>WORKING EXPERIENCE</h3>
+                    <dl>
+                        <dt>Front-end developer ( Freelance ) - 6+ months.</dt>
+                        <dd>Some period of freelance jobs and test cases. Prototyping. Markup on
+                            Vue-Vite-Tailwind. Rest
+                            and Crud (Axios, Express, PostgreSQL). Current project - my website webdev|babajka.</dd>
+                        <dd class="text-slate-400">Markup, Vue, Vite, Tailwind, REST, CRUD, Express, Firebase, Smacss,
+                            Figma.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Front-end developer ( Intertool ) - 4 months.</dt>
+                        <dd>Work on existing company websites. Development of new functionality. Correction of existing
+                            bugs. Creating svg in Figma. Teamwork in Git.</dd>
+                        <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Shopify developer ( InTechSoft ) - 4 months.</dt>
+                        <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
+                        <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
+                    </dl>
+                    <dl>
+                        <dt>Junior front-end developer ( Art-coral ) - 2 years.</dt>
+                        <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
+                        <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
+                            Photoshop.</dd>
+                    </dl>
+                </article>
+
+                <article class="hover:drop-shadow-md">
                     <h3>SOME OF MY WORK</h3>
-                    <p>site: Webdev , source-code: Webdev (Vue Tailwind Firebase)</p>
-                    <p>site: Auth , source-code: Auth (Angular Firebase)</p>
-                    <p>site: Naturetour , source-code: Naturetour (Markup Ajax Sprites)</p>
-                    <p>site: Dogsbomba , source-code: Dogsbomba (UI Php MySQL )</p>
-                    <p>site: Coralmedia , Intertoolua (An example of 2 company websites that I worked on)</p>
+                    <ul class="flex justify-between">
+                        <li><a href="https://test-e8a57.web.app">Webdev|babajka</a></li>
+                        <li><a href="https://authentication-5bff9.web.app/">Auth</a></li>
+                        <li><a href="http://naturetour.eu3.biz/">Naturetour</a></li>
+                        <li><a href="http://art-coral.com">Art-coral.com</a></li>
+                        <li><a href="https://intertool.ua/">Intertoolua.ua</a></li>
+                    </ul>
                 </article>
 
                 <article class="hover:drop-shadow-md">
@@ -104,7 +142,7 @@
 }
 
 .cv h3 {
-    @apply text-teal-500;
+    @apply text-teal-500 text-center border-b border-slate-200 mb-2 font-bold;
 }
 
 .cv__aside--left article:first-child {
@@ -112,10 +150,16 @@
 }
 
 .cv__aside--left li {
-    @apply mb-3 flex;
+    @apply py-3 flex;
 }
 
 .cv__aside--left li span {
     @apply block text-teal-500 mr-2;
+}
+
+.cv dl,
+.cv dt,
+.cv dd {
+    margin: revert;
 }
 </style>
