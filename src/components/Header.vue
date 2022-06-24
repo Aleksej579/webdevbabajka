@@ -1,5 +1,5 @@
 <template>
-  <div class="header-middle text-center p-5 text-3xl xsm:text-4xl xsm:h-80 sm:text-5xl font-extrabold uppercase pt-10">
+  <div class="header-middle text-center p-5 text-3xl xsm:text-4xl xsm:h-80 sm:text-5xl font-extrabold uppercase">
     <p class="header-middle-text mx-auto">Front-end developer</p>
     <Splide :options="{ rewind: true, autoplay: true, pagination: false, }" aria-label="My Favorite Images"
       class="font-bold tracking-widest text-lg sm:text-2xl md:w-2/4 mx-auto">

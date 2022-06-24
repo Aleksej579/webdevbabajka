@@ -1,15 +1,19 @@
 <template>
     <div
-        class="header-bottom sticky top-0 mt-[124px] sm:mt-24 flex items-center bg-slate-50 dark:bg-slate-800 border-b dark:border-b-slate-700 z-20 ">
+        class="header-bottom sticky top-0 flex items-center bg-slate-50 dark:bg-slate-800 border-b dark:border-b-slate-700 z-20 ">
         <div class="flex items-center m-auto container max-w-7xl justify-between p-1.5">
             <img class="header__logo h-12 rounded-lg" src="/src/assets/logo.jpg" alt="WebDev">
             <span @click="openMobileMenu" class="cursor-pointer text-slate-400 text-xl sm:hidden">
                 <i class="fa-solid fa-bars"></i>
             </span>
             <nav :class="{ mobile_menu: isActive }" @click="closeMobileMenu"
-                class="header__menu hidden sm:flex justify-between ml-3 w-full text-slate-500 font-extrabold sm:text-xs lg:text-base gap-4">
+                class="header__menu hidden sm:flex justify-between ml-3 w-full text-slate-500 font-extrabold sm:text-xs lg:text-base gap-4 sm:w-3/4">
                 <router-link to="/" class="group hover:text-teal-500 relative">
                     {{ t('home') }}
+                    <span class="group-hover:p-1"></span>
+                </router-link>
+                <router-link to="/cv" class="group hover:text-teal-500 relative">
+                    {{ t('cv') }}
                     <span class="group-hover:p-1"></span>
                 </router-link>
                 <router-link to="/methodology" class="group hover:text-teal-500 relative">
@@ -20,24 +24,12 @@
                     {{ t('roadmap') }}
                     <span class="group-hover:p-1"></span>
                 </router-link>
-                <router-link to="/info" class="group hover:text-teal-500 relative">
-                    {{ t('info') }}
-                    <span class="group-hover:p-1"></span>
-                </router-link>
-                <router-link to="/html_css" class="group hover:text-teal-500 relative">
-                    {{ t('html_css') }}
-                    <span class="group-hover:p-1"></span>
-                </router-link>
                 <router-link to="/programming" class="group hover:text-teal-500 relative">
                     {{ t('programming') }}
                     <span class="group-hover:p-1"></span>
                 </router-link>
                 <router-link to="/library" class="group hover:text-teal-500 relative">
                     {{ t('library') }}
-                    <span class="group-hover:p-1"></span>
-                </router-link>
-                <router-link to="/cv" class="group hover:text-teal-500 relative">
-                    {{ t('cv') }}
                     <span class="group-hover:p-1"></span>
                 </router-link>
                 <router-link to="/editor" class="group hover:text-teal-500 relative">
@@ -87,10 +79,14 @@ export default {
 .mobile_menu {
     display: block !important;
     position: absolute;
-    background-color: black;
+    background-color: white;
     top: 0;
     left: 0;
     padding: 5px;
     margin-left: 0 !important;
+}
+
+.mobile_menu a {
+    display: block;
 }
 </style>

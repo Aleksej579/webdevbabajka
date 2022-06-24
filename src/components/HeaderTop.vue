@@ -1,5 +1,5 @@
 <template>
-    <div class="header-top z-30">
+    <div class="header-top z-30 absolute w-full">
         <div class="h-7 max-w-7xl m-auto">
             <div class="h-7 m-auto text-teal-400 flex items-center justify-between">
                 <div>
