@@ -1,15 +1,15 @@
 <template>
     <div class="main cv max-w-7xl mx-auto">
         <h1 class="text-2xl text-center ">ALEKSEJ EREMENKO</h1>
-        <section class="flex flex-col md:flex-row gap-5">
+        <section class="flex flex-col md:flex-row gap-5 px-2">
             <aside class="cv__aside--left w-full md:w-1/4">
-                <article class="hover:drop-shadow-md">
+                <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <img src="/src/assets/ava_sq.jpg" width="200" height="auto" alt="Aleksej Eremenko photo"
                         class="rounded">
                 </article>
 
-                <article class="hover:drop-shadow-md overflow-auto">
-                    <ul class="divide-y divide-slate-200">
+                <article class="hover:drop-shadow-md dark:bg-slate-800 overflow-auto">
+                    <ul class="divide-y divide-slate-400/10">
                         <li class="flex-col md:flex-row items-center md:items-start">
                             <span class="w-7 xl:text-center">
                                 <i class="fa-solid fa-user"></i>
@@ -32,7 +32,7 @@
                             <span class="w-7 xl:text-center">
                                 <i class="fa-brands fa-github"></i>
                             </span>
-                            github.com/aleksej579
+                            <a href="https://github.com/aleksej579">github.com/aleksej579</a>
                         </li>
                         <li class="flex-col md:flex-row items-center md:items-start">
                             <span class="w-7 xl:text-center">
@@ -44,7 +44,7 @@
                             <span class="w-7 xl:text-center">
                                 <i class="fa-brands fa-linkedin"></i>
                             </span>
-                            linkedin.com/in/aleksje579
+                            <a href="https://www.linkedin.com/in/aleksej579/">linkedin.com/in/aleksje579</a>
                         </li>
                     </ul>
                 </article>
@@ -52,7 +52,7 @@
             </aside>
 
             <aside class="cv__aside--right w-full md:w-3/4">
-                <article class="hover:drop-shadow-md">
+                <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SKILLS</h3>
                     <table class="mx-auto">
                         <tbody>
@@ -68,10 +68,9 @@
                             </tr>
                         </tbody>
                     </table>
-
                 </article>
 
-                <article class="hover:drop-shadow-md">
+                <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>KNOWLEDGE </h3>
                     <ul class="list-disc list-inside">
                         <li>Programming in Javascript (ES6+), jQuery, basic PHP skills.</li>
@@ -85,7 +84,7 @@
                     </ul>
                 </article>
 
-                <article class="hover:drop-shadow-md">
+                <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>WORKING EXPERIENCE</h3>
                     <dl>
                         <dt>Front-end developer ( Freelance ) - 6+ months.</dt>
@@ -114,7 +113,7 @@
                     </dl>
                 </article>
 
-                <article class="hover:drop-shadow-md">
+                <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SOME OF MY WORK</h3>
                     <ul class="flex justify-between">
                         <li><a href="https://test-e8a57.web.app">Webdev|babajka</a></li>
@@ -125,7 +124,7 @@
                     </ul>
                 </article>
 
-                <article class="hover:drop-shadow-md">
+                <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SUMMARY</h3>
                     <p>English: Pre-Intermediate.</p>
                 </article>
@@ -142,7 +141,7 @@
 }
 
 .cv h3 {
-    @apply text-teal-500 text-center border-b border-slate-200 mb-2 font-bold;
+    @apply text-teal-500 text-center border-b border-slate-400/10 mb-2 font-bold;
 }
 
 .cv__aside--left article:first-child {

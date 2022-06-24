@@ -1,7 +1,7 @@
 <template>
-    <div class="main max-w-7xl mx-auto">
+    <div class="main max-w-7xl mx-auto px-2">
         <h1 class="text-2xl text-center">TOOLS</h1>
-        <section class="grid gap-8 grid-cols-1 mb-10">
+        <section class="grid gap-8 grid-cols-1 mb-10 bg-white dark:bg-slate-800 p-5">
             <p>Topical sites for studying web development:
                 <a href="https://www.freecodecamp.org/">Freecodecamp</a>,
                 <a href="https://learn.javascript.ru/">learn.javascript.ru</a>,
