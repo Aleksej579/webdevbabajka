@@ -1,8 +1,8 @@
 <template>
-  <div class="main__form container max-w-7xl mx-auto">
+  <div class="main__form max-w-7xl mx-auto">
     <h1 class="text-2xl text-center">EDITORS</h1>
-    <section class="flex gap-5 h-full p-3">
-      <div class="w-3/4 border border-slate-600 p-3 flex flex-col mx-auto">
+    <section class="flex flex-col sm:flex-row gap-5 h-full p-3">
+      <div class="w-full sm:w-3/4 border border-slate-600 p-3 flex flex-col mx-auto">
         <form>
           <label class="font-bold" title="Enter the content">Enter the content</label>
           <QuillEditor class="editor-area" ref="editor_area" contentType="html"
@@ -35,7 +35,7 @@
             </label>
           </div>
 
-          <div class="w-max float-right">
+          <div class="w-max float-right flex flex-col sm:flex-row">
             <input @click="emptyEditor" type="reset" value='Cancel'
               class="!border-2 !rounded-none !p-1 !m-2.5 !w-36 !text-green-500 !border-green-500 cursor-pointer" />
             <button type="submit" @click="submitMethod"
@@ -45,7 +45,7 @@
           </div>
         </form>
       </div>
-      <div class="w-1/4 p-3 border border-slate-600">
+      <div class="w-full sm:w-1/4 p-3 border border-slate-600">
         <div v-for="itemField in html" :key="itemField" v-html="itemField"></div>
       </div>
     </section>

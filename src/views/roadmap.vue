@@ -1,5 +1,5 @@
 <template>
-    <div class="main container max-w-7xl mx-auto p-3">
+    <div class="main max-w-7xl mx-auto">
         <h1 class="text-2xl text-center">TOOLS</h1>
         <section class="grid gap-8 grid-cols-1 mb-10">
             <p>Topical sites for studying web development:

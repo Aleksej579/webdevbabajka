@@ -1,5 +1,5 @@
 <template>
-    <div class="main container max-w-7xl mx-auto p-3">
+    <div class="main max-w-7xl mx-auto">
         <h1 class="text-2xl text-center">PATTERNS</h1>
         <section class="pattern sm:px-3 md:px-5 grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div class=" space-y-8">

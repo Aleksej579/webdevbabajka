@@ -1,5 +1,5 @@
 <template>
-    <div class="main container cv max-w-7xl mx-auto  p-3">
+    <div class="main cv max-w-7xl mx-auto">
         <h1 class="text-2xl text-center ">ALEKSEJ EREMENKO</h1>
         <section class="flex flex-col md:flex-row gap-5">
             <aside class="cv__aside--left w-full md:w-1/4">

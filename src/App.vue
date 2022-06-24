@@ -6,13 +6,12 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <header class="relative">
+  <header>
     <HeaderTop />
     <Header />
   </header>
 
-  <main
-    class="main-container mt-[124px] sm:mt-24 bg-gray-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 z-10">
+  <main class="main mt-[124px] sm:mt-24 bg-gray-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 z-10">
     <HeaderBottom />
     <router-view></router-view>
   </main>
@@ -23,9 +22,3 @@ import Footer from "./components/Footer.vue";
 
   <Footer />
 </template>
-
-<style>
-main {
-  /* height: 100vh; */
-}
-</style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="main container max-w-7xl mx-auto p-3">
+  <div class="main max-w-7xl mx-auto">
     <Form />
   </div>
 </template>

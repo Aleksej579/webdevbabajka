@@ -43,7 +43,7 @@
     }
 
     .main a {
-        @apply text-sky-500 no-underline;
+        /* @apply text-sky-500 no-underline; */
     }
 
     /* Grid */
