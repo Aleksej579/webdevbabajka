@@ -1,6 +1,7 @@
 <template>
-  <div class="header-middle text-center p-5 text-3xl xsm:text-4xl xsm:h-80 sm:text-5xl font-extrabold uppercase">
-    <p class="header-middle-text mx-auto">Front-end developer</p>
+  <div
+    class="header-middle text-center px-2 pt-7 pb-5 h-40 text-2xl xsm:text-3xl xsm:h-80 sm:text-4xl font-extrabold uppercase">
+    <p class="header-middle-text mx-auto inline"></p>
     <Splide :options="{ rewind: true, autoplay: true, pagination: false, }" aria-label="My Favorite Images"
       class="font-bold tracking-widest text-lg sm:text-xl md:w-2/4 mx-auto">
       <SplideSlide>HTML-5</SplideSlide>
@@ -13,11 +14,13 @@
       <SplideSlide>VITE</SplideSlide>
       <SplideSlide>PINIA</SplideSlide>
     </Splide>
+
   </div>
 </template>
 
 <script>
 import { useI18n } from 'vue-i18n'
+import Typed from 'typed.js';
 // import { store } from "../stores/counter.js";
 
 export default {
@@ -28,6 +31,16 @@ export default {
     // const str = store()
     // return { locale, t, str, localeChange: str.localeChange }
     return { locale, t }
+  },
+  mounted() {
+    var options = {
+      strings: ['Frontend developer'],
+      backSpeed: 50,
+      typeSpeed: 150,
+      loop: true,
+      // shuffle: true,
+    };
+    var typed = new Typed('.header-middle-text', options);
   }
 };
 </script>
