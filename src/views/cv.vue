@@ -8,7 +8,7 @@
                         class="rounded">
                 </article>
 
-                <article class="hover:drop-shadow-md dark:bg-slate-800 overflow-auto">
+                <article class="contact-info hover:drop-shadow-md dark:bg-slate-800 overflow-auto">
                     <ul class="divide-y divide-slate-400/10">
                         <li class="flex-col md:flex-row items-center md:items-start">
                             <span class="w-7 xl:text-center">
@@ -48,7 +48,6 @@
                         </li>
                     </ul>
                 </article>
-
             </aside>
 
             <aside class="cv__aside--right w-full md:w-3/4">
@@ -156,9 +155,12 @@
     @apply block text-teal-500 mr-2;
 }
 
-.cv dl,
-.cv dt,
-.cv dd {
+.cv :is(dl, dt, dd) {
     margin: revert;
+}
+
+.cv article:not(.contact-info) :is(ul, p, td, dt, dd) {
+    font-family: "dm", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-style: italic;
 }
 </style>

@@ -33,12 +33,13 @@ export default {
 </script>
 
 <style>
-/* .header { */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
 .header-middle {
   position: fixed;
   left: 0;
   right: 0;
-  /* z-index: 1; */
+  font-family: 'Signika Negative', sans-serif;
 }
 
 .header-middle {

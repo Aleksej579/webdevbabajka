@@ -72,8 +72,11 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 
-
+nav {
+    font-family: 'Signika Negative', sans-serif;
+}
 
 .header-bottom figcaption {
     font-family: 'Fredericka the Great', cursive;
