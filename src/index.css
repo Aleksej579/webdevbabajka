@@ -1,14 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* import '../assets/fonts.css'; */
 
 @layer base {
-    /* @import '../assets/fonts.css' */
     @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 
     #app {
-        min-height: 100vh;
+        @apply min-h-screen;
         font-family: 'Signika Negative', sans-serif;
     }
 
@@ -20,8 +18,7 @@
         @apply flex flex-col mb-3;
     }
 
-    .main__form input,
-    .main__form textarea {
+    .main__form :is(input, textarea) {
         @apply border border-slate-800 rounded-md p-2.5;
     }
 
@@ -37,8 +34,22 @@
         @apply text-fuchsia-500 bg-purple-400/10;
     }
 
+    ::-webkit-scrollbar {
+        @apply w-1 h-1 bg-gray-200;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply rounded-sm;
+        background: linear-gradient(180deg, #50a3a2, #53e3a6);
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+        @apply bg-gray-200 rounded-sm;
+    }
+
     .tooltip {
-        position: relative;
+        @apply relative;
     }
 
     *[tooltip]:hover:after {

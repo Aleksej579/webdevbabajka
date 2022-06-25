@@ -1,5 +1,6 @@
 const translationInterface = {
     en: {
+        sbbi: "Small busines BIG Impact",
         home: "HOME",
         methodology: "METHODOLOGY",
         roadmap: "ROADMAP",
@@ -19,6 +20,7 @@ const translationInterface = {
         oopAbstract: "Abstraction",
     },
     ru: {
+        sbbi: "Малый бизнес Большое влияние",
         home: "ГЛАВНАЯ",
         methodology: "МЕТОДОЛОГИЯ",
         roadmap: "ОБЗОР",

@@ -1,16 +1,15 @@
 <template>
-    <div
-        class="header-bottom sticky top-0 flex items-center bg-slate-50 dark:bg-slate-800 border-b dark:border-b-slate-700 z-20 ">
+    <div class="header-bottom dark:bg-slate-800 dark:border-b-slate-700">
         <div class="flex items-center m-auto container max-w-7xl justify-between p-1.5">
             <figure class='flex items-center'>
                 <img class="header__logo h-12 rounded-lg" src="/src/assets/logo.png" alt="WebDev">
-                <figcaption class="ml-5">Small busines BIG Impact</figcaption>
+                <figcaption class="ml-5">{{ t('sbbi') }}</figcaption>
             </figure>
             <span @click="openMobileMenu" class="cursor-pointer text-slate-400 text-xl sm:hidden">
                 <i class="fa-solid fa-bars"></i>
             </span>
             <nav :class="{ mobile_menu: isActive }" @click="closeMobileMenu"
-                class="header__menu hidden sm:flex justify-between ml-3 text-slate-500 font-extrabold sm:text-xs lg:text-base gap-4">
+                class="header__menu dark:bg-slate-800 sm:flex sm:text-xs lg:text-base">
                 <router-link to="/" class="group hover:text-teal-500 relative">
                     {{ t('home') }}
                     <span class="group-hover:p-1"></span>
@@ -74,8 +73,17 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 
+.header-bottom {
+    @apply sticky top-0 flex items-center bg-slate-50 border-b z-20;
+}
+
 nav {
     font-family: 'Signika Negative', sans-serif;
+    @apply hidden justify-between ml-3 text-slate-500 font-extrabold gap-4 bg-slate-50;
+}
+
+.mobile_menu {
+    @apply  !block p-1 absolute left-0 right-0 top-0 !ml-0;
 }
 
 .header-bottom figcaption {
@@ -88,16 +96,6 @@ nav {
 
 .router-link-active {
     @apply text-teal-500;
-}
-
-.mobile_menu {
-    display: block !important;
-    position: absolute;
-    background-color: white;
-    top: 0;
-    left: 0;
-    padding: 5px;
-    margin-left: 0 !important;
 }
 
 .mobile_menu a {

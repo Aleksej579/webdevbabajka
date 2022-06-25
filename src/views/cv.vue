@@ -11,37 +11,37 @@
                 <article class="contact-info hover:drop-shadow-md dark:bg-slate-800 overflow-auto">
                     <ul class="divide-y divide-slate-400/10">
                         <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 xl:text-center">
+                            <span class="w-7 text-center">
                                 <i class="fa-solid fa-user"></i>
                             </span>
                             Front-end developer
                         </li>
                         <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 xl:text-center">
+                            <span class="w-7 text-center">
                                 <i class="fa-solid fa-house"></i>
                             </span>
                             Kharkiv, Ukraine
                         </li>
                         <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 xl:text-center">
+                            <span class="w-7 text-center">
                                 <i class="fa-solid fa-mobile-screen-button"></i>
                             </span>
                             +380 (97) 337-14-28
                         </li>
                         <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 xl:text-center">
+                            <span class="w-7 text-center">
                                 <i class="fa-brands fa-github"></i>
                             </span>
                             <a href="https://github.com/aleksej579">github.com/aleksej579</a>
                         </li>
                         <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 xl:text-center">
+                            <span class="w-7 text-center">
                                 <i class="fa-solid fa-envelope"></i>
                             </span>
                             aleksej.eremenko579@gmail.com
                         </li>
                         <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 xl:text-center">
+                            <span class="w-7 text-center">
                                 <i class="fa-brands fa-linkedin"></i>
                             </span>
                             <a href="https://www.linkedin.com/in/aleksej579/">linkedin.com/in/aleksje579</a>
@@ -114,7 +114,7 @@
 
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SOME OF MY WORK</h3>
-                    <ul class="flex justify-between">
+                    <ul class="flex flex-col md:flex-row justify-between">
                         <li><a href="https://test-e8a57.web.app">Webdev|babajka</a></li>
                         <li><a href="https://authentication-5bff9.web.app/">Auth</a></li>
                         <li><a href="http://naturetour.eu3.biz/">Naturetour</a></li>

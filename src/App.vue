@@ -11,14 +11,24 @@ import Footer from "./components/Footer.vue";
     <Header />
   </header>
 
-  <main class="main mt-[95px] sm:mt-24 bg-gray-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 z-10">
+  <main class="main sm:mt-24 dark:bg-slate-900 dark:text-slate-400">
     <HeaderBottom />
     <router-view></router-view>
   </main>
 
-  <a class="text-slate-500  hover:text-slate-400 cursor-pointer fixed bottom-8 right-5 sm:bottom-12 sm:right-12 z-30"
-    href="#" title="Go to top"><i class="fa-solid fa-circle-arrow-up fa-2xl"></i>
+  <a class="go-to-top hover:text-slate-400 sm:bottom-12 sm:right-12 " href="#" title="Go to top">
+    <i class="fa-solid fa-circle-arrow-up fa-2xl"></i>
   </a>
 
   <Footer />
 </template>
+
+<style>
+main {
+  @apply mt-[95px] bg-gray-100 text-slate-600 z-10;
+}
+
+.go-to-top {
+  @apply text-slate-500 cursor-pointer fixed bottom-8 right-5 z-30;
+}
+</style>
