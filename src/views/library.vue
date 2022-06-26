@@ -33,10 +33,18 @@
                 <div class="side-right"><span>WEAPON-4</span></div>
             </article>
         </section>
+
+        <!-- <section>
+            <div id="scene">
+                <div data-depth="0.2" class="w-5 h-5 p-5 bg-slate-300 border"></div>
+                <div data-depth="0.6" class="w-5 h-5 p-5 bg-slate-600 border"></div>
+            </div>
+        </section> -->
     </div>
 </template>
 
 <script>
+// import Parallax from 'parallax-js'
 export default {
     data() {
         return {
@@ -71,6 +79,10 @@ export default {
             this.box3d.degValue5 += 90;
         },
     },
+    // mounted() {
+    //     var scene = document.getElementById('scene');
+    //     var parallaxInstance = new Parallax(scene);
+    // }
 }
 </script>
 
