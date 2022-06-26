@@ -1,66 +1,86 @@
 <template>
-    <div class="main container max-w-7xl mx-auto p-3">
-        <div class="box3d_wrp">
-            <div id="box3d">
-                <div id="box3d_c"><span class="s1">NATURE</span></div>
-                <div id="box3d_l"><span class="s1">SCULPTURE</span></div>
-                <div id="box3d_t"><span class="s1">ART</span></div>
-                <div id="box3d_r"><span class="s1">WEAPON</span></div>
-            </div>
-            <div id="but_box3d_1" @click="rot_box_nature_1">Click 1</div>
-            <div id="but_box3d_2" @click="rot_box_nature_2">Click 2</div>
-            <div id="but_box3d_3" @click="rot_box_nature_3">Click 3</div>
-            <div id="but_box3d_4" @click="rot_box_nature_4">Click 4</div>
-        </div>
+    <div class="main container max-w-7xl mx-auto p-3 min-h-screen">
+        <h2 class="text-2xl text-center">3D</h2>
+        <section class="box3d_wrp flex flex-wrap justify-around gap-8">
+            <article id="box3d1" ref="box3d1" @click="box3dRotate1">
+                <div class="side-center"><span>NATURE-1</span></div>
+                <div class="side-left"><span>NATURE-2</span></div>
+                <div class="side-back"><span>NATURE-3</span></div>
+                <div class="side-right"><span>NATURE-4</span></div>
+            </article>
+            <article id="box3d2" ref="box3d2" @click="box3dRotate2">
+                <div class="side-center"><span>HOME-1</span></div>
+                <div class="side-left"><span>HOME-2</span></div>
+                <div class="side-back"><span>HOME-3</span></div>
+                <div class="side-right"><span>HOME-4</span></div>
+            </article>
+            <article id="box3d3" ref="box3d3" @click="box3dRotate3">
+                <div class="side-center"><span>SCULPTURE-1</span></div>
+                <div class="side-left"><span>SCULPTURE-2</span></div>
+                <div class="side-back"><span>SCULPTURE-3</span></div>
+                <div class="side-right"><span>SCULPTURE-4</span></div>
+            </article>
+            <article id="box3d4" ref="box3d4" @click="box3dRotate4">
+                <div class="side-center"><span>ART-1</span></div>
+                <div class="side-left"><span>ART-2</span></div>
+                <div class="side-back"><span>ART-3</span></div>
+                <div class="side-right"><span>ART-4</span></div>
+            </article>
+            <article id="box3d5" ref="box3d5" @click="box3dRotate5">
+                <div class="side-center"><span>WEAPON-1</span></div>
+                <div class="side-left"><span>WEAPON-2</span></div>
+                <div class="side-back"><span>WEAPON-3</span></div>
+                <div class="side-right"><span>WEAPON-4</span></div>
+            </article>
+        </section>
     </div>
 </template>
 
 <script>
-
 export default {
+    data() {
+        return {
+            box3d: {
+                degValue1: 90,
+                degValue2: 90,
+                degValue3: 90,
+                degValue4: 90,
+                degValue5: 90,
+            }
+        };
+    },
     methods: {
-        rot_box_nature_1() {
-            but_box3d_1.onclick = function () {
-                document.querySelector('#box3d').style.transform = 'rotateY(90deg)';
-                document.querySelector('#but_box3d_1').style.display = "none";
-                document.querySelector('#but_box3d_2').style.display = "block";
-            };
+        box3dRotate1() {
+            this.$refs.box3d1.style.transform = `rotateY(${this.box3d.degValue1}deg)`;
+            this.box3d.degValue1 += 90;
         },
-        rot_box_nature_2() {
-            but_box3d_2.onclick = function () {
-                document.querySelector('#box3d').style.transform = 'rotateY(180deg)';
-                document.querySelector('#but_box3d_2').style.display = "none";
-                document.querySelector('#but_box3d_3').style.display = "block";
-            };
+        box3dRotate2() {
+            this.$refs.box3d2.style.transform = `rotateY(${this.box3d.degValue2}deg)`;
+            this.box3d.degValue2 += 90;
         },
-        rot_box_nature_3() {
-            but_box3d_3.onclick = function () {
-                document.querySelector('#box3d').style.transform = 'rotateY(270deg)';
-                document.querySelector('#but_box3d_3').style.display = "none";
-                document.querySelector('#but_box3d_4').style.display = "block";
-            };
+        box3dRotate3() {
+            this.$refs.box3d3.style.transform = `rotateY(${this.box3d.degValue3}deg)`;
+            this.box3d.degValue3 += 90;
         },
-        rot_box_nature_4() {
-            but_box3d_4.onclick = function () {
-                document.querySelector('#box3d').style.transform = 'rotateY(360deg)';
-                document.querySelector('#but_box3d_4').style.display = "none";
-                document.querySelector('#but_box3d_1').style.display = "block";
-            };
+        box3dRotate4() {
+            this.$refs.box3d4.style.transform = `rotateY(${this.box3d.degValue4}deg)`;
+            this.box3d.degValue4 += 90;
+        },
+        box3dRotate5() {
+            this.$refs.box3d5.style.transform = `rotateY(${this.box3d.degValue5}deg)`;
+            this.box3d.degValue5 += 90;
         },
     },
 }
-
 </script>
 
 <style>
 .box3d_wrp {
-    height: 500px;
-    width: 100%;
     position: relative;
     margin: 0 auto;
 }
 
-#box3d {
+.box3d_wrp article {
     height: 500px;
     width: 200px;
     -webkit-transform-style: preserve-3d;
@@ -68,78 +88,157 @@ export default {
     transform-origin: 100px 0 -100px;
     transition: 1.5s ease;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
+    @apply cursor-move;
 }
 
-#box3d_c,
-#box3d_l,
-#box3d_t,
-#box3d_r {
-    height: 500px;
-    width: 200px;
+.box3d_wrp span {
+    @apply bg-slate-800/75 text-teal-500 cursor-pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10%;
+}
+
+.box3d_wrp span:hover {
+    border: 3px solid tomato;
+}
+
+.side-center,
+.side-left,
+.side-back,
+.side-right {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top: 0px;
-    float: left;
-    text-align: center;
-    line-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#box3d_c {
+.side-center {
     left: 0px;
-    background: url("/src/assets/bg2.png") repeat, url("/src/assets/slide/imgCube_1.jpg") no-repeat;
 }
 
-#box3d_l {
-    left: -200px;
-    background: url("/src/assets/bg2.png") repeat, url("/src/assets/slide/imgCube_2.jpg") no-repeat;
+.side-left {
+    left: -100%;
     transform: rotateY(-90deg);
     transform-origin: 100% 0;
 }
 
-#box3d_t {
-    left: -400px;
-    background: url("/src/assets/bg2.png") repeat, url("/src/assets/slide/imgCube_3.jpg") no-repeat;
+.side-back {
+    left: -200%;
     transform: rotateY(180deg);
     transform-origin: 300px 0 -100px;
 }
 
-#box3d_r {
-    left: 200px;
-    background: url("/src/assets/bg2.png") repeat, url("/src/assets/slide/imgCube_4.jpg") no-repeat;
+.side-right {
+    left: 100%;
     transform: rotateY(90deg);
     transform-origin: 0 0;
 }
 
-#but_box3d_1,
-#but_box3d_2,
-#but_box3d_3,
-#but_box3d_4 {
-    height: 500px;
-    width: 200px;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    cursor: pointer;
+/* 1 */
+#box3d1 .side-center {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/nature_1.jpg") no-repeat;
 }
 
-#but_box3d_1 {
-    display: block;
+#box3d1 .side-left {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/nature_2.jpg") no-repeat;
 }
 
-#but_box3d_2,
-#but_box3d_3,
-#but_box3d_4 {
-    display: none;
+#box3d1 .side-back {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/nature_3.jpg") no-repeat;
 }
 
-.s1 {
-    color: #f90;
-    background: rgba(0, 0, 0, 0.45);
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 10%;
+#box3d1 .side-right {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/nature_4.jpg") no-repeat;
+}
+
+/* 2 */
+#box3d2 .side-center {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/home_1.jpg") no-repeat;
+}
+
+#box3d2 .side-left {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/home_2.jpg") no-repeat;
+}
+
+#box3d2 .side-back {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/home_3.jpg") no-repeat;
+}
+
+#box3d2 .side-right {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/home_4.jpg") no-repeat;
+}
+
+/* 3 */
+#box3d3 .side-center {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/sculpture_1.jpg") no-repeat;
+}
+
+#box3d3 .side-left {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/sculpture_2.jpg") no-repeat;
+}
+
+#box3d3 .side-back {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/sculpture_3.jpg") no-repeat;
+}
+
+#box3d3 .side-right {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/sculpture_4.jpg") no-repeat;
+}
+
+/* 4 */
+#box3d4 .side-center {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/art_1.jpg") no-repeat;
+}
+
+#box3d4 .side-left {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/art_2.jpg") no-repeat;
+}
+
+#box3d4 .side-back {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/art_3.jpg") no-repeat;
+}
+
+#box3d4 .side-right {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/art_4.jpg") no-repeat;
+}
+
+/* 5 */
+#box3d5 .side-center {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/weapon_1.jpg") no-repeat;
+}
+
+#box3d5 .side-left {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/weapon_2.jpg") no-repeat;
+}
+
+#box3d5 .side-back {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/weapon_3.jpg") no-repeat;
+}
+
+#box3d5 .side-right {
+    background: url("/src/assets/bg2.png") repeat,
+        url("/src/assets/box3dimg/weapon_4.jpg") no-repeat;
 }
 </style>

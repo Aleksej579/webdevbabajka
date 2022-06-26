@@ -3,7 +3,7 @@
         <h1 class="text-2xl text-center ">ALEKSEJ EREMENKO</h1>
         <section class="flex flex-col md:flex-row gap-5 px-2">
             <aside class="cv__aside--left w-full md:w-1/4">
-                <article class="hover:drop-shadow-md dark:bg-slate-800">
+                <article class="avatar hover:drop-shadow-md dark:bg-slate-800">
                     <img src="/src/assets/ava_sq.jpg" width="200" height="auto" alt="Aleksej Eremenko photo"
                         class="rounded">
                 </article>
@@ -145,6 +145,14 @@
 
 .cv__aside--left article:first-child {
     @apply flex justify-center items-center;
+}
+
+.cv .avatar img {
+    transition-duration: 0.3s;
+}
+
+.cv .avatar:hover img {
+    transform: scale(1.1) rotate(-5deg);
 }
 
 .cv__aside--left li {
