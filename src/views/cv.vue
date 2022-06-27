@@ -1,6 +1,7 @@
 <template>
     <div class="main cv max-w-7xl mx-auto">
         <h1 class="text-2xl text-center ">ALEKSEJ EREMENKO</h1>
+
         <section class="flex flex-col md:flex-row gap-5 px-2">
             <aside class="cv__aside--left w-full md:w-1/4">
                 <article class="avatar hover:drop-shadow-md dark:bg-slate-800">
@@ -131,8 +132,30 @@
             </aside>
         </section>
 
+        <section>
+            <button @click="printResume" class="border rounded border-slate-800 p-1 mr-2">Print page</button>
+            <a href="/src/assets/Aleksej-Eremenko--Frontend.pdf" download>Download PDF</a>
+        </section>
+
     </div>
 </template>
+
+<script>
+import { useI18n } from 'vue-i18n'
+
+export default {
+    data() {
+        return {}
+    },
+    setup() {
+    },
+    methods: {
+        printResume() {
+            window.print();
+        },
+    }
+};
+</script>
 
 <style>
 .cv article {
@@ -168,7 +191,7 @@
 }
 
 .cv article:not(.contact-info) :is(ul, p, td, dt, dd) {
-    font-family: "dm", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: " dm", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
     font-style: italic;
 }
 </style>
