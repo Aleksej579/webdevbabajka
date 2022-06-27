@@ -11,10 +11,6 @@
             <nav :class="{ mobile_menu: isActive }" @click="closeMobileMenu"
                 class="header__menu dark:bg-slate-800 sm:flex sm:text-xs lg:text-base">
                 <router-link to="/" class="group hover:text-teal-500 relative">
-                    {{ t('home') }}
-                    <span class="group-hover:p-1"></span>
-                </router-link>
-                <router-link to="/cv" class="group hover:text-teal-500 relative">
                     {{ t('cv') }}
                     <span class="group-hover:p-1"></span>
                 </router-link>

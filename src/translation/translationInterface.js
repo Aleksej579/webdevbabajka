@@ -1,12 +1,11 @@
 const translationInterface = {
     en: {
         sbbi: "Small busines BIG Impact",
-        home: "HOME",
         methodology: "METHODOLOGY",
         roadmap: "ROADMAP",
         programming: "PROGRAMMING",
         library: "PORTFOLIO",
-        cv: "CV",
+        cv: "RESUME",
         editor: "EDITOR",
         warning: "WARNING",
         suggested_alternatives: "You follow an external link",
@@ -21,12 +20,11 @@ const translationInterface = {
     },
     ru: {
         sbbi: "Малый бизнес Большое влияние",
-        home: "ГЛАВНАЯ",
         methodology: "МЕТОДОЛОГИЯ",
         roadmap: "ОБЗОР",
         programming: "ПРОГРАММИРОВАНИЕ",
         library: "ПОРТФОЛИО",
-        cv: "CV",
+        cv: "РЕЗЮМЕ",
         editor: "РЕДАКТОР",
         warning: "ПРЕДУПРЕЖДЕНИЕ",
         suggested_alternatives: "Вы переходите по внешней сслке",
