@@ -27,7 +27,7 @@
                             <span class="w-7 text-center">
                                 <i class="fa-solid fa-mobile-screen-button"></i>
                             </span>
-                            +380 (97) 337-14-28
+                            <a href="tel: +380 (97) 337-14-28">+380 (97) 337-14-28</a>
                         </li>
                         <li class="flex-col md:flex-row items-center md:items-start">
                             <span class="w-7 text-center">
@@ -39,7 +39,7 @@
                             <span class="w-7 text-center">
                                 <i class="fa-solid fa-envelope"></i>
                             </span>
-                            aleksej.eremenko579@gmail.com
+                            <a href="mailto:aleksej.eremenko579@gmail.com">aleksej.eremenko579@gmail.com</a>
                         </li>
                         <li class="flex-col md:flex-row items-center md:items-start">
                             <span class="w-7 text-center">
@@ -72,7 +72,7 @@
 
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>KNOWLEDGE </h3>
-                    <ul class="list-disc list-inside">
+                    <ul class="list-disc list-inside font-bold">
                         <li>Programming in Javascript (ES6+), jQuery, basic PHP skills.</li>
                         <li>SPA development on Vue3, Vite.</li>
                         <li>HTML/CSS coding, BEM, Sass and TailwindCSS. SMACSS. Responsive.</li>
@@ -87,7 +87,7 @@
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>WORKING EXPERIENCE</h3>
                     <dl>
-                        <dt>Front-end developer ( Freelance ) - 6+ months.</dt>
+                        <dt class="underline">Front-end developer ( Freelance ) - 6+ months.</dt>
                         <dd>Some period of freelance jobs and test cases. Prototyping. Markup on
                             Vue-Vite-Tailwind. Rest
                             and Crud (Axios, Express, PostgreSQL). Current project - my website webdev|babajka.</dd>
@@ -95,18 +95,18 @@
                             Figma.</dd>
                     </dl>
                     <dl>
-                        <dt>Front-end developer ( Intertool ) - 4 months.</dt>
+                        <dt class="underline">Front-end developer ( Intertool ) - 4 months.</dt>
                         <dd>Work on existing company websites. Development of new functionality. Correction of existing
                             bugs. Creating svg in Figma. Teamwork in Git.</dd>
                         <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
                     </dl>
                     <dl>
-                        <dt>Shopify developer ( InTechSoft ) - 4 months.</dt>
+                        <dt class="underline">Shopify developer ( InTechSoft ) - 4 months.</dt>
                         <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
                         <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
                     </dl>
                     <dl>
-                        <dt>Junior front-end developer ( Art-coral ) - 2 years.</dt>
+                        <dt class="underline">Junior front-end developer ( Art-coral ) - 2 years.</dt>
                         <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
                         <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
                             Photoshop.</dd>
@@ -141,8 +141,6 @@
 </template>
 
 <script>
-import { useI18n } from 'vue-i18n'
-
 export default {
     data() {
         return {}

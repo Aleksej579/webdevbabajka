@@ -16,7 +16,7 @@ import Footer from "./components/Footer.vue";
     <router-view></router-view>
   </main>
 
-  <a class="go-to-top hover:text-slate-400 sm:bottom-12 sm:right-12 " href="#" title="Go to top">
+  <a class="go-to-top hover:text-teal-600 sm:bottom-12 sm:right-12 " href="#" title="Go to top">
     <i class="fa-solid fa-circle-arrow-up fa-2xl"></i>
   </a>
 
@@ -29,6 +29,17 @@ main {
 }
 
 .go-to-top {
-  @apply text-slate-500 cursor-pointer fixed bottom-8 right-5 z-30;
+  @apply h-8 w-8 block rounded-full text-teal-500 cursor-pointer fixed bottom-8 right-5 z-30;
+  animation: pulse 2000ms infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: #59baa6 0 0 0 0;
+  }
+
+  75% {
+    box-shadow: #59baa600 0 0 0 16px;
+  }
 }
 </style>

@@ -36,9 +36,8 @@ export default {
     var options = {
       strings: ['Frontend developer'],
       backSpeed: 50,
-      typeSpeed: 150,
+      typeSpeed: 250,
       loop: true,
-      // shuffle: true,
     };
     var typed = new Typed('.header-middle-text', options);
   }

@@ -105,11 +105,18 @@
             </figure>
         </section>
 
+        <section>
+            <iframe src='https://my.spline.design/untitled-55b7c49f1197bb312d49227ea43769e6/' frameborder='0'
+                width='100%' height='100%'></iframe>
+        </section>
+
     </div>
 </template>
 
 <script>
+
 export default {
+
     data() {
         return {
             box3d: {

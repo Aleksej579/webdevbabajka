@@ -1,6 +1,6 @@
 <template>
     <div class="header-bottom dark:bg-slate-800 dark:border-b-slate-700">
-        <div class="flex items-center m-auto container max-w-7xl justify-between p-1.5">
+        <div class="flex items-center m-auto container max-w-7xl justify-between">
             <figure class='flex items-center'>
                 <img class="header__logo h-12 rounded-lg" src="/src/assets/logo.png" alt="WebDev">
                 <figcaption class="ml-5">{{ t('sbbi') }}</figcaption>
@@ -12,27 +12,27 @@
                 class="header__menu dark:bg-slate-800 sm:flex sm:text-xs lg:text-base">
                 <router-link to="/" class="group hover:text-teal-500 relative">
                     {{ t('cv') }}
-                    <span class="group-hover:p-1"></span>
+                    <span class="group-hover:p-0.5"></span>
                 </router-link>
                 <router-link to="/methodology" class="group hover:text-teal-500 relative">
                     {{ t('methodology') }}
-                    <span class="group-hover:p-1"></span>
+                    <span class="group-hover:p-0.5"></span>
                 </router-link>
                 <router-link to="/roadmap" class="group hover:text-teal-500 relative">
                     {{ t('roadmap') }}
-                    <span class="group-hover:p-1"></span>
+                    <span class="group-hover:p-0.5"></span>
                 </router-link>
                 <router-link to="/programming" class="group hover:text-teal-500 relative">
                     {{ t('programming') }}
-                    <span class="group-hover:p-1"></span>
+                    <span class="group-hover:p-0.5"></span>
                 </router-link>
                 <router-link to="/library" class="group hover:text-teal-500 relative">
                     {{ t('library') }}
-                    <span class="group-hover:p-1"></span>
+                    <span class="group-hover:p-0.5"></span>
                 </router-link>
                 <router-link to="/editor" class="group hover:text-teal-500 relative">
                     {{ t('editor') }}
-                    <span class="group-hover:p-1"></span>
+                    <span class="group-hover:p-0.5"></span>
                 </router-link>
             </nav>
         </div>
@@ -75,7 +75,7 @@ export default {
 
 nav {
     font-family: 'Signika Negative', sans-serif;
-    @apply hidden justify-between ml-3 text-slate-500 font-extrabold gap-4 bg-slate-50;
+    @apply hidden justify-between ml-3 text-slate-500 font-extrabold text-center gap-4 bg-slate-50;
 }
 
 .mobile_menu {
