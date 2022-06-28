@@ -27,23 +27,23 @@
                     <h2>SOLID</h2>
                     <ul>
                         <li>
-                            <span class="dark:text-sky-400">SRP</span>
+                            <span class="dark:text-sky-400">Single responsibility principle</span>
                             - объект отвечает только за одно дело.
                         </li>
                         <li class=" border-b border-slate-400/10">
-                            <span class="dark:text-sky-400">OCP</span>
+                            <span class="dark:text-sky-400">Open/closed principle</span>
                             - программные сущности открыты для расширения но закрыты для модификации.
                         </li>
                         <li>
-                            <span class="dark:text-sky-400">LSP</span>
+                            <span class="dark:text-sky-400">Liskov substitution principle</span>
                             - где используется базовый класс должен подходить и его наследуемый класс.
                         </li>
                         <li>
-                            <span class="dark:text-sky-400">ISP</span>
+                            <span class="dark:text-sky-400">Interface segregation principle</span>
                             - много интерфейсов для клиента лучше чем один интерфейс общего назначения.
                         </li>
                         <li>
-                            <span class="dark:text-sky-400">DIP</span>
+                            <span class="dark:text-sky-400">Dependency inversion principle</span>
                             - использовать все классы через интерфейсы.
                         </li>
                     </ul>
