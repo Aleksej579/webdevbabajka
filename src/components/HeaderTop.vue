@@ -134,35 +134,20 @@ export default {
 </script>
 
 <style>
-.modal-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.modal-container,
+.modal-close {
+    @apply flex justify-center items-center;
 }
 
 .modal-content {
-    position: relative;
-    width: 50%;
-    padding: 16px;
-    overflow: auto;
-    background-color: #fff;
-    border-radius: 4px;
+    @apply relative w-1/2 p-4 overflow-auto bg-white rounded;
 }
 
 .modal-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    margin: 8px 8px 0 0;
-    cursor: pointer;
+    @apply absolute top-0 right-0 w-8 h-8 cursor-pointer m-2;
 }
 
-.modal-close::hover {
-    color: gray;
+.modal-close:hover {
+    @apply text-gray-500;
 }
 </style>

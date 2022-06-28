@@ -67,6 +67,6 @@ export default {
 }
 
 .splide__arrows {
-  display: none;
+  @apply hidden;
 }
 </style>

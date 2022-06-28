@@ -1,5 +1,5 @@
 <template>
-    <div class="main cv max-w-7xl mx-auto">
+    <div class="cv max-w-7xl mx-auto">
         <h1 class="text-2xl text-center ">ALEKSEJ EREMENKO</h1>
 
         <section class="flex flex-col md:flex-row gap-5 px-2">
@@ -71,7 +71,7 @@
                 </article>
 
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
-                    <h3>KNOWLEDGE </h3>
+                    <h3>KNOWLEDGE</h3>
                     <ul class="list-disc list-inside font-bold">
                         <li>Programming in Javascript (ES6+), jQuery, basic PHP skills.</li>
                         <li>SPA development on Vue3, Vite.</li>
@@ -115,7 +115,7 @@
 
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SOME OF MY WORK</h3>
-                    <ul class="flex flex-col md:flex-row justify-between">
+                    <ul class="flex flex-col md:flex-row justify-between text-sky-400 underline">
                         <li><a href="https://test-e8a57.web.app">Webdev|babajka</a></li>
                         <li><a href="https://authentication-5bff9.web.app/">Auth</a></li>
                         <li><a href="http://naturetour.eu3.biz/">Naturetour</a></li>
@@ -142,11 +142,6 @@
 
 <script>
 export default {
-    data() {
-        return {}
-    },
-    setup() {
-    },
     methods: {
         printResume() {
             window.print();
@@ -189,7 +184,19 @@ export default {
 }
 
 .cv article:not(.contact-info) :is(ul, p, td, dt, dd) {
-    font-family: " dm", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: "dm", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
     font-style: italic;
+}
+
+meter,
+meter::-webkit-meter-bar,
+meter::-webkit-meter-optimum-value,
+meter::-webkit-meter-suboptimum-value,
+meter::-webkit-meter-even-less-good-value,
+meter::-webkit-meter-inner-element {
+    border-radius: 0;
+    border: none;
+    width: 150px;
+    height: 8px;
 }
 </style>

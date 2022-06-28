@@ -26,7 +26,7 @@
                     {{ t('programming') }}
                     <span class="group-hover:p-0.5"></span>
                 </router-link>
-                <router-link to="/library" class="group hover:text-teal-500 relative">
+                <router-link to="/portfolio" class="group hover:text-teal-500 relative">
                     {{ t('library') }}
                     <span class="group-hover:p-0.5"></span>
                 </router-link>
@@ -41,7 +41,6 @@
 
 <script>
 import { useI18n } from 'vue-i18n'
-
 export default {
     data() {
         return {
@@ -67,7 +66,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap'); */
 
 .header-bottom {
     @apply sticky top-0 flex items-center bg-slate-50 border-b z-20;
@@ -95,6 +94,6 @@ nav {
 }
 
 .mobile_menu a {
-    display: block;
+    @apply block;
 }
 </style>

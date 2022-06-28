@@ -1,5 +1,5 @@
 <template>
-    <div class="main max-w-7xl mx-auto px-2">
+    <div class="max-w-7xl mx-auto px-2">
         <h1 class="text-2xl text-center">PROGRAMMING</h1>
 
         <h2 class="text-2xl text-center">JavaScript</h2>

@@ -1,5 +1,5 @@
 <template>
-    <div class="main container max-w-7xl mx-auto p-3 min-h-screen">
+    <div class="container max-w-7xl mx-auto p-3 min-h-screen">
         <h2 class="text-2xl text-center">3D</h2>
         <section class="box3d_wrp flex flex-wrap justify-around gap-8">
             <article id="box3d1" ref="box3d1" @click="box3dRotate1">
@@ -114,9 +114,7 @@
 </template>
 
 <script>
-
 export default {
-
     data() {
         return {
             box3d: {

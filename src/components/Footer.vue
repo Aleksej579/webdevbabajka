@@ -17,11 +17,6 @@
 import { useI18n } from 'vue-i18n'
 
 export default {
-  data() {
-    return {
-      // isActive: false,
-    }
-  },
   setup() {
     const { locale, t } = useI18n({
       useScope: 'global'
