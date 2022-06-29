@@ -126,7 +126,11 @@
 
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SUMMARY</h3>
-                    <p>English: Pre-Intermediate.</p>
+                    <ul>
+                        <li>Education - course in SouceIT 'Java and Web technologies'</li>
+                        <li>Education - Kharkiv National University of Civil Engineering and Architecture</li>
+                        <li>English: Pre-Intermediate.</li>
+                    </ul>
                 </article>
 
             </aside>
