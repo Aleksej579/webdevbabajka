@@ -54,20 +54,16 @@
             <aside class="cv__aside--right w-full md:w-3/4">
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SKILLS</h3>
-                    <table class="mx-auto">
-                        <tbody>
-                            <tr class="flex">
-                                <td class="flex flex-col items-center p-6">
-                                    Markup 75%
-                                    <meter value="0.75"></meter>
-                                </td>
-                                <td class="flex flex-col items-center p-6">
-                                    Programming 25%
-                                    <meter value="0.25"></meter>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <ul class="flex flex-col md:flex-row mx-auto w-max">
+                        <li class="flex flex-col items-center p-6 text-center">
+                            Markup 75%
+                            <meter value="0.75"></meter>
+                        </li>
+                        <li class="flex flex-col items-center p-6 text-center">
+                            Programming 25%
+                            <meter value="0.25"></meter>
+                        </li>
+                    </ul>
                 </article>
 
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
@@ -127,8 +123,8 @@
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SUMMARY</h3>
                     <ul>
-                        <li>Education - course in SouceIT 'Java and Web technologies'</li>
-                        <li>Education - Kharkiv National University of Civil Engineering and Architecture</li>
+                        <li>Course - SouceIT 'Java and Web technologies'</li>
+                        <li>University - Kharkiv National University of Civil Engineering and Architecture</li>
                         <li>English: Pre-Intermediate.</li>
                     </ul>
                 </article>
@@ -168,11 +164,13 @@ export default {
 }
 
 .cv .avatar img {
+    border-radius: 25% 75% 58% 42% / 55% 32% 68% 45%;
     transition-duration: 0.3s;
 }
 
 .cv .avatar:hover img {
-    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 13px 13px 13px #bcbcbc,
+        -13px -13px 13px #ffffff;
 }
 
 .cv__aside--left li {
