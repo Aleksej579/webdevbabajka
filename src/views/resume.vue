@@ -5,8 +5,7 @@
         <section class="flex flex-col md:flex-row gap-5 px-2">
             <aside class="cv__aside--left w-full md:w-1/4">
                 <article class="avatar hover:drop-shadow-md dark:bg-slate-800">
-                    <img src="/src/assets/ava_sq.jpg" width="200" height="auto" alt="Aleksej Eremenko photo"
-                        class="rounded">
+                    <img src="/src/assets/ava_sq.jpg" width="200" height="auto" alt="Aleksej Eremenko photo">
                 </article>
 
                 <article class="contact-info hover:drop-shadow-md dark:bg-slate-800 overflow-auto">
@@ -166,11 +165,13 @@ export default {
 .cv .avatar img {
     border-radius: 25% 75% 58% 42% / 55% 32% 68% 45%;
     transition-duration: 0.3s;
+    /* outline: 5px solid green; */
+    /* @apply outline-4 outline-teal-500; */
+
 }
 
 .cv .avatar:hover img {
-    box-shadow: 13px 13px 13px #bcbcbc,
-        -13px -13px 13px #ffffff;
+    /* @apply outline-4 outline-teal-500; */
 }
 
 .cv__aside--left li {
