@@ -5,7 +5,7 @@
                 <img class="header__logo h-12 rounded-lg" src="/src/assets/logo.png" alt="WebDev">
                 <figcaption class="ml-5">{{ t('sbbi') }}</figcaption>
             </figure>
-            <span @click="openMobileMenu" class="cursor-pointer text-slate-400 text-xl sm:hidden">
+            <span @click="openMobileMenu" class="cursor-pointer mr-1 text-slate-400 text-xl sm:hidden">
                 <i class="fa-solid fa-bars"></i>
             </span>
             <nav :class="{ mobile_menu: isActive }" @click="closeMobileMenu"
@@ -66,7 +66,6 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap'); */
 
 .header-bottom {
     @apply sticky top-0 flex items-center bg-slate-50 border-b z-20;

@@ -2,7 +2,7 @@
   <div class="main__form max-w-7xl mx-auto">
     <h1 class="text-2xl text-center">EDITORS</h1>
     <section class="flex flex-col sm:flex-row gap-5 h-full p-3">
-      <div class="w-full sm:w-3/4 border border-slate-600 p-3 flex flex-col mx-auto">
+      <div class="w-full sm:w-3/4 bg-white dark:bg-slate-800 p-3 flex flex-col mx-auto">
         <form>
           <label class="font-bold" title="Enter the content">Enter the content</label>
           <QuillEditor class="editor-area" ref="editor_area" contentType="html"
@@ -45,7 +45,7 @@
           </div>
         </form>
       </div>
-      <div class="w-full sm:w-1/4 p-3 border border-slate-600">
+      <div class="w-full sm:w-1/4 p-3 bg-white dark:bg-slate-800">
         <div v-for="itemField in html" :key="itemField" v-html="itemField"></div>
       </div>
     </section>
@@ -112,15 +112,15 @@ export default {
 
 <style>
 .ql-container {
-  height: auto;
+  @apply h-auto;
 }
 
 .editor-area {
-  min-height: 400px;
+  @apply min-h-[300px];
 }
 
 .ql-toolbar.ql-snow,
 .ql-container.ql-snow {
-  background-color: white;
+  @apply bg-white;
 }
 </style>

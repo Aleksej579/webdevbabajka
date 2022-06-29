@@ -153,11 +153,11 @@ export default {
 
 <style>
 section {
-    margin-bottom: 50px;
+    @apply mb-12;
 }
 
 .box3d_wrp {
-    position: relative;
+    @apply relative;
 }
 
 .box3d_wrp article {
@@ -172,10 +172,7 @@ section {
 }
 
 .box3d_wrp span {
-    @apply bg-slate-800/75 text-teal-500 cursor-pointer;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 10%;
+    @apply bg-slate-800/75 text-teal-500 cursor-pointer text-base font-bold p-2.5;
 }
 
 .box3d_wrp span:hover {
@@ -186,17 +183,11 @@ section {
 .side-left,
 .side-back,
 .side-right {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @apply h-full w-full absolute flex flex-col items-center justify-center;
 }
 
 .side-center {
-    left: 0px;
+    @apply left-0;
 }
 
 .side-left {

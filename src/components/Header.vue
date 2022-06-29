@@ -48,10 +48,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 
 .header-middle {
-  position: fixed;
-  left: 0;
-  right: 0;
   font-family: 'Signika Negative', sans-serif;
+  @apply fixed inset-x-0;
 }
 
 .header-middle {

@@ -194,9 +194,6 @@ meter::-webkit-meter-optimum-value,
 meter::-webkit-meter-suboptimum-value,
 meter::-webkit-meter-even-less-good-value,
 meter::-webkit-meter-inner-element {
-    border-radius: 0;
-    border: none;
-    width: 150px;
-    height: 8px;
+    @apply rounded-none border-none w-full h-2;
 }
 </style>

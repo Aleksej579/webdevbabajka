@@ -220,11 +220,11 @@
                         <li>
                             <span class="dark:text-sky-400">SMART</span>
                             <ul>
-                                <li>specific конкретная</li>
-                                <li>measurable измеримая</li>
-                                <li>attainable достижимая</li>
-                                <li>relevant уместная или актуальная</li>
-                                <li>time-bound ограниченная по времени</li>
+                                <li>specific</li>
+                                <li>measurable</li>
+                                <li>attainable</li>
+                                <li>relevant</li>
+                                <li>time-bound</li>
                             </ul>
                         </li>
                     </ul>
@@ -316,10 +316,8 @@
                                 <li>чистые функции детерминированые, без побочных эффектов</li>
                                 <li>функции высших порядков функция принимающая другую функцию</li>
                                 <li>композиция функций общий path - типы данных</li>
-                                <li>имутабельность данных функция не должна изменять переданный аргумент только
-                                    создать
-                                    копию и
-                                    его
+                                <li>имутабельность данных функция не должна изменять переданный аргумент только создать
+                                    копию и его
                                 </li>
                                 <li>каррироваие</li>
                             </ul>
@@ -431,6 +429,6 @@ export default {
 
 .pattern li {
     font-family: "dm", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-    font-style: italic;
+    @apply italic;
 }
 </style>
