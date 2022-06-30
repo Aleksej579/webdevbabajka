@@ -133,7 +133,7 @@
 
         <section>
             <button @click="printResume" class="border rounded border-slate-800 p-1 mr-2">Print page</button>
-            <a href="/src/assets/Aleksej-Eremenko--Frontend.pdf" download>Download PDF</a>
+            <a href="/public/Aleksej-Eremenko--Frontend.pdf" download>Download PDF</a>
         </section>
 
     </div>
@@ -165,13 +165,7 @@ export default {
 .cv .avatar img {
     border-radius: 25% 75% 58% 42% / 55% 32% 68% 45%;
     transition-duration: 0.3s;
-    /* outline: 5px solid green; */
-    /* @apply outline-4 outline-teal-500; */
 
-}
-
-.cv .avatar:hover img {
-    /* @apply outline-4 outline-teal-500; */
 }
 
 .cv__aside--left li {
