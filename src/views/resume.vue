@@ -133,7 +133,7 @@
 
         <section>
             <button @click="printResume" class="border rounded border-slate-800 p-1 mr-2">Print page</button>
-            <a href="/assets/Aleksej_Eremenko__Frontend.pdf" download>Download PDF</a>
+            <a href="/public/Aleksej Eremenko Frontend.pdf" download>Download PDF</a>
         </section>
 
     </div>
