@@ -14,6 +14,7 @@ const routes = [
     { path: "/programming", name: "programming", component: programming },
     { path: "/portfolio", name: "portfolio", component: portfolio },
     { path: "/editor", name: "editor", component: editor },
+    { path: "/public/Aleksej-Eremenko--Frontend.pdf" },
     { path: "/:pathMatch(.*)*", name: "pnf", component: pnf }
 ]
 
