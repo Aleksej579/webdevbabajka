@@ -5,7 +5,6 @@ import portfolio from '../views/portfolio.vue'
 import resume from '../views/resume.vue'
 import methodology from '../views/methodology.vue'
 import roadmap from '../views/roadmap.vue'
-// import cvpdf from '../assets/Aleksej_Eremenko__Frontend.pdf'
 import pnf from '../views/pnf.vue'
 
 const routes = [
@@ -15,7 +14,6 @@ const routes = [
     { path: "/programming", name: "programming", component: programming },
     { path: "/portfolio", name: "portfolio", component: portfolio },
     { path: "/editor", name: "editor", component: editor },
-    // { path: "/cvpdf", name: "cvpdf", component: cvpdf },
     { path: "/:pathMatch(.*)*", name: "pnf", component: pnf }
 ]
 

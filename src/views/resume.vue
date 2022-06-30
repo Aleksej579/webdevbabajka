@@ -122,7 +122,7 @@
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SUMMARY</h3>
                     <ul>
-                        <li>Course - SouceIT 'Java and Web technologies'</li>
+                        <li>Course - SourceIT 'Java and Web technologies'</li>
                         <li>University - Kharkiv National University of Civil Engineering and Architecture</li>
                         <li>English: Pre-Intermediate.</li>
                     </ul>
@@ -132,22 +132,12 @@
         </section>
 
         <section>
-            <button @click="printResume" class="border rounded border-slate-800 p-1 mr-2">Print page</button>
-            <a href="/public/Aleksej Eremenko Frontend.pdf" download>Download PDF</a>
+            <a href="/Aleksej-Eremenko--Frontend.pdf" download class="border rounded border-slate-800 p-1 mr-2">Download
+                resume PDF</a>
         </section>
 
     </div>
 </template>
-
-<script>
-export default {
-    methods: {
-        printResume() {
-            window.print();
-        },
-    }
-};
-</script>
 
 <style>
 .cv article {
