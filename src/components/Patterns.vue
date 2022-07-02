@@ -20,6 +20,7 @@
                         </li>
                         <li>
                             <span class="dark:text-sky-400">{{ t('oopAbstract') }}</span>
+                            {{ t('oopAbstractDesc') }}
                         </li>
                     </ul>
                 </article>
@@ -28,23 +29,23 @@
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">Single responsibility principle</span>
-                            - объект отвечает только за одно дело.
+                            {{ t('solid_s') }}
                         </li>
                         <li class=" border-b border-slate-400/10">
                             <span class="dark:text-sky-400">Open/closed principle</span>
-                            - программные сущности открыты для расширения но закрыты для модификации.
+                            {{ t('solid_o') }}
                         </li>
                         <li>
                             <span class="dark:text-sky-400">Liskov substitution principle</span>
-                            - где используется базовый класс должен подходить и его наследуемый класс.
+                            {{ t('solid_l') }}
                         </li>
                         <li>
                             <span class="dark:text-sky-400">Interface segregation principle</span>
-                            - много интерфейсов для клиента лучше чем один интерфейс общего назначения.
+                            {{ t('solid_i') }}
                         </li>
                         <li>
                             <span class="dark:text-sky-400">Dependency inversion principle</span>
-                            - использовать все классы через интерфейсы.
+                            {{ t('solid_d') }}
                         </li>
                     </ul>
                 </article>
@@ -203,23 +204,23 @@
 
             <div class="space-y-8">
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>Акроним</h2>
+                    <h2>{{ t('acronym') }}</h2>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">KISS</span>
-                            делай проще
+                            {{ t("kiss") }}
                         </li>
                         <li>
                             <span class="dark:text-sky-400">DRY</span>
-                            не повторяйся
+                            {{ t('dry') }}
                         </li>
                         <li>
                             <span class="dark:text-sky-400">YAGNI</span>
-                            тебе это не понадобиться
+                            {{ t("yagni") }}
                         </li>
                         <li>
                             <span class="dark:text-sky-400">SMART</span>
-                            <ul>
+                            <ul class="list-disc list-inside">
                                 <li>specific</li>
                                 <li>measurable</li>
                                 <li>attainable</li>
@@ -278,7 +279,12 @@
                         </li>
                         <li>
                             <span class="dark:text-sky-400">RUP</span>
-                            inception | elaboration | construction | transition
+                            <ul class="list-disc list-inside">
+                                <li>inception</li>
+                                <li>elaboration</li>
+                                <li>construction</li>
+                                <li>transition</li>
+                            </ul>
                         </li>
                         <li>
                             <span class="dark:text-sky-400">XP</span>
@@ -312,7 +318,7 @@
                         </li>
                         <li>
                             <span class="dark:text-sky-400">Функциональное 'BigO'</span>
-                            <ul>
+                            <ul class="list-disc list-inside">
                                 <li>чистые функции детерминированые, без побочных эффектов</li>
                                 <li>функции высших порядков функция принимающая другую функцию</li>
                                 <li>композиция функций общий path - типы данных</li>
@@ -373,8 +379,8 @@
                     <h2>Network protocols</h2>
                     <ul>
                         <li>
-                            <span class="dark:text-sky-400">RESTful</span>
-                            <ul>
+                            <span class="dark:text-sky-400">REST-ful</span>
+                            <ul class="list-disc list-inside">
                                 <li>модель клиент-сервер</li>
                                 <li>отсутствие состояния</li>
                                 <li>кэширование</li>
@@ -385,12 +391,25 @@
                         </li>
                         <li>GraphQl</li>
                         <li>Web APIs</li>
-                        <li>Web sockets - Протоколы</li>
-                        <li>Web Workers фоновый поток выполнения</li>
+                        <li>Web sockets</li>
+                        <li>Web Workers</li>
                         <li>JWT JSON Web Token</li>
-                        <li>CRUD create, read, update, delete</li>
+                        <li>CRUD
+                            <ul class="list-disc list-inside">
+                                <li>create</li>
+                                <li>read</li>
+                                <li>update</li>
+                                <li>delete</li>
+                            </ul>
+                        </li>
                         <li>
-                            ACID Atomicity | Consistency | Isolation | Durability
+                            ACID
+                            <ul class="list-disc list-inside">
+                                <li>Atomicity</li>
+                                <li>Consistency</li>
+                                <li>Isolation</li>
+                                <li>Durability</li>
+                            </ul>
                         </li>
                     </ul>
                 </article>
@@ -419,7 +438,7 @@ export default {
     @apply text-base font-semibold text-center;
 }
 
-.pattern li {
+.pattern li:not(:last-child) {
     @apply border-b border-slate-400/10 mb-3;
 }
 

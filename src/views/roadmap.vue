@@ -1,12 +1,39 @@
 <template>
     <div class="roadmap max-w-7xl mx-auto px-2">
         <h1 class="text-2xl text-center">TOOLS</h1>
-        <section class="w-full mb-0 text-right">
-            <button @click="collapseAll"
-                class="border rounded border-teal-500 p-1 cursor-pointer text-teal-500">Collapse all</button>
-        </section>
+        <fieldset class="w-full mb-0 flex flex-col md:flex-row gap-2 md:gap-6 items-end md:items-center md:justify-end">
+            <label for="html">
+                Show HTML
+                <input type="checkbox" id='html' v-model="detailsHTML" />
+            </label>
+
+            <label for="css">
+                Show CSS
+                <input type="checkbox" id='css' v-model="detailsCSS">
+            </label>
+
+            <label for="js">
+                Show JS
+                <input type="checkbox" id='js' v-model="detailsJS">
+            </label>
+
+            <label for="fw">
+                Show Framework
+                <input type="checkbox" id='fw' v-model="detailsFRAMEWORK">
+            </label>
+
+            <label for="other">
+                Show Other
+                <input type="checkbox" id='other' v-model="detailsOTHER">
+            </label>
+
+            <button @click="collapseAll" class="border rounded border-teal-500 p-1 cursor-pointer text-teal-500">
+                Collapse all card
+            </button>
+        </fieldset>
+
         <section class="mb-1 flex flex-wrap justify-center">
-            <details class="details dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsHTML" class="details dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     <span class="tooltip" tooltip="HyperText Markup Language">
                         <strong>HTML</strong>
@@ -21,7 +48,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsHTML" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     <span class="tooltip" tooltip="Block Element Modifier">
                         <strong>BEM</strong>
@@ -35,7 +62,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsCSS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     <span class="tooltip" tooltip="Cascading Style Sheets">
                         <strong>CSS3</strong>
@@ -52,7 +79,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsCSS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     <strong>SASS</strong> preprocessor
                 </summary>
@@ -69,7 +96,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsCSS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     <span class="tooltip" tooltip="Scalable and Modular Architecture for CSS">
                         <strong>SMACSS</strong>
@@ -85,7 +112,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsFRAMEWORKS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-CSS
                 </summary>
@@ -100,7 +127,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsHTML" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Template engine
                 </summary>
@@ -111,7 +138,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsJS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     <strong>JavaScript</strong> ES6+
                 </summary>
@@ -128,7 +155,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsFRAMEWORK" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-JS-UI
                 </summary>
@@ -140,7 +167,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsFRAMEWORK" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-JS-Test
                 </summary>
@@ -150,7 +177,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsFRAMEWORK" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-JS-Build
                 </summary>
@@ -161,7 +188,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsFRAMEWORK" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-JS-Backend
                 </summary>
@@ -174,7 +201,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     <span class="tooltip" tooltip="Version Control System">
                         <strong>VCS</strong>
@@ -188,7 +215,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Cloud platforms
                 </summary>
@@ -198,7 +225,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     E-commerce Shopify
                 </summary>
@@ -209,7 +236,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Topical sites
                 </summary>
@@ -221,7 +248,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Prototyping
                 </summary>
@@ -232,7 +259,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     The Algorithm
                 </summary>
@@ -243,7 +270,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Block diagram
                 </summary>
@@ -260,7 +287,7 @@
                 </ul>
             </details>
 
-            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     <span class="tooltip" tooltip="Unified Modeling Language">
                         <strong>UML</strong>
@@ -310,6 +337,15 @@
 
 <script>
 export default {
+    data() {
+        return {
+            detailsHTML: true,
+            detailsCSS: true,
+            detailsJS: true,
+            detailsFRAMEWORK: true,
+            detailsOTHER: true,
+        }
+    },
     methods: {
         collapseAll() {
             let allDetails = document.querySelectorAll('details');
@@ -322,6 +358,14 @@ export default {
 </script>
 
 <style>
+fieldset label {
+    @apply text-slate-400;
+}
+
+fieldset input {
+    accent-color: #00c5a7;
+}
+
 .roadmap details {
     @apply m-2.5 h-max w-max p-3 bg-white mb-2.5 text-slate-400 cursor-pointer;
 }
