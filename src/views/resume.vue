@@ -122,8 +122,8 @@
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SUMMARY</h3>
                     <ul>
-                        <li>Course - SourceIT 'Java and Web technologies'</li>
-                        <li>University - Kharkiv National University of Civil Engineering and Architecture</li>
+                        <li>Course: SourceIT 'Java and Web technologies'</li>
+                        <li>University: Kharkiv National University of Civil Engineering and Architecture</li>
                         <li>English: Pre-Intermediate.</li>
                     </ul>
                 </article>
@@ -131,9 +131,10 @@
             </aside>
         </section>
 
-        <section>
-            <a href="/Aleksej-Eremenko--Frontend.pdf" download class="border rounded border-slate-800 p-1 mr-2">Download
-                resume PDF</a>
+        <section class="text-center">
+            <a href="/Aleksej-Eremenko--Frontend.pdf" download class="border rounded border-slate-800 p-1 mr-2">
+                Download resume PDF
+            </a>
         </section>
 
     </div>
