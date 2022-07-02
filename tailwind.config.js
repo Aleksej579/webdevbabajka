@@ -7,6 +7,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {},
+    listStyleType: {
+      square: 'square',
+      disc: 'disc',
+    },
     screens: {
       'xsm': '376px',
       // => @media (min-width: 375px) { ... }

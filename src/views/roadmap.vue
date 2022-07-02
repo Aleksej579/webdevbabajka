@@ -1,9 +1,13 @@
 <template>
-    <div class="max-w-7xl mx-auto px-2">
+    <div class="roadmap max-w-7xl mx-auto px-2">
         <h1 class="text-2xl text-center">TOOLS</h1>
-        <section class="mb-1 flex flex-wrap">
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+        <section class="w-full mb-0 text-right">
+            <button @click="collapseAll"
+                class="border rounded border-teal-500 p-1 cursor-pointer text-teal-500">Collapse all</button>
+        </section>
+        <section class="mb-1 flex flex-wrap justify-center">
+            <details class="details dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     <span class="tooltip" tooltip="HyperText Markup Language">
                         <strong>HTML</strong>
                     </span> must have:
@@ -17,21 +21,22 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     <span class="tooltip" tooltip="Block Element Modifier">
                         <strong>BEM</strong>
                     </span> naming
                 </summary>
                 <ul>
                     <li>Block-name</li>
+                    <li>Container or Wrapper</li>
                     <li>Block-name__Element-name</li>
-                    <li>Block-name__Element-name--Modifier</li>
+                    <li>Block-name__Element-name--Is-modifier</li>
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     <span class="tooltip" tooltip="Cascading Style Sheets">
                         <strong>CSS3</strong>
                     </span>
@@ -47,8 +52,8 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     <strong>SASS</strong> preprocessor
                 </summary>
                 <a href="https://sass-lang.com" target="_blank">SASS</a>
@@ -64,8 +69,8 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     <span class="tooltip" tooltip="Scalable and Modular Architecture for CSS">
                         <strong>SMACSS</strong>
                     </span> methodology
@@ -80,9 +85,9 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
-                    CSS-framework
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    Framework-CSS
                 </summary>
                 <ul>
                     <li><a href="https://tailwindcss.com" target="_blank">TailwindCSS</a></li>
@@ -95,8 +100,8 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     Template engine
                 </summary>
                 <ul>
@@ -106,17 +111,25 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
-                    <strong>JavaScript</strong> use <strong>ES6+</strong>
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    <strong>JavaScript</strong> ES6+
                 </summary>
-                <!-- <ul>
-                    <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
-                </ul> -->
+                <ul>
+                    <li>Data structures</li>
+                    <li>Algorithm</li>
+                    <li>OOP</li>
+                    <li>SOLID</li>
+                    <li>GRASP</li>
+                    <li>GOF</li>
+                    <li>KISS</li>
+                    <li>DRY</li>
+                    <li>YAGNI</li>
+                </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     Framework-JS-UI
                 </summary>
                 <ul>
@@ -127,8 +140,8 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     Framework-JS-Test
                 </summary>
                 <ul>
@@ -137,8 +150,8 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     Framework-JS-Build
                 </summary>
                 <ul>
@@ -148,8 +161,8 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     Framework-JS-Backend
                 </summary>
                 <ul>
@@ -161,19 +174,22 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
-                    <strong>GIT</strong> version control system
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    <span class="tooltip" tooltip="Version Control System">
+                        <strong>VCS</strong>
+                    </span>
                 </summary>
-                <ul>
+                <a href="https://git-scm.com/" target="_blank">GIT</a>
+                <ul class="list-disc list-inside">
                     <li><a href="https://github.com" target="_blank">GitHub</a></li>
                     <li><a href="https://about.gitlab.com/" target="_blank">GitLab</a></li>
                     <li><a href="https://bitbucket.org/" target="_blank">Bitbucket</a></li>
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     Cloud platforms
                 </summary>
                 <ul>
@@ -182,8 +198,8 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     E-commerce Shopify
                 </summary>
                 <ul>
@@ -193,8 +209,8 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     Topical sites
                 </summary>
                 <ul>
@@ -205,92 +221,54 @@
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     Prototyping
                 </summary>
-                <ul>
-                    <li>WIREFRAME</li>
-                    <li>PROTOTYPE</li>
-                    <li>MOCKUP</li>
+                <ul class="list-disc list-inside">
+                    <li>Wireframe</li>
+                    <li>Prototype</li>
+                    <li>Mockup</li>
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
-                    ALGORITHM
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    The Algorithm
                 </summary>
-                <ul>
+                <ul class="list-disc list-inside">
                     <li>Linear</li>
                     <li>Choices</li>
                     <li>Cycle</li>
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
-                    BLOCK DIAGRAM
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    Block diagram
                 </summary>
-                <ul>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Терминатор </td>
-                                <td>Овал</td>
-                                <td>(начало и конец алгоритма)</td>
-                            </tr>
-                            <tr>
-                                <td>Процес</td>
-                                <td>Прямоугольник</td>
-                                <td>(обработка данных)</td>
-                            </tr>
-                            <tr>
-                                <td>Данные</td>
-                                <td>Параллелепипед</td>
-                                <td>(отображает данные)</td>
-                            </tr>
-                            <tr>
-                                <td>Предопределенный процес</td>
-                                <td>Прямоугольник с линиями</td>
-                                <td>(ссылка на код в другом месте)</td>
-                            </tr>
-                            <tr>
-                                <td>Решение</td>
-                                <td>Ромб</td>
-                                <td>(выбор)</td>
-                            </tr>
-                            <tr>
-                                <td>Цикл</td>
-                                <td>Восьмигранник</td>
-                                <td>(цикл)</td>
-                            </tr>
-                            <tr>
-                                <td>Соединитель</td>
-                                <td>Круг</td>
-                                <td>(разделение блок схемы на части)</td>
-                            </tr>
-                            <tr>
-                                <td>Коментарий</td>
-                                <td>Скоба + штрихпунктир</td>
-                                <td>(коментарий)</td>
-                            </tr>
-                            <tr>
-                                <td>Паралельные действия</td>
-                                <td>паралельные линии</td>
-                                <td>(паралельное выполнение)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <ul class="list-disc list-inside">
+                    <li>Терминатор</li>
+                    <li>Процес</li>
+                    <li>Данные</li>
+                    <li>Предопределенный процес</li>
+                    <li>Решение</li>
+                    <li>Цикл</li>
+                    <li>Соединитель</li>
+                    <li>Коментарий</li>
+                    <li>Паралельные действия</li>
                 </ul>
             </details>
 
-            <details class="bg-white dark:bg-slate-800 mb-2.5 text-slate-400">
-                <summary class="text-slate-400 font-medium font-mono text-center p-2">
-                    UML
+            <details class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    <span class="tooltip" tooltip="Unified Modeling Language">
+                        <strong>UML</strong>
+                    </span>
                 </summary>
-                <ul>
-                    <li>Структурные "элементы диаграммы"
-                        <ul>
+                <ul class="list-square list-inside">
+                    <li>Структурные
+                        <ul class="list-disc list-inside ml-6">
                             <li>классов</li>
                             <li>компонентов</li>
                             <li>композитной структуры</li>
@@ -301,15 +279,15 @@
                             <li>профилей</li>
                         </ul>
                     </li>
-                    <li>Поведения "элементы диаграммы"
-                        <ul>
+                    <li>Поведения
+                        <ul class="list-disc list-inside ml-6">
                             <li>деятельности</li>
                             <li>состояний</li>
                             <li>вариантов использования</li>
                         </ul>
                     </li>
-                    <li>Взаимодействия "элементы диаграммы"
-                        <ul>
+                    <li>Взаимодействия
+                        <ul class="list-disc list-inside ml-6">
                             <li>коммуникации</li>
                             <li>обзора взаимодействия </li>
                             <li>последовательности</li>
@@ -317,11 +295,11 @@
                         </ul>
                     </li>
                     <li>Зависимость
-                        <ul>
-                            <li>агрегация "линия + ромб (часть - целое) часть отдельно сущ. от целого"</li>
-                            <li>композиция "линия + ромб закрашеный (часть - целое) часть не отдельно от целого"</li>
-                            <li>зависимость "пунктир + стрелка (независимое влияет на зависимое)"</li>
-                            <li>обобщение "линия + стрелка (отношение наследования или реализации интерфейса)"</li>
+                        <ul class="list-disc list-inside ml-6">
+                            <li>агрегация</li>
+                            <li>композиция</li>
+                            <li>зависимость</li>
+                            <li>обобщение</li>
                         </ul>
                     </li>
                 </ul>
@@ -330,24 +308,33 @@
     </div>
 </template>
 
+<script>
+export default {
+    methods: {
+        collapseAll() {
+            let allDetails = document.querySelectorAll('details');
+            allDetails.forEach((item) => {
+                item.open = false;
+            })
+        }
+    }
+}
+</script>
+
 <style>
-details {
-    padding: .5em .5em 0;
-    width: max-content;
-    height: max-content;
-    margin: 10px;
+.roadmap details {
+    @apply m-2.5 h-max w-max p-3 bg-white mb-2.5 text-slate-400 cursor-pointer;
 }
 
-summary {
-    margin: -.5em -.5em 0;
+.roadmap details[open] {
+    @apply p-3 w-full;
 }
 
-details[open] {
-    padding: .5em;
+.roadmap details[open] summary {
+    @apply mb-3;
 }
 
-details[open] summary {
-    border-bottom: 1px solid grey;
-    margin-bottom: .5em;
+.roadmap summary {
+    @apply -m-2.5 text-slate-400 font-medium font-mono text-center p-2;
 }
 </style>
