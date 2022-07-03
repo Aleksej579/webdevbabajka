@@ -5,10 +5,6 @@
       <button @click="showGrid">
         <i class="fa-solid fa-grip-vertical fa-lg"></i>
       </button>
-      <span class="ml-5">
-        <i class="fa-solid fa-arrow-left-long"></i>
-        Grid
-      </span>
     </div>
   </footer>
 </template>

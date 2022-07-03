@@ -128,15 +128,13 @@
                     </ul>
                 </article>
 
+                <a href="/Aleksej-Eremenko--Frontend.pdf" download
+                    class="border rounded border-teal-500 text-teal-500 p-1 hover:text-white dark:hover:text-slate-800 hover:bg-teal-500">
+                    Download resume PDF
+                </a>
+
             </aside>
         </section>
-
-        <section class="text-center">
-            <a href="/Aleksej-Eremenko--Frontend.pdf" download class="border rounded border-slate-800 p-1 mr-2">
-                Download resume PDF
-            </a>
-        </section>
-
     </div>
 </template>
 

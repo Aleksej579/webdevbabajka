@@ -1,34 +1,31 @@
 <template>
-    <div class="roadmap max-w-7xl mx-auto px-2">
+    <div class="roadmap max-w-7xl mx-auto px-2 min-h-screen">
         <h1 class="text-2xl text-center">TOOLS</h1>
-        <fieldset class="w-full mb-0 flex flex-col md:flex-row gap-2 md:gap-6 items-end md:items-center md:justify-end">
-            <label for="html">
-                Show HTML
+        <fieldset class="w-full flex flex-col md:flex-row gap-2 md:gap-5 items-end md:items-center md:justify-end mb-5">
+            <span>Show: </span>
+            <label for="html" class="border rounded border-teal-500 px-1 text-teal-500">
+                Html
                 <input type="checkbox" id='html' v-model="detailsHTML" />
             </label>
 
-            <label for="css">
-                Show CSS
+            <label for="css" class="border rounded border-teal-500 px-1 text-teal-500">
+                Css
                 <input type="checkbox" id='css' v-model="detailsCSS">
             </label>
 
-            <label for="js">
-                Show JS
+            <label for="js" class="border rounded border-teal-500 px-1 text-teal-500">
+                JavaScript
                 <input type="checkbox" id='js' v-model="detailsJS">
             </label>
 
-            <label for="fw">
-                Show Framework
-                <input type="checkbox" id='fw' v-model="detailsFRAMEWORK">
-            </label>
-
-            <label for="other">
-                Show Other
+            <label for="other" class="border rounded border-teal-500 px-1 text-teal-500">
+                Other
                 <input type="checkbox" id='other' v-model="detailsOTHER">
             </label>
 
-            <button @click="collapseAll" class="border rounded border-teal-500 p-1 cursor-pointer text-teal-500">
-                Collapse all card
+            <button @click="collapseAll"
+                class="border rounded border-teal-500 px-1 cursor-pointer text-teal-500 hover:text-white dark:hover:text-slate-800 hover:bg-teal-500">
+                Collapse All Card
             </button>
         </fieldset>
 
@@ -112,7 +109,7 @@
                 </ul>
             </details>
 
-            <details v-if="detailsFRAMEWORKS" class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsCSS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-CSS
                 </summary>
@@ -155,7 +152,7 @@
                 </ul>
             </details>
 
-            <details v-if="detailsFRAMEWORK" class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsJS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-JS-UI
                 </summary>
@@ -167,7 +164,7 @@
                 </ul>
             </details>
 
-            <details v-if="detailsFRAMEWORK" class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsJS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-JS-Test
                 </summary>
@@ -177,7 +174,7 @@
                 </ul>
             </details>
 
-            <details v-if="detailsFRAMEWORK" class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsJS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-JS-Build
                 </summary>
@@ -188,16 +185,16 @@
                 </ul>
             </details>
 
-            <details v-if="detailsFRAMEWORK" class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsJS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     Framework-JS-Backend
                 </summary>
                 <ul>
                     <li><a href="https://expressjs.com/">Express.js</a></li>
                     <li><a href="https://rxjs.dev/">RxJS</a></li>
-                    <li><strong>REST</strong></li>
-                    <li><strong>PostgreSQL</strong></li>
-                    <li><strong class="tooltip" tooltip="Create, Read, Update, Delete">CRUD</strong></li>
+                    <li>REST</li>
+                    <li>PostgreSQL</li>
+                    <li class="tooltip" tooltip="Create, Read, Update, Delete">CRUD</li>
                 </ul>
             </details>
 
@@ -259,7 +256,7 @@
                 </ul>
             </details>
 
-            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsJS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
                     The Algorithm
                 </summary>
@@ -342,7 +339,6 @@ export default {
             detailsHTML: true,
             detailsCSS: true,
             detailsJS: true,
-            detailsFRAMEWORK: true,
             detailsOTHER: true,
         }
     },
@@ -363,7 +359,7 @@ fieldset label {
 }
 
 fieldset input {
-    accent-color: #00c5a7;
+    @apply accent-teal-500;
 }
 
 .roadmap details {

@@ -389,12 +389,13 @@
                                 <li>код по требованию</li>
                             </ul>
                         </li>
-                        <li>GraphQl</li>
-                        <li>Web APIs</li>
-                        <li>Web sockets</li>
-                        <li>Web Workers</li>
-                        <li>JWT JSON Web Token</li>
-                        <li>CRUD
+                        <li><span class="dark:text-sky-400">GraphQl</span></li>
+                        <li><span class="dark:text-sky-400">Web APIs</span></li>
+                        <li><span class="dark:text-sky-400">Web sockets</span></li>
+                        <li><span class="dark:text-sky-400">Web Workers</span></li>
+                        <li><span class="dark:text-sky-400">JWT JSON Web Token</span></li>
+                        <li>
+                            <span class="dark:text-sky-400">CRUD</span>
                             <ul class="list-disc list-inside">
                                 <li>create</li>
                                 <li>read</li>
@@ -403,7 +404,7 @@
                             </ul>
                         </li>
                         <li>
-                            ACID
+                            <span class="dark:text-sky-400">ACID</span>
                             <ul class="list-disc list-inside">
                                 <li>Atomicity</li>
                                 <li>Consistency</li>
