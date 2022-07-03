@@ -294,6 +294,19 @@
                             <span class="dark:text-sky-400">RAD</span>
                             rapid application development
                         </li>
+                        <li>
+                            <span class="dark:text-sky-400">SDLC</span>
+                            System/Software Development Life Cycle
+                            <ul class="list-disc list-inside">
+                                <li>Planning</li>
+                                <li>Define Requirements</li>
+                                <li>Design and Prototyping</li>
+                                <li>Software Development</li>
+                                <li>Testing</li>
+                                <li>Deployment</li>
+                                <li>Operations and Maintenance</li>
+                            </ul>
+                        </li>
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">

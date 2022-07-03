@@ -18,6 +18,11 @@
                 <input type="checkbox" id='js' v-model="detailsJS">
             </label>
 
+            <label for="fonts" class="border rounded border-teal-500 px-1 text-teal-500">
+                Fonts
+                <input type="checkbox" id='fonts' v-model="detailsFONTS">
+            </label>
+
             <label for="other" class="border rounded border-teal-500 px-1 text-teal-500">
                 Other
                 <input type="checkbox" id='other' v-model="detailsOTHER">
@@ -51,6 +56,7 @@
                         <strong>BEM</strong>
                     </span> naming
                 </summary>
+                <a href="https://9elements.com/bem-cheat-sheet/" target="_blank">Bem-cheat-sheet</a>
                 <ul>
                     <li>Block-name</li>
                     <li>Container or Wrapper</li>
@@ -124,11 +130,34 @@
                 </ul>
             </details>
 
-            <details v-if="detailsHTML" class="dark:bg-slate-800 hover:drop-shadow-md">
+            <details v-if="detailsFONTS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
-                    Template engine
+                    Fonts & Icons
                 </summary>
                 <ul>
+                    <li><a href="https://fontawesome.com/" target="_blank">Fontawesome</a></li>
+                    <li><a href="https://fonts.google.com/" target="_blank">Google fonts</a></li>
+                    <li><a href="https://css.gg/" target="_blank">Css Gg</a></li>
+                    <li><a href="https://boxicons.com/" target="_blank">Boxicons</a></li>
+                </ul>
+            </details>
+
+            <details v-if="detailsHTML" class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    HTML Component
+                </summary>
+                <ul>
+                    <li><a href="https://lit.dev/" target="_blank">Lit</a></li>
+                    <li><a href="https://stenciljs.com/" target="_blank">Stencil</a></li>
+                </ul>
+            </details>
+
+            <details v-if="detailsHTML" class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    Template engine & Markdown
+                </summary>
+                <ul>
+                    <li><a href="https://www.markdownguide.org/" target="_blank">Markdown</a></li>
                     <li><a href="https://pugjs.org/api/getting-started.html" target="_blank">Pug</a></li>
                     <li><a href="https://twig.symfony.com/" target="_blank">Twig</a></li>
                     <li><a href="https://www.shopify.ca/partners/shopify-cheat-sheet" target="_blank">Liquid</a></li>
@@ -154,10 +183,41 @@
 
             <details v-if="detailsJS" class="dark:bg-slate-800 hover:drop-shadow-md">
                 <summary>
+                    JS-Library
+                </summary>
+                <ul>
+                    <li><a href="https://axios-http.com/" target="_blank">Axios</a></li>
+                    <li><a href="https://splidejs.com/integration/vue-splide/" target="_blank">Splide</a></li>
+                    <li><a href="https://nodemon.io/" target="_blank">Nodemon</a></li>
+                    <li><a href="https://auth0.com/" target="_blank">Auth0</a></li>
+                    <li><a href="https://animejs.com/" target="_blank">Animejs</a></li>
+                    <li><a href="https://greensock.com/" target="_blank">Greensock</a></li>
+                    <li><a href="https://animxyz.com/" target="_blank">Animxyz</a></li>
+                    <li><a href="https://www.theatrejs.com/" target="_blank">Theatrejs</a></li>
+                    <li><a href="https://party.js.org/" target="_blank">Party</a></li>
+                    <li><a href="https://airbnb.io/lottie/#/" target="_blank">Lottie</a></li>
+                    <li><a href="https://anijs.github.io/" target="_blank">Anijs</a></li>
+                    <li><a href="https://popmotion.io/" target="_blank">Popmotion</a></li>
+                    <li><a href="https://mojs.github.io/" target="_blank">Mojs</a></li>
+                </ul>
+            </details>
+
+            <details v-if="detailsJS" class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
                     Framework-JS-UI
                 </summary>
                 <ul>
-                    <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
+                    <li>
+                        <a href="https://vuejs.org/" target="_blank">Vue.js</a>
+                        <ul class="list-disc list-inside">
+                            <li><a href="https://pinia.vuejs.org" target="_blank">Pinia</a></li>
+                            <li><a href="https://router.vuejs.org/" target="_blank">Router</a></li>
+                            <li><a href="https://vueup.github.io/vue-quill/" target="_blank">Vue-quill</a></li>
+                            <li><a href="https://v3.vue-final-modal.org/" target="_blank">Vue-final-modal</a></li>
+                            <li><a href="https://vue-i18n.intlify.dev/" target="_blank">Vue-i18n</a></li>
+                            <li><a href="https://www.vuestorefront.io/" target="_blank">Vuestorefront</a></li>
+                        </ul>
+                    </li>
                     <li><a href="https://reactjs.org/" target="_blank">React.js</a></li>
                     <li><a href="https://angular.io/" target="_blank">Angular</a></li>
                     <li><a href="https://svelte.dev/" target="_blank">Svelte</a></li>
@@ -190,8 +250,12 @@
                     Framework-JS-Backend
                 </summary>
                 <ul>
-                    <li><a href="https://expressjs.com/">Express.js</a></li>
-                    <li><a href="https://rxjs.dev/">RxJS</a></li>
+                    <li><a href="https://nodejs.org/api/" target="_blank">Nodejs</a></li>
+                    <li><a href="https://expressjs.com/" target="_blank">Express.js</a></li>
+                    <li><a href="https://nestjs.com/" target="_blank">Nestjs</a></li>
+                    <li><a href="https://rxjs.dev/" target="_blank">RxJS</a></li>
+                    <li><a href="https://nativescript.org/" target="_blank">Nativescript</a></li>
+                    <li><a href="https://graphql.org/" target="_blank">Graphql</a></li>
                     <li>REST</li>
                     <li>PostgreSQL</li>
                     <li class="tooltip" tooltip="Create, Read, Update, Delete">CRUD</li>
@@ -204,11 +268,12 @@
                         <strong>VCS</strong>
                     </span>
                 </summary>
-                <a href="https://git-scm.com/" target="_blank">GIT</a>
+                <a href="https://git-scm.com/book/ru/v2" target="_blank">GIT</a>
                 <ul class="list-disc list-inside">
                     <li><a href="https://github.com" target="_blank">GitHub</a></li>
                     <li><a href="https://about.gitlab.com/" target="_blank">GitLab</a></li>
                     <li><a href="https://bitbucket.org/" target="_blank">Bitbucket</a></li>
+                    <li><a href="https://learngitbranching.js.org/" target="_blank">Learngitbranching</a></li>
                 </ul>
             </details>
 
@@ -218,7 +283,44 @@
                 </summary>
                 <ul>
                     <li><a href="https://firebase.google.com/" target="_blank">Firebase</a></li>
+                    <li><a href="https://console.cloud.google.com/" target="_blank">Google cloud</a></li>
+                    <li><a href="https://cdnjs.com/" target="_blank">Cdnjs</a></li>
                     <li><a href="https://www.netlify.com/" target="_blank">Netlify</a></li>
+                    <li><a href="https://www.prisma.io/" target="_blank">Prisma</a></li>
+                    <li><a href="https://vercel.com/" target="_blank">Vercel</a></li>
+                    <li><a href="https://web.postman.co/" target="_blank">Postman</a></li>
+                    <li><a href="https://codepen.io/" target="_blank">Codepen</a></li>
+                    <li><a href="https://www.figma.com/" target="_blank">Figma</a></li>
+                    <li><a href="https://www.canva.com/" target="_blank">Canva</a></li>
+                    <li><a href="https://app.spline.design/" target="_blank">Spline</a></li>
+                    <li><a href="https://app.vectary.com/" target="_blank">Vectary</a></li>
+                    <li><a href="https://miro.com/" target="_blank">Miro</a></li>
+                    <li><a href="https://www.taiga.io/" target="_blank">Taiga</a></li>
+                </ul>
+            </details>
+
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    Online tools
+                </summary>
+                <ul>
+                    <li><a href="https://codebeautify.org/" target="_blank">Codebeautify</a></li>
+                    <li><a href="http://autoprefixer.github.io/" target="_blank">Autoprefixer</a></li>
+                    <li><a href="https://www.base64-image.de/" target="_blank">Base64</a></li>
+                    <li><a href="https://squoosh.app/" target="_blank">Squoosh</a></li>
+                    <li><a href="https://poet.so/" target="_blank">Poet</a></li>
+                    <li><a href="https://carbon.now.sh/" target="_blank">Carbon</a></li>
+                    <li><a href="https://unsplash.com/developers" target="_blank">Unsplash</a></li>
+                    <li><a href="https://getwaves.io/" target="_blank">Getwaves</a></li>
+                    <li><a href="https://neumorphism.io/#e0e0e0" target="_blank">Neumorphism</a></li>
+                    <li><a href="http://tridiv.com/" target="_blank">Tridiv</a></li>
+                    <li><a href="https://9elements.github.io/fancy-border-radius/#55.30.30.30--."
+                            target="_blank">Fancy-border-radius</a></li>
+                    <li><a href="https://css.glass/" target="_blank">Glass</a></li>
+                    <li><a href="https://validator.w3.org/" target="_blank">Validator</a></li>
+                    <li><a href="https://search.google.com/test/rich-results" target="_blank">Rich-results</a></li>
+                    <li><a href="https://readme.so/" target="_blank">Readme</a></li>
+                    <li><a href="https://regexr.com/" target="_blank">Regexr</a></li>
                 </ul>
             </details>
 
@@ -242,6 +344,7 @@
                     <li><a href="https://learn.javascript.ru/" target="_blank">learn.javascript.ru</a></li>
                     <li><a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
                     <li><a href="https://css-tricks.com/" target="_blank">Css-tricks</a></li>
+                    <li><a href="https://scrimba.com/" target="_blank">Scrimba</a></li>
                 </ul>
             </details>
 
@@ -253,6 +356,18 @@
                     <li>Wireframe</li>
                     <li>Prototype</li>
                     <li>Mockup</li>
+                </ul>
+            </details>
+
+            <details v-if="detailsOTHER" class="dark:bg-slate-800 hover:drop-shadow-md">
+                <summary>
+                    English
+                </summary>
+                <ul class="list-disc list-inside">
+                    <li><a href="https://www.deepl.com/ru/translator" target="_blank">Deepl</a></li>
+                    <li><a href="https://grammarway.com/ru" target="_blank">Grammarway</a></li>
+                    <li><a href="https://www.native-english.ru/" target="_blank">Native-english</a></li>
+                    <li><a href="https://www.cambly.com/" target="_blank">Camblycambly</a></li>
                 </ul>
             </details>
 
@@ -338,6 +453,7 @@ export default {
         return {
             detailsHTML: true,
             detailsCSS: true,
+            detailsFONTS: true,
             detailsJS: true,
             detailsOTHER: true,
         }
