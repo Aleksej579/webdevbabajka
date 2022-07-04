@@ -30,10 +30,6 @@
                     {{ t('library') }}
                     <span class="group-hover:p-0.5"></span>
                 </router-link>
-                <router-link to="/editor" class="group hover:text-teal-500 relative">
-                    {{ t('editor') }}
-                    <span class="group-hover:p-0.5"></span>
-                </router-link>
             </nav>
         </div>
     </div>
