@@ -110,6 +110,13 @@
     vertical-align: middle;
     width: 100%;
     cursor: pointer;
+    @apply border-2 border-transparent;
+}
+
+.archwork .column img:not(.archworkImgFull):hover {
+    opacity: 0.5;
+    border: 2px solid red;
+    @apply border-teal-500;
 }
 
 .archworkBg:before {
