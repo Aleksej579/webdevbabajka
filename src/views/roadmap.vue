@@ -29,7 +29,7 @@
             </label>
 
             <button @click="collapseAll"
-                class="border rounded border-teal-500 px-1 cursor-pointer text-teal-500 hover:text-white dark:hover:text-slate-800 hover:bg-teal-500">
+                class="border rounded border-teal-500 px-1 cursor-pointer text-white hover:text-teal-500 dark:hover:text-teal-500 bg-teal-500 hover:bg-inherit">
                 Collapse All Card
             </button>
         </fieldset>

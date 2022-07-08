@@ -96,12 +96,12 @@
                         <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
                     </dl>
                     <dl>
-                        <dt class="underline">Shopify developer ( InTechSoft ) - 4 months.</dt>
+                        <dt class="underline">junior Shopify developer ( InTechSoft ) - 4 months.</dt>
                         <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
                         <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
                     </dl>
                     <dl>
-                        <dt class="underline">Junior front-end developer ( Art-coral ) - 2 years.</dt>
+                        <dt class="underline">junior Front-end developer ( Art-coral ) - 2 years.</dt>
                         <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
                         <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
                             Photoshop.</dd>
@@ -110,21 +110,24 @@
 
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SOME OF MY WORK</h3>
-                    <ul class="flex flex-col md:flex-row justify-between text-sky-400 underline">
-                        <li><a href="https://test-e8a57.web.app">Webdev|babajka</a></li>
-                        <li><a href="https://authentication-5bff9.web.app/">Auth</a></li>
-                        <li><a href="http://naturetour.eu3.biz/">Naturetour</a></li>
-                        <li><a href="http://art-coral.com">Art-coral.com</a></li>
-                        <li><a href="https://intertool.ua/">Intertoolua.ua</a></li>
+                    <ul class="flex flex-col md:flex-row justify-between">
+                        <li><a href="https://test-e8a57.web.app" class="text-sky-400 underline">Webdev|babajka</a></li>
+                        <li><a href="https://shopyfyliquid.myshopify.com/"
+                                class="text-sky-400 underline">Shopyfyliquid</a> pass:123456</li>
+                        <li><a href="https://authentication-5bff9.web.app/" class="text-sky-400 underline">Auth</a></li>
+                        <li><a href="http://naturetour.eu3.biz/" class="text-sky-400 underline">Naturetour</a></li>
+                        <li><a href="http://art-coral.com" class="text-sky-400 underline">Art-coral.com</a></li>
+                        <li><a href="https://intertool.ua/" class="text-sky-400 underline">Intertoolua.ua</a></li>
                     </ul>
                 </article>
 
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SUMMARY</h3>
                     <ul>
-                        <li>Course: SourceIT 'Java and Web technologies'</li>
-                        <li>University: Kharkiv National University of Civil Engineering and Architecture</li>
-                        <li>English: Pre-Intermediate.</li>
+                        <li><span class="font-semibold">Course:</span> SourceIT 'Java and Web technologies'</li>
+                        <li><span class="font-semibold">University:</span> Kharkiv National University of Civil
+                            Engineering and Architecture. The Architect.</li>
+                        <li><span class="font-semibold">English:</span> Pre-Intermediate.</li>
                     </ul>
                 </article>
 

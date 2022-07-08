@@ -35,6 +35,10 @@
         </section>
 
         <section>
+            <ArchWork />
+        </section>
+
+        <section>
             <figure class="card w-max m-auto">
                 <figcaption class="w-max">
                     <svg xmlns="http://www.w3.org/2000/svg" width="633" height="1158" viewBox="0 0 633 1158"
@@ -117,8 +121,10 @@
 
 <script>
 import Form from "../components/Form.vue";
+import ArchWork from "../components/ArchWork.vue";
 export default {
     components: {
+        ArchWork,
         Form,
     },
     data() {
