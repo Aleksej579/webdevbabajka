@@ -111,13 +111,18 @@
                 <article class="hover:drop-shadow-md dark:bg-slate-800">
                     <h3>SOME OF MY WORK</h3>
                     <ul class="flex flex-col md:flex-row justify-between">
-                        <li><a href="https://test-e8a57.web.app" class="text-sky-400 underline">Webdev|babajka</a></li>
-                        <li><a href="https://shopyfyliquid.myshopify.com/"
+                        <li><a href="https://test-e8a57.web.app" target="_blank"
+                                class="text-sky-400 underline">Webdev|babajka</a></li>
+                        <li><a href="https://shopyfyliquid.myshopify.com/" target="_blank"
                                 class="text-sky-400 underline">Shopyfyliquid</a> pass:123456</li>
-                        <li><a href="https://authentication-5bff9.web.app/" class="text-sky-400 underline">Auth</a></li>
-                        <li><a href="http://naturetour.eu3.biz/" class="text-sky-400 underline">Naturetour</a></li>
-                        <li><a href="http://art-coral.com" class="text-sky-400 underline">Art-coral.com</a></li>
-                        <li><a href="https://intertool.ua/" class="text-sky-400 underline">Intertoolua.ua</a></li>
+                        <li><a href="https://authentication-5bff9.web.app/" target="_blank"
+                                class="text-sky-400 underline">Auth</a></li>
+                        <li><a href="http://naturetour.eu3.biz/" target="_blank"
+                                class="text-sky-400 underline">Naturetour</a></li>
+                        <li><a href="http://art-coral.com" target="_blank"
+                                class="text-sky-400 underline">Art-coral.com</a></li>
+                        <li><a href="https://intertool.ua/" target="_blank"
+                                class="text-sky-400 underline">Intertoolua.ua</a></li>
                     </ul>
                 </article>
 
