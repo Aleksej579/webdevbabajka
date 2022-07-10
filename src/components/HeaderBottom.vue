@@ -14,6 +14,10 @@
                     {{ t('cv') }}
                     <span class="group-hover:p-0.5"></span>
                 </router-link>
+                <router-link to="/portfolio" class="group hover:text-teal-500 relative">
+                    {{ t('library') }}
+                    <span class="group-hover:p-0.5"></span>
+                </router-link>
                 <router-link to="/methodology" class="group hover:text-teal-500 relative">
                     {{ t('methodology') }}
                     <span class="group-hover:p-0.5"></span>
@@ -24,10 +28,6 @@
                 </router-link>
                 <router-link to="/programming" class="group hover:text-teal-500 relative">
                     {{ t('programming') }}
-                    <span class="group-hover:p-0.5"></span>
-                </router-link>
-                <router-link to="/portfolio" class="group hover:text-teal-500 relative">
-                    {{ t('library') }}
                     <span class="group-hover:p-0.5"></span>
                 </router-link>
             </nav>

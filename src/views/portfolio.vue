@@ -1,5 +1,13 @@
 <template>
     <div class="container max-w-7xl mx-auto p-3 min-h-screen">
+        <section>
+            <WebWork />
+        </section>
+
+        <section>
+            <ArchWork />
+        </section>
+
         <h2 class="text-2xl text-center">3D</h2>
         <section class="box3d_wrp flex flex-wrap justify-around gap-8">
             <article id="box3d1" ref="box3d1" @click="box3dRotate1">
@@ -32,10 +40,6 @@
                 <div class="side-back"><span>WEAPON-3</span></div>
                 <div class="side-right"><span>WEAPON-4</span></div>
             </article>
-        </section>
-
-        <section>
-            <ArchWork />
         </section>
 
         <section>
@@ -121,9 +125,11 @@
 
 <script>
 import Form from "../components/Form.vue";
+import WebWork from "../components/WebWork.vue";
 import ArchWork from "../components/ArchWork.vue";
 export default {
     components: {
+        WebWork,
         ArchWork,
         Form,
     },
