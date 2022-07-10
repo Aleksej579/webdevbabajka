@@ -1,5 +1,7 @@
 <template>
-    <div class="container max-w-7xl mx-auto p-3 min-h-screen">
+    <div class="container max-w-7xl mx-auto px-3 min-h-screen">
+        <h1 class="text-2xl text-center">MY WORKS</h1>
+
         <section>
             <WebWork />
         </section>

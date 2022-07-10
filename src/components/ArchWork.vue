@@ -75,7 +75,7 @@
             <img src="/src/assets/arch_work/64.jpg" loading="lazy" alt="Architect">
         </div>
     </div>
-    <button @click="showMore"
+    <button @click="showMore" ref="archworkBtn"
         class="border rounded border-teal-500 px-1 cursor-pointer text-white hover:text-teal-500 dark:hover:text-teal-500 bg-teal-500 hover:bg-inherit mx-auto block mt-2.5">
         Show more
     </button>
@@ -157,6 +157,7 @@ export default {
         },
         showMore() {
             this.$refs.archwork.style.height = 'max-content'
+            this.$refs.archworkBtn.style.display = 'none'
         }
     }
 }

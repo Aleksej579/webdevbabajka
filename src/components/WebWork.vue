@@ -1,52 +1,68 @@
 <template>
-    <h2 class="text-2xl text-center">My work</h2>
-    <!-- Photo Grid -->
     <div class="webWork row after:dark:to-slate-900" @click="showImghWebWork" ref="webWork">
-        <div class="column">
-            <img src="/src/assets/web_work/shopify-1.jpg" alt="Web">
-            <img src="/src/assets/web_work/shopify-2.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/shopify-3.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/naturetour.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/errors.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/istar.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/darly-angular.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/darly-react.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/python-tkinter.jpg" loading="lazy" alt="Web">
-        </div>
-        <div class="column">
-            <img src="/src/assets/web_work/intertool-1.jpg" alt="Web">
-            <img src="/src/assets/web_work/intertool-2.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/intertool-3.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/mirinstrumenta.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/vlasov.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/test-intertool.jpg" loading="lazy" alt="Web">
-        </div>
-        <div class="column">
-            <img src="/src/assets/web_work/art-coral-1.jpg" alt="Web">
-            <img src="/src/assets/web_work/art-coral-2.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/art-coral-3.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/art-coral-4.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/tesey.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/misma-1.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/misma-2.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/ok-guru-1.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/ok-guru-2.jpg" loading="lazy" alt="Web">
-        </div>
-        <div class="column">
-            <img src="/src/assets/web_work/yoga.jpg" alt="Web">
-            <img src="/src/assets/web_work/big-drop.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/ho-studio.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/robots.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/uikit-calendar.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/order.jpg" loading="lazy" alt="Web">
-            <img src="/src/assets/web_work/weather-vue.jpg" loading="lazy" alt="Web">
-        </div>
+        <ul class="column">
+            <li><img src="/src/assets/web_work/shopify-1.jpg" alt="Web"></li>
+            <li><img src="/src/assets/web_work/shopify-2.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/shopify-3.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/naturetour.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/errors.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/istar.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/darly-angular.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/darly-react.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/python-tkinter.jpg" loading="lazy" alt="Web"></li>
+        </ul>
+        <ul class="column">
+            <li><img src="/src/assets/web_work/intertool-1.jpg" alt="Web"></li>
+            <li><img src="/src/assets/web_work/intertool-2.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/intertool-3.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/mirinstrumenta.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/vlasov.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/test-intertool.jpg" loading="lazy" alt="Web"></li>
+        </ul>
+        <ul class="column">
+            <li><img src="/src/assets/web_work/art-coral-1.jpg" alt="Web"></li>
+            <li><img src="/src/assets/web_work/art-coral-2.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/art-coral-3.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/art-coral-4.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/tesey.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/misma-1.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/misma-2.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/ok-guru-1.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/ok-guru-2.jpg" loading="lazy" alt="Web"></li>
+        </ul>
+        <ul class="column">
+            <li><img src="/src/assets/web_work/yoga.jpg" alt="Web"></li>
+            <li><img src="/src/assets/web_work/big-drop.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/ho-studio.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/robots.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/uikit-calendar.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/order.jpg" loading="lazy" alt="Web"></li>
+            <li><img src="/src/assets/web_work/weather-vue.jpg" loading="lazy" alt="Web"></li>
+        </ul>
     </div>
-    <button @click="showMore"
+    <button @click="showMore" ref="webWorkBtn"
         class="border rounded border-teal-500 px-1 cursor-pointer text-white hover:text-teal-500 dark:hover:text-teal-500 bg-teal-500 hover:bg-inherit mx-auto block mt-2.5">
         Show more
     </button>
 </template>
+
+<script>
+export default {
+    methods: {
+        showImghWebWork(e) {
+            if (e.target.tagName == "IMG") {
+                e.target.parentElement.classList.toggle("webWorkImgFull");
+                document.querySelector('.webWork').classList.toggle("webWorkBg");
+                this.$refs.webWork.style.height = 'max-content'
+            }
+        },
+        showMore() {
+            this.$refs.webWork.style.height = 'max-content'
+            this.$refs.webWorkBtn.style.display = 'none'
+        }
+    }
+}
+</script>
 
 <style>
 .webWork.row {
@@ -67,12 +83,21 @@
     padding: 0 4px;
 }
 
-.webWork .column img {
-    @apply cursor-pointer w-full mt-2 align-middle;
+.webWork .column li {
+    @apply mb-2;
 }
 
-.webWork .column img:not(.webWorkImgFull):hover {
-    filter: brightness(0.4);
+.webWork .column img {
+    @apply cursor-pointer w-full align-middle;
+}
+
+/* .webWork .column li:not(.webWorkImgFull) {
+    filter: brightness(0.8);
+} */
+
+.webWork .column li:not(.webWorkImgFull):hover {
+    /* filter: brightness(1); */
+    filter: brightness(0.7);
 }
 
 .webWorkBg:before {
@@ -91,8 +116,12 @@
 }
 
 .webWorkImgFull {
-    @apply absolute inset-x-0 !w-4/5 mx-auto rounded-xl;
+    @apply absolute inset-x-0 !w-4/5 !mt-2 mx-auto rounded-xl;
+    overflow-y: auto;
+    height: 550px;
+    padding-right: 7px;
 }
+
 
 @media screen and (max-width: 800px) {
     .webWork .column {
@@ -111,20 +140,3 @@
 }
 </style>
 
-<script>
-export default {
-    methods: {
-        showImghWebWork(e) {
-            if (e.target.tagName !== "DIV") {
-                e.target.classList.toggle("webWorkImgFull");
-                document.querySelector('.webWork').classList.toggle("webWorkBg");
-                this.$refs.webWork.style.height = 'max-content'
-            }
-
-        },
-        showMore() {
-            this.$refs.webWork.style.height = 'max-content'
-        }
-    }
-}
-</script>
