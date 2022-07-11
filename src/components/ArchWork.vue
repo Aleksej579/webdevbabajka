@@ -1,5 +1,5 @@
 <template>
-    <h2 class="text-2xl text-center">Simple image gallery</h2>
+    <!-- <h2 class="text-2xl text-center">Simple image gallery</h2> -->
     <!-- Photo Grid -->
     <div class="archwork row after:dark:to-slate-900" @click="showImghArchWork" ref="archwork">
         <div class="column">

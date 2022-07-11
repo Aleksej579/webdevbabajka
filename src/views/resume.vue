@@ -1,183 +1,175 @@
 <template>
-    <div class="cv max-w-7xl mx-auto">
-        <h1 class="text-2xl text-center ">ALEKSEJ EREMENKO</h1>
+    <div class="cv max-w-7xl mx-auto drop-shadow-md px-1">
 
-        <section class="flex flex-col md:flex-row gap-5 px-2">
-            <aside class="cv__aside--left w-full md:w-1/4">
-                <article class="avatar hover:drop-shadow-md dark:bg-slate-800">
-                    <img src="/src/assets/ava_sq.jpg" width="200" height="auto" alt="Aleksej Eremenko photo">
-                </article>
+        <section class="cv-header p-5 flex justify-center">
+            <article class="flex flex-col md:flex-row items-center gap-6 w-full md:w-2/3">
+                <figure class="avatar p-4 w-full md:w-1/3">
+                    <img class="mx-auto" src="/src/assets/ava_sq.jpg" width="250" height="auto"
+                        alt="Aleksej Eremenko photo">
+                    <figcaption></figcaption>
+                </figure>
+                <div class="w-full md:w-2/3">
+                    <p class="text-6xl mb-5 text-center md:text-left">Hello</p>
+                    <p class="text-2xl mb-5">Let me introduce myself</p>
+                    <p class="text-lg mb-5">My name is <span class="font-extrabold">Aleksej Eremenko</span> I am a
+                        <mark>Front-end developer</mark>. My main area of activity is the development of the interfaces
+                        of websites and applications.
+                    </p>
+                    <p class="text-lg mb-5">My main skill is Markup. I like working with Vue.js, and I'm interested in
+                        Javascript programming. Working with graphic
+                        editors and prototyping.</p>
+                </div>
+            </article>
+        </section>
 
-                <article class="contact-info hover:drop-shadow-md dark:bg-slate-800 overflow-auto">
-                    <ul class="divide-y divide-slate-400/10">
-                        <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 text-center">
-                                <i class="fa-solid fa-user"></i>
-                            </span>
-                            Front-end developer
-                        </li>
-                        <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 text-center">
-                                <i class="fa-solid fa-house"></i>
-                            </span>
-                            Kharkiv, Ukraine
-                        </li>
-                        <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 text-center">
-                                <i class="fa-solid fa-mobile-screen-button"></i>
-                            </span>
-                            <a href="tel: +380 (97) 337-14-28">+380 (97) 337-14-28</a>
-                        </li>
-                        <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 text-center">
-                                <i class="fa-brands fa-github"></i>
-                            </span>
-                            <a href="https://github.com/aleksej579">github.com/aleksej579</a>
-                        </li>
-                        <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 text-center">
-                                <i class="fa-solid fa-envelope"></i>
-                            </span>
-                            <a href="mailto:aleksej.eremenko579@gmail.com">aleksej.eremenko579@gmail.com</a>
-                        </li>
-                        <li class="flex-col md:flex-row items-center md:items-start">
-                            <span class="w-7 text-center">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </span>
-                            <a href="https://www.linkedin.com/in/aleksej579/">linkedin.com/in/aleksje579</a>
-                        </li>
-                    </ul>
-                </article>
-            </aside>
-
-            <aside class="cv__aside--right w-full md:w-3/4">
-                <article class="hover:drop-shadow-md dark:bg-slate-800">
-                    <h3>SKILLS</h3>
-                    <ul class="flex flex-col md:flex-row mx-auto w-max">
-                        <li class="flex flex-col items-center p-6 text-center">
-                            Markup 75%
-                            <meter value="0.75"></meter>
-                        </li>
-                        <li class="flex flex-col items-center p-6 text-center">
-                            Programming 25%
-                            <meter value="0.25"></meter>
-                        </li>
-                    </ul>
-                </article>
-
-                <article class="hover:drop-shadow-md dark:bg-slate-800">
-                    <h3>KNOWLEDGE</h3>
-                    <ul class="list-disc list-inside font-bold">
-                        <li>Programming in Javascript (ES6+), jQuery, basic PHP skills.</li>
-                        <li>SPA development on Vue3, Vite.</li>
-                        <li>HTML/CSS coding, BEM, Sass and TailwindCSS. SMACSS. Responsive.</li>
-                        <li>Some experience with Twig, Liquid templating engines and Gulp.</li>
-                        <li>Teamwork using Jira and Git.</li>
-                        <li>Working with REST and CRUD.</li>
-                        <li>CMS development on Drupal, Shopify and cloud services Firebase.</li>
-                        <li>Prototyping in Figma.</li>
-                    </ul>
-                </article>
-
-                <article class="hover:drop-shadow-md dark:bg-slate-800">
-                    <h3>WORKING EXPERIENCE</h3>
-                    <dl>
-                        <dt class="underline">Front-end developer ( Freelance ) - 6+ months.</dt>
-                        <dd>Some period of freelance jobs and test cases. Prototyping. Markup on
-                            Vue-Vite-Tailwind. Rest
-                            and Crud (Axios, Express, PostgreSQL). Current project - my website webdev|babajka.</dd>
-                        <dd class="text-slate-400">Markup, Vue, Vite, Tailwind, REST, CRUD, Express, Firebase, Smacss,
-                            Figma.</dd>
-                    </dl>
-                    <dl>
-                        <dt class="underline">Front-end developer ( Intertool ) - 4 months.</dt>
-                        <dd>Work on existing company websites. Development of new functionality. Correction of existing
-                            bugs. Creating svg in Figma. Teamwork in Git.</dd>
-                        <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
-                    </dl>
-                    <dl>
-                        <dt class="underline">junior Shopify developer ( InTechSoft ) - 4 months.</dt>
-                        <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
-                        <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
-                    </dl>
-                    <dl>
-                        <dt class="underline">junior Front-end developer ( Art-coral ) - 2 years.</dt>
-                        <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
-                        <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
-                            Photoshop.</dd>
-                    </dl>
-                </article>
-
-                <article class="hover:drop-shadow-md dark:bg-slate-800">
-                    <h3>SOME OF MY WORK</h3>
-                    <ul class="flex flex-col md:flex-row justify-between">
-                        <li><a href="https://a-eremenko.web.app/" target="_blank"
-                                class="text-sky-400 underline">Eremenko-A</a></li>
-                        <li><a href="https://shopyfyliquid.myshopify.com/" target="_blank"
-                                class="text-sky-400 underline">Shopyfyliquid</a> pass:123456</li>
-                        <li><a href="https://authentication-5bff9.web.app/" target="_blank"
-                                class="text-sky-400 underline">Auth</a></li>
-                        <li><a href="http://naturetour.eu3.biz/" target="_blank"
-                                class="text-sky-400 underline">Naturetour</a></li>
-                        <li><a href="http://art-coral.com" target="_blank"
-                                class="text-sky-400 underline">Art-coral.com</a></li>
-                        <li><a href="https://intertool.ua/" target="_blank"
-                                class="text-sky-400 underline">Intertoolua.ua</a></li>
-                    </ul>
-                </article>
-
-                <article class="hover:drop-shadow-md dark:bg-slate-800">
-                    <h3>SUMMARY</h3>
-                    <ul>
-                        <li><span class="font-semibold">Course:</span> SourceIT 'Java and Web technologies'</li>
-                        <li><span class="font-semibold">University:</span> Kharkiv National University of Civil
-                            Engineering and Architecture. The Architect.</li>
-                        <li><span class="font-semibold">English:</span> Pre-Intermediate.</li>
-                    </ul>
-                </article>
-
+        <section>
+            <h2 class="text-2xl text-center">Contact info</h2>
+            <article class="flex flex-col md:flex-row items-center justify-around">
+                <ul class="divide-y divide-slate-400/10 w-max">
+                    <li class="py-3 flex flex-col md:flex-row items-center md:items-start">
+                        <span class="block text-teal-500 mr-2 w-7 text-center">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        Kharkiv, Ukraine
+                    </li>
+                    <li class="py-3 flex flex-col md:flex-row items-center md:items-start">
+                        <span class="block text-teal-500 mr-2 w-7 text-center">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </span>
+                        <a href="tel: +380 (97) 337-14-28">+380 (97) 337-14-28</a>
+                    </li>
+                    <li class="py-3 flex flex-col md:flex-row items-center md:items-start">
+                        <span class="block text-teal-500 mr-2 w-7 text-center">
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+                        <a href="https://github.com/aleksej579">github.com/aleksej579</a>
+                    </li>
+                    <li class="py-3 flex flex-col md:flex-row items-center md:items-start">
+                        <span class="block text-teal-500 mr-2 w-7 text-center">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <a href="mailto:aleksej.eremenko579@gmail.com">aleksej.eremenko579@gmail.com</a>
+                    </li>
+                    <li class="py-3 flex flex-col md:flex-row items-center md:items-start">
+                        <span class="block text-teal-500 mr-2 w-7 text-center">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                        <a href="https://www.linkedin.com/in/aleksej579/">linkedin.com/in/aleksje579</a>
+                    </li>
+                </ul>
                 <a href="/Aleksej-Eremenko--Frontend.pdf" download
                     class="border rounded border-teal-500 text-teal-500 p-1 hover:text-white dark:hover:text-slate-800 hover:bg-teal-500">
-                    Download resume PDF
+                    Download Resume
                 </a>
-
-            </aside>
+            </article>
         </section>
+
+        <section>
+            <h2 class="text-2xl text-center">Skills</h2>
+            <article>
+                <ul class="flex flex-col md:flex-row mx-auto w-max">
+                    <li class="flex flex-col items-center p-6 text-center">
+                        Markup 75%
+                        <meter value="0.75"></meter>
+                    </li>
+                    <li class="flex flex-col items-center p-6 text-center">
+                        Programming 25%
+                        <meter value="0.25"></meter>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="text-2xl text-center">Knowledge</h2>
+                <ul class="w-full md:w-max mx-auto">
+                    <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                        Programming in Javascript (ES6+), jQuery, basic PHP skills.
+                    </li>
+                    <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                        SPA development on Vue3, Vite.
+                    </li>
+                    <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                        HTML/CSS coding, BEM, Sass and TailwindCSS. SMACSS. Responsive.
+                    </li>
+                    <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                        Some experience with Twig, Liquid templating engines and Gulp.
+                    </li>
+                    <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                        Teamwork using Jira and Git.
+                    </li>
+                    <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                        Working with REST and CRUD.
+                    </li>
+                    <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                        CMS development on Drupal, Shopify and cloud services Firebase.
+                    </li>
+                    <li class="bg-white dark:bg-slate-800 p-4 rounded">
+                        Prototyping in Figma.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2 class="text-2xl text-center">Working experience</h2>
+            <article>
+                <dl class="border p-3">
+                    <dt class="underline">Front-end developer ( Freelance ) 6+ months.</dt>
+                    <dd>Some period of freelance jobs and test cases. Prototyping. Markup on
+                        Vue-Vite-Tailwind. Rest
+                        and Crud (Axios, Express, PostgreSQL).</dd>
+                    <dd class="text-slate-400">Markup, Vue, Vite, Tailwind, REST, CRUD, Express, Firebase, Smacss,
+                        Figma.</dd>
+                </dl>
+                <dl class="border p-3">
+                    <dt class="underline">Front-end developer ( Intertool ) 4 months.</dt>
+                    <dd>Work on existing company websites. Development of new functionality. Correction of existing
+                        bugs. Creating svg in Figma. Teamwork in Git.</dd>
+                    <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
+                </dl>
+                <dl class="border p-3">
+                    <dt class="underline">junior Shopify developer ( InTechSoft ) 4 months.</dt>
+                    <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
+                    <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
+                </dl>
+                <dl class="border p-3">
+                    <dt class="underline">junior Front-end developer ( Art-coral ) 2 years.</dt>
+                    <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
+                    <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
+                        Photoshop.</dd>
+                </dl>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="text-2xl text-center">Summary</h2>
+                <ul class="w-full md:w-max mx-auto">
+                    <li class="mb-3"><span class="font-semibold">Course:</span> SourceIT 'Java and Web technologies'
+                    </li>
+                    <li class="mb-3"><span class="font-semibold">University:</span> Kharkiv National University of Civil
+                        Engineering and Architecture. The Architect.</li>
+                    <li class="mb-3"><span class="font-semibold">English:</span> Pre-Intermediate.</li>
+                </ul>
+            </article>
+        </section>
+
     </div>
 </template>
 
 <style>
-.cv article {
-    @apply bg-white p-4 mb-4;
-}
-
-.cv h3 {
-    @apply text-teal-500 text-center border-b border-slate-400/10 mb-2 font-bold;
-}
-
-.cv__aside--left article:first-child {
-    @apply flex justify-center items-center;
-}
-
 .cv .avatar img {
     border-radius: 25% 75% 58% 42% / 55% 32% 68% 45%;
     transition-duration: 0.3s;
-
-}
-
-.cv__aside--left li {
-    @apply py-3 flex;
-}
-
-.cv__aside--left li span {
-    @apply block text-teal-500 mr-2;
 }
 
 .cv :is(dl, dt, dd) {
     margin: revert;
 }
 
-.cv article:not(.contact-info) :is(ul, p, td, dt, dd) {
+.cv article :is(ul, p, td, dt, dd) {
     font-family: "dm", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
     font-style: italic;
 }

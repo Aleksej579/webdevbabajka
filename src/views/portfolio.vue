@@ -1,12 +1,12 @@
 <template>
     <div class="container max-w-7xl mx-auto px-3 min-h-screen">
-        <h1 class="text-2xl text-center">MY WORKS</h1>
-
         <section>
+            <h2 class="text-2xl text-center">MY WORKS Web</h2>
             <WebWork />
         </section>
 
         <section>
+            <h2 class="text-2xl text-center">MY WORKS Architect</h2>
             <ArchWork />
         </section>
 
