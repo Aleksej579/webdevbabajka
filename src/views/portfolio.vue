@@ -44,7 +44,7 @@
             </article>
         </section>
 
-        <section>
+        <!-- <section>
             <figure class="card w-max m-auto">
                 <figcaption class="w-max">
                     <svg xmlns="http://www.w3.org/2000/svg" width="633" height="1158" viewBox="0 0 633 1158"
@@ -113,14 +113,14 @@
                     </svg>
                 </figcaption>
             </figure>
-        </section>
+        </section> -->
 
         <section>
             <iframe src='https://my.spline.design/untitled-55b7c49f1197bb312d49227ea43769e6/' frameborder='0'
                 width='100%' height='100%'></iframe>
         </section>
 
-        <Form />
+        <!-- <Form /> -->
 
     </div>
 </template>
