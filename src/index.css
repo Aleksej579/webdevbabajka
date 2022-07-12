@@ -15,7 +15,11 @@
     }
 
     h2 {
-        @apply my-8 mx-auto text-5xl w-max font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
+        @apply my-8 mx-auto text-2xl text-center w-max font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
+    }
+
+    h3 {
+        @apply mx-auto text-5xl w-max font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
     }
 
     .main__form label {

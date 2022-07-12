@@ -1,8 +1,6 @@
 const translationInterface = {
     en: {
         sbbi: "Small busines BIG Impact",
-        methodology: "METHODOLOGY",
-        roadmap: "ROADMAP",
         programming: "PROGRAMMING",
         library: "PORTFOLIO",
         cv: "RESUME",
@@ -29,8 +27,6 @@ const translationInterface = {
     },
     ru: {
         sbbi: "Малый бизнес Большое влияние",
-        methodology: "МЕТОДОЛОГИЯ",
-        roadmap: "ОБЗОР",
         programming: "ПРОГРАММИРОВАНИЕ",
         library: "ПОРТФОЛИО",
         cv: "РЕЗЮМЕ",

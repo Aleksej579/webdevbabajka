@@ -187,31 +187,26 @@ export default {
             graphics.moveTo(24, 15)
             graphics.lineTo(24, height_1 + height_2 + height_3 + height_4 + 50)
 
-            // circle 1
             graphics.lineStyle(3, 0x00c5a7, 1);
             graphics.beginFill(0x02f5d5, 1);
             graphics.drawCircle(24, 11, 8);
             graphics.endFill();
 
-            // circle 2
             graphics.lineStyle(3, 0x00c5a7, 1);
             graphics.beginFill(0x02f5d5, 1);
             graphics.drawCircle(24, height_1 + 8, 6);
             graphics.endFill();
 
-            // circle 3
             graphics.lineStyle(3, 0x00c5a7, 1);
             graphics.beginFill(0x02f5d5, 1);
             graphics.drawCircle(24, height_1 + height_2 + 24, 6);
             graphics.endFill();
 
-            // circle 4
             graphics.lineStyle(3, 0x00c5a7, 1);
             graphics.beginFill(0x02f5d5, 1);
             graphics.drawCircle(24, height_1 + height_2 + height_3 + 40, 6);
             graphics.endFill();
 
-            // circle 5
             graphics.lineStyle(3, 0x00c5a7, 1);
             graphics.beginFill(0x02f5d5, 1);
             graphics.drawCircle(24, height_1 + height_2 + height_3 + height_4 + 42, 6);
@@ -224,14 +219,9 @@ export default {
         this.drawPixi()
     },
 }
-
 </script>
 
 <style>
-.working-experience {
-    /* clear: both; */
-}
-
 #canvas {
     position: absolute;
 }
@@ -251,7 +241,6 @@ export default {
         width: 45%;
     }
 }
-
 
 dl {
     height: auto;

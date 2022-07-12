@@ -1,10 +1,9 @@
 <template>
     <div class="max-w-7xl mx-auto">
-        <h1 class="text-2xl text-center">PATTERNS</h1>
         <section class="pattern sm:px-3 md:px-2 grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div class=" space-y-8">
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>{{ t('oop') }}</h2>
+                    <h3>{{ t('oop') }}</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">{{ t('oopEnc') }}</span>
@@ -25,7 +24,7 @@
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>SOLID</h2>
+                    <h3>SOLID</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">Single responsibility principle</span>
@@ -50,7 +49,7 @@
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>GRASP</h2>
+                    <h3>GRASP</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">Information Expert</span>
@@ -90,7 +89,7 @@
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>GOF - Creation</h2>
+                    <h3>GOF - Creation</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">Information Expert</span>
@@ -119,7 +118,7 @@
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>GOF - Structural</h2>
+                    <h3>GOF - Structural</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">Adapter</span>
@@ -152,7 +151,7 @@
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>GOF - Behavioral</h2>
+                    <h3>GOF - Behavioral</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">Chain of Responsibility</span>
@@ -204,7 +203,7 @@
 
             <div class="space-y-8">
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>{{ t('acronym') }}</h2>
+                    <h3>{{ t('acronym') }}</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">KISS</span>
@@ -231,7 +230,7 @@
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>Software architecture pattern</h2>
+                    <h3>Software architecture pattern</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">MVC</span>
@@ -263,7 +262,7 @@
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>Agile</h2>
+                    <h3>Agile</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">Scrum</span>
@@ -310,7 +309,7 @@
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>Programming models</h2>
+                    <h3>Programming models</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">Императивный</span>
@@ -347,7 +346,7 @@
 
             <div class="space-y-8">
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>Data structures</h2>
+                    <h3>Data structures</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">
@@ -389,7 +388,7 @@
                     </ul>
                 </article>
                 <article class="dark:bg-slate-800 hover:drop-shadow-md">
-                    <h2>Network protocols</h2>
+                    <h3>Network protocols</h3>
                     <ul>
                         <li>
                             <span class="dark:text-sky-400">REST-ful</span>
@@ -448,7 +447,7 @@ export default {
     @apply p-6 bg-white;
 }
 
-.pattern h2 {
+.pattern h3 {
     @apply text-base font-semibold text-center;
 }
 

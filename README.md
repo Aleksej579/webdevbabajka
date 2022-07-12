@@ -10,7 +10,7 @@ This is a personal project with notes on web development
 
 - Styled: [Tailwind](https://tailwindcss.com/) + [Fontawesome](https://fontawesome.com)
 
-- Plugin: [Splide](https://splidejs.com/integration/vue-splide) + [I18n](https://vue-i18n.intlify.dev) + [VueQuill](https://vueup.github.io/vue-quill) + [VuePopUp](https://v3.vue-final-modal.org/)
+- Plugin: [Splide](https://splidejs.com/integration/vue-splide) + [I18n](https://vue-i18n.intlify.dev) + [VueQuill](https://vueup.github.io/vue-quill) + [VuePopUp](https://v3.vue-final-modal.org/) + [Pixi.js](https://pixijs.com/)
 
 - Backend: [Nodemon](https://nodemon.io) + [Express](https://expressjs.com)+ [Axios](https://axios-http.com) + [Firebase](https://firebase.google.com)
 
