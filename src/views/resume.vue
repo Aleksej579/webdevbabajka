@@ -112,34 +112,38 @@
             </article>
         </section>
 
-        <section>
+        <section class="working-experience">
             <h2 class="text-2xl text-center">Working experience</h2>
-            <article>
-                <dl class="border p-3">
-                    <dt class="underline">Front-end developer ( Freelance ) 6+ months.</dt>
-                    <dd>Some period of freelance jobs and test cases. Prototyping. Markup on
-                        Vue-Vite-Tailwind. Rest
-                        and Crud (Axios, Express, PostgreSQL).</dd>
-                    <dd class="text-slate-400">Markup, Vue, Vite, Tailwind, REST, CRUD, Express, Firebase, Smacss,
-                        Figma.</dd>
-                </dl>
-                <dl class="border p-3">
-                    <dt class="underline">Front-end developer ( Intertool ) 4 months.</dt>
-                    <dd>Work on existing company websites. Development of new functionality. Correction of existing
-                        bugs. Creating svg in Figma. Teamwork in Git.</dd>
-                    <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
-                </dl>
-                <dl class="border p-3">
-                    <dt class="underline">junior Shopify developer ( InTechSoft ) 4 months.</dt>
-                    <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
-                    <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
-                </dl>
-                <dl class="border p-3">
-                    <dt class="underline">junior Front-end developer ( Art-coral ) 2 years.</dt>
-                    <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
-                    <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
-                        Photoshop.</dd>
-                </dl>
+            <article class="relative">
+                <canvas id="canvas"></canvas>
+                <div ref="wrapperForExperienceBlock" class="h-max pl-10 md:pl-0">
+                    <dl ref="experience_item_1" class="border p-3">
+                        <dt class="underline">Front-end developer ( Freelance ) 6+ months.</dt>
+                        <dd>Some period of freelance jobs and test cases. Prototyping. Markup on
+                            Vue-Vite-Tailwind. Rest
+                            and Crud (Axios, Express, PostgreSQL).</dd>
+                        <dd class="text-slate-400">Markup, Vue, Vite, Tailwind, REST, CRUD, Express, Firebase, Smacss,
+                            Figma.</dd>
+                    </dl>
+                    <dl ref="experience_item_2" class="border p-3">
+                        <dt class="underline">Front-end developer ( experience_item_2 ) 4 months.</dt>
+                        <dd>Work on existing company websites. Development of new functionality. Correction of existing
+                            bugs. Creating svg in Figma. Teamwork in Git.</dd>
+                        <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
+                    </dl>
+
+                    <dl ref="experience_item_3" class="border p-3">
+                        <dt class="underline">junior Shopify developer ( InTechSoft ) 4 months.</dt>
+                        <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
+                        <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
+                    </dl>
+                    <dl ref="experience_item_4" class="border p-3">
+                        <dt class="underline">junior Front-end developer ( Art-coral ) 2 years.</dt>
+                        <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
+                        <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
+                            Photoshop.</dd>
+                    </dl>
+                </div>
             </article>
         </section>
 
@@ -159,7 +163,100 @@
     </div>
 </template>
 
+<script>
+export default {
+    methods: {
+        drawPixi() {
+            var canvas = document.getElementById('canvas')
+
+            let height_1 = this.$refs.experience_item_1.getBoundingClientRect().height;
+            let height_2 = this.$refs.experience_item_2.getBoundingClientRect().height;
+            let height_3 = this.$refs.experience_item_3.getBoundingClientRect().height;
+            let height_4 = this.$refs.experience_item_4.getBoundingClientRect().height;
+
+            const app = new PIXI.Application({
+                width: 50,
+                height: height_1 + height_2 + height_3 + height_4 + 50,
+                antialias: true,
+                transparent: true,
+                view: canvas,
+            })
+            let graphics = new PIXI.Graphics()
+
+            graphics.lineStyle(3, 0x00c5a7)
+            graphics.moveTo(24, 15)
+            graphics.lineTo(24, height_1 + height_2 + height_3 + height_4 + 50)
+
+            // circle 1
+            graphics.lineStyle(3, 0x00c5a7, 1);
+            graphics.beginFill(0x02f5d5, 1);
+            graphics.drawCircle(24, 11, 8);
+            graphics.endFill();
+
+            // circle 2
+            graphics.lineStyle(3, 0x00c5a7, 1);
+            graphics.beginFill(0x02f5d5, 1);
+            graphics.drawCircle(24, height_1 + 8, 6);
+            graphics.endFill();
+
+            // circle 3
+            graphics.lineStyle(3, 0x00c5a7, 1);
+            graphics.beginFill(0x02f5d5, 1);
+            graphics.drawCircle(24, height_1 + height_2 + 24, 6);
+            graphics.endFill();
+
+            // circle 4
+            graphics.lineStyle(3, 0x00c5a7, 1);
+            graphics.beginFill(0x02f5d5, 1);
+            graphics.drawCircle(24, height_1 + height_2 + height_3 + 40, 6);
+            graphics.endFill();
+
+            // circle 5
+            graphics.lineStyle(3, 0x00c5a7, 1);
+            graphics.beginFill(0x02f5d5, 1);
+            graphics.drawCircle(24, height_1 + height_2 + height_3 + height_4 + 42, 6);
+            graphics.endFill();
+
+            app.stage.addChild(graphics)
+        },
+    },
+    mounted() {
+        this.drawPixi()
+    },
+}
+
+</script>
+
 <style>
+.working-experience {
+    /* clear: both; */
+}
+
+#canvas {
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+    #canvas {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    dl:nth-child(odd) {
+        width: 45%;
+        transform: translateX(120%);
+    }
+
+    dl:nth-child(even) {
+        width: 45%;
+    }
+}
+
+
+dl {
+    height: auto;
+}
+
 .cv .avatar img {
     border-radius: 25% 75% 58% 42% / 55% 32% 68% 45%;
     transition-duration: 0.3s;
