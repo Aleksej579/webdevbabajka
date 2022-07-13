@@ -53,8 +53,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-
 .header-bottom {
     @apply sticky top-0 flex items-center bg-slate-50 border-b z-20;
 }

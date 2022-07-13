@@ -1,6 +1,4 @@
 <template>
-    <!-- <h2 class="text-2xl text-center">Simple image gallery</h2> -->
-    <!-- Photo Grid -->
     <div class="archwork row after:dark:to-slate-900" @click="showImghArchWork" ref="archwork">
         <div class="column">
             <img src="/src/assets/arch_work/1.jpg" alt="Architect">
@@ -153,7 +151,6 @@ export default {
                 document.querySelector('.archwork').classList.toggle("archworkBg");
                 this.$refs.archwork.style.height = 'max-content'
             }
-
         },
         showMore() {
             this.$refs.archwork.style.height = 'max-content'

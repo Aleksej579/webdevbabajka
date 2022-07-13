@@ -1,6 +1,5 @@
 <template>
     <div class="cv max-w-7xl mx-auto drop-shadow-md px-1">
-
         <section class="cv-header p-5 flex justify-center">
             <article class="flex flex-col md:flex-row items-center gap-6 w-full md:w-2/3">
                 <figure class="avatar p-4 w-full md:w-1/3">
@@ -69,11 +68,11 @@
             <article>
                 <ul class="flex flex-col md:flex-row mx-auto w-max">
                     <li class="flex flex-col items-center p-6 text-center">
-                        Markup 75%
+                        Markup 65%
                         <meter value="0.75"></meter>
                     </li>
                     <li class="flex flex-col items-center p-6 text-center">
-                        Programming 25%
+                        Programming 35%
                         <meter value="0.25"></meter>
                     </li>
                 </ul>
@@ -167,52 +166,32 @@
 export default {
     methods: {
         drawPixi() {
-            var canvas = document.getElementById('canvas')
+            var canvas = document.getElementById('canvas');
+            if (canvas.getContext) {
+                var ctx = canvas.getContext('2d');
 
-            let height_1 = this.$refs.experience_item_1.getBoundingClientRect().height;
-            let height_2 = this.$refs.experience_item_2.getBoundingClientRect().height;
-            let height_3 = this.$refs.experience_item_3.getBoundingClientRect().height;
-            let height_4 = this.$refs.experience_item_4.getBoundingClientRect().height;
+                let height_1 = this.$refs.experience_item_1.getBoundingClientRect().height;
+                let height_2 = this.$refs.experience_item_2.getBoundingClientRect().height;
+                let height_3 = this.$refs.experience_item_3.getBoundingClientRect().height;
+                let height_4 = this.$refs.experience_item_4.getBoundingClientRect().height;
 
-            const app = new PIXI.Application({
-                width: 50,
-                height: height_1 + height_2 + height_3 + height_4 + 50,
-                antialias: true,
-                transparent: true,
-                view: canvas,
-            })
-            let graphics = new PIXI.Graphics()
+                canvas.width = 50;
+                canvas.height = height_1 + height_2 + height_3 + height_4 + 100;
 
-            graphics.lineStyle(3, 0x00c5a7)
-            graphics.moveTo(24, 15)
-            graphics.lineTo(24, height_1 + height_2 + height_3 + height_4 + 50)
+                ctx.beginPath();
+                ctx.strokeStyle = '#00c5a7';
+                ctx.moveTo(25, 0);
+                ctx.lineTo(25, height_1 + height_2 + height_3 + height_4 + 50);
+                ctx.stroke();
 
-            graphics.lineStyle(3, 0x00c5a7, 1);
-            graphics.beginFill(0x02f5d5, 1);
-            graphics.drawCircle(24, 11, 8);
-            graphics.endFill();
+                ctx.fillStyle = "#00c5a7";
 
-            graphics.lineStyle(3, 0x00c5a7, 1);
-            graphics.beginFill(0x02f5d5, 1);
-            graphics.drawCircle(24, height_1 + 8, 6);
-            graphics.endFill();
-
-            graphics.lineStyle(3, 0x00c5a7, 1);
-            graphics.beginFill(0x02f5d5, 1);
-            graphics.drawCircle(24, height_1 + height_2 + 24, 6);
-            graphics.endFill();
-
-            graphics.lineStyle(3, 0x00c5a7, 1);
-            graphics.beginFill(0x02f5d5, 1);
-            graphics.drawCircle(24, height_1 + height_2 + height_3 + 40, 6);
-            graphics.endFill();
-
-            graphics.lineStyle(3, 0x00c5a7, 1);
-            graphics.beginFill(0x02f5d5, 1);
-            graphics.drawCircle(24, height_1 + height_2 + height_3 + height_4 + 42, 6);
-            graphics.endFill();
-
-            app.stage.addChild(graphics)
+                ctx.fillRect(17, 0, 16, 16);
+                ctx.fillRect(17, height_1, 16, 16);
+                ctx.fillRect(17, height_1 + height_2 + 16, 16, 16);
+                ctx.fillRect(17, height_1 + height_2 + height_3 + 32, 16, 16);
+                ctx.fillRect(17, height_1 + height_2 + height_3 + height_4 + 48, 16, 16);
+            }
         },
     },
     mounted() {

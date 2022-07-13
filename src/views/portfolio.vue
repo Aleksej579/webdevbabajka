@@ -55,13 +55,13 @@
 <script>
 import WebWork from "../components/WebWork.vue";
 import ArchWork from "../components/ArchWork.vue";
-import Form from "../components/Form.vue";
+// import Form from "../components/Form.vue";
 
 export default {
     components: {
         WebWork,
         ArchWork,
-        Form,
+        // Form,
     },
     data() {
         return {
