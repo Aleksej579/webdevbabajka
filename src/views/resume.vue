@@ -168,6 +168,7 @@ export default {
         drawPixi() {
             var canvas = document.getElementById('canvas');
             if (canvas.getContext) {
+                // var ctx = canvas.getContext('2d', { alpha: false });
                 var ctx = canvas.getContext('2d');
 
                 let height_1 = this.$refs.experience_item_1.getBoundingClientRect().height;
@@ -175,22 +176,21 @@ export default {
                 let height_3 = this.$refs.experience_item_3.getBoundingClientRect().height;
                 let height_4 = this.$refs.experience_item_4.getBoundingClientRect().height;
 
-                canvas.width = 50;
+                canvas.width = 10;
                 canvas.height = height_1 + height_2 + height_3 + height_4 + 100;
 
                 ctx.beginPath();
                 ctx.strokeStyle = '#00c5a7';
-                ctx.moveTo(25, 0);
-                ctx.lineTo(25, height_1 + height_2 + height_3 + height_4 + 50);
+                ctx.moveTo(5, 0);
+                ctx.lineTo(5, height_1 + height_2 + height_3 + height_4 + 50);
                 ctx.stroke();
 
                 ctx.fillStyle = "#00c5a7";
 
-                ctx.fillRect(17, 0, 16, 16);
-                ctx.fillRect(17, height_1, 16, 16);
-                ctx.fillRect(17, height_1 + height_2 + 16, 16, 16);
-                ctx.fillRect(17, height_1 + height_2 + height_3 + 32, 16, 16);
-                ctx.fillRect(17, height_1 + height_2 + height_3 + height_4 + 48, 16, 16);
+                ctx.fillRect(0, height_1 / 2 - 8, 10, 10);
+                ctx.fillRect(0, height_1 + (height_2 / 2), 10, 10);
+                ctx.fillRect(0, height_1 + height_2 + (height_3 / 2) + 32, 10, 10);
+                ctx.fillRect(0, height_1 + height_2 + height_3 + + (height_4 / 2) + 32, 10, 10);
             }
         },
     },
@@ -201,6 +201,10 @@ export default {
 </script>
 
 <style>
+.working-experience {
+    overflow: hidden;
+}
+
 #canvas {
     position: absolute;
 }
