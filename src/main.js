@@ -8,7 +8,7 @@ import { vfmPlugin } from 'vue-final-modal';
 import { createI18n } from 'vue-i18n'
 import translationInterface from './translation/translationInterface.js'
 import './index.css'
-import './assets/font.css'
+// import './assets/font.css'
 
 const i18n = createI18n({
     locale: 'en',
