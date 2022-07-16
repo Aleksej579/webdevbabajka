@@ -83,28 +83,37 @@
             <h2 class="text-2xl text-center">Knowledge</h2>
             <ul class="w-full md:w-max mx-auto">
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Programming in Javascript (ES6+), jQuery, basic PHP skills.
+                    Client-side development for a web application
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    SPA development on Vue3, Vite.
+                    I create responsive web design with semantic markup.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    HTML/CSS coding, BEM, Sass and TailwindCSS. SMACSS. Responsive.
+                    Using BEM-naming. Familiar with Twig, Liquid.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Some experience with Twig, Liquid templating engines and Gulp.
+                    Can work with Sass preprocessor and Smacss architecture.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Teamwork using Jira and Git.
+                    Used css libraries like: TailwindCSS, ElementUI+, UiKit and some other.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Working with REST and CRUD.
+                    Programming in Javascript (ES6+), can work with jQuery and have basic PHP skills.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                    In SPA development I prefer to use Vue.js.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                    Using build tools Vite.js and Gulp.js. Some experience with Webpack.js.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
+                    I use Git and have worked with Jira.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
                     CMS development on Drupal, Shopify and cloud services Firebase.
                 </li>
                 <li class="bg-white dark:bg-slate-800 p-4 rounded">
-                    Prototyping in Figma.
+                    Creating a prototype in Figma. Working with raster and vector graphics and 3D modeling.
                 </li>
             </ul>
         </article>
