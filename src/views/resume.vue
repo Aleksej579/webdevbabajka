@@ -90,28 +90,31 @@
             <canvas id="canvas"></canvas>
             <div ref="wrapperForExperienceBlock" class="h-max pl-10 md:pl-0 text-lg">
                 <dl ref="experience_item_1" class="border p-3 dark:bg-slate-800 dark:border-slate-800">
-                    <dt class="underline">Front-end developer ( Freelance ) 6+ months.</dt>
-                    <dd>Some period of freelance jobs and test cases. Prototyping. Markup on
-                        Vue-Vite-Tailwind. Rest
-                        and Crud (Axios, Express, PostgreSQL).</dd>
+                    <dt class="underline">Front-end developer ( <b>Freelance</b> ) 6+ months.</dt>
+                    <dd>Freelance and pet projects. Prototyping.</dd>
                     <dd class="text-slate-400">Markup, Vue, Vite, Tailwind, REST, CRUD, Express, Firebase, Smacss,
                         Figma.</dd>
                 </dl>
                 <dl ref="experience_item_2" class="border p-3 dark:bg-slate-800 dark:border-slate-800">
-                    <dt class="underline">Front-end developer ( experience_item_2 ) 4 months.</dt>
-                    <dd>Work on existing company websites. Development of new functionality. Correction of existing
-                        bugs. Creating svg in Figma. Teamwork in Git.</dd>
+                    <dt class="underline">Front-end developer ( <b>Intertool</b> ) 4 months.</dt>
+                    <dd>Improving existing sites. Redesigning existing CSS, replacing graphics icons with SVG. Layout of
+                        new pages. Adapting for mobile devices. Development of new functionality such as a quick order
+                        basket. Simple work with PHP in Html of e.g. display a list of products. Working with Figma.
+                        Teamwork in Git.</dd>
                     <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
                 </dl>
 
                 <dl ref="experience_item_3" class="border p-3 dark:bg-slate-800 dark:border-slate-800">
-                    <dt class="underline">junior Shopify developer ( InTechSoft ) 4 months.</dt>
-                    <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
+                    <dt class="underline">junior Shopify developer ( <b>InTechSoft</b> ) 4 months.</dt>
+                    <dd>Internship. Learning Shopify eCommerce. Working with Jira. Creating and setting up the store.
+                        Developing new functionality for it on Liquid. Working with the project manager - creating
+                        reports and a weekly report to the supervisor with a demonstration of the work.</dd>
                     <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
                 </dl>
                 <dl ref="experience_item_4" class="border p-3 dark:bg-slate-800 dark:border-slate-800">
-                    <dt class="underline">junior Front-end developer ( Art-coral ) 2 years.</dt>
-                    <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
+                    <dt class="underline">junior Front-end developer ( <b>Art-coral</b> ) 2 years.</dt>
+                    <dd>Drupal development. Markup. Working with REST. Content management. Prototyping in Figma. Manual
+                        testing of a mobile app.</dd>
                     <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
                         Photoshop.</dd>
                 </dl>
@@ -166,8 +169,7 @@
             <h2 class="text-2xl text-center">Summary</h2>
             <ul class="w-full md:w-max mx-auto text-lg">
                 <li class="mb-3"><span class="font-semibold">Self-Study:</span> Freecodecamp, Hexlet, Sololearn,
-                    Codewars,
-                    learn_javascript, w3schools etc.
+                    Codewars, learn_javascript, w3schools etc.
                 </li>
                 <li class="mb-3"><span class="font-semibold">Course:</span> SourceIT 'Java and Web technologies'
                 </li>
