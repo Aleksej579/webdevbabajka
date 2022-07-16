@@ -2,7 +2,9 @@
     <div class="header-bottom dark:bg-slate-800 dark:border-b-slate-700">
         <div class="flex items-center m-auto container max-w-7xl justify-between">
             <figure class='flex items-center'>
-                <img class="header__logo h-12 rounded-lg" src="/src/assets/logo.png" alt="WebDev">
+                <router-link to="/">
+                    <img class="header__logo h-12 rounded-lg" src="/src/assets/logo.png" alt="WebDev">
+                </router-link>
                 <figcaption class="ml-5">{{ t('sbbi') }}</figcaption>
             </figure>
             <span @click="openMobileMenu" class="cursor-pointer mr-1 text-slate-400 text-xl sm:hidden">

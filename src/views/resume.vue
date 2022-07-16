@@ -168,7 +168,6 @@ export default {
         drawPixi() {
             var canvas = document.getElementById('canvas');
             if (canvas.getContext) {
-                // var ctx = canvas.getContext('2d', { alpha: false });
                 var ctx = canvas.getContext('2d');
 
                 let height_1 = this.$refs.experience_item_1.getBoundingClientRect().height;

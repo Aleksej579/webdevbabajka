@@ -299,6 +299,14 @@
                 </span>
                 <img src="/src/assets/web_work/weather-vue.jpg" loading="lazy" alt="Web">
             </li>
+            <li>
+                <span>
+                    <a href="https://zvernennya.eo.gov.ua/open.php" target="_blank">
+                        <i class="fa-solid fa-globe fa-xl"></i>
+                    </a>
+                </span>
+                <img src="/src/assets/web_work/zvernennya.jpg" loading="lazy" alt="Web">
+            </li>
         </ul>
     </div>
     <button @click="showMore" ref="webWorkBtn"
