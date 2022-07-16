@@ -1,5 +1,5 @@
 <template>
-    <section class="cv p-5 flex justify-center drop-shadow-md">
+    <section class="cv p-5 flex justify-center drop-shadow-md mb-10">
         <article class="flex flex-col md:flex-row items-center gap-6 w-full md:w-2/3">
             <figure class="avatar p-4 w-full md:w-1/3">
                 <img class="mx-auto" src="/src/assets/ava_sq.jpg" width="250" height="auto"
@@ -13,17 +13,116 @@
                     <mark>Front-end developer</mark>. My main area of activity is the development of the interfaces
                     of websites and applications.
                 </p>
-                <p class="text-lg mb-5">My main skill is Markup. I like working with Vue.js, and I'm interested in
+                <p class="text-lg mb-5">I like working with Vue.js, and I'm interested in
                     Javascript programming. Working with graphic
                     editors and prototyping.</p>
             </div>
         </article>
     </section>
 
-    <section class="cv drop-shadow-md">
+    <section class="cv main-skill mb-10">
+        <article>
+            <h2 class="text-2xl text-center">Knowledge</h2>
+            <ul class="text-lg w-full md:w-max mx-auto">
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    Client-side development for a web application
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    I create <strong>responsive</strong> web design with <strong>semantic</strong> markup.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    Using <strong>BEM</strong>-naming. Familiar with <strong>Twig</strong>, <strong>Liquid</strong>.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    Can work with <strong>Sass</strong> preprocessor and <strong>Smacss</strong> architecture.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    Used css libraries like: <strong>TailwindCSS</strong>, <strong>ElementUI+</strong>,
+                    <strong>UiKit</strong> and some other.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    Programming in <strong>Javascript</strong> (ES6+), can work with <strong>jQuery</strong> and have
+                    basic <strong>PHP</strong> skills.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    In SPA development I prefer to use <strong>Vue.js</strong>.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    Using build tools <strong>Vite.js</strong> and <strong>Gulp.js</strong>. Some experience with
+                    <strong>Webpack.js</strong>.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    I use <strong>Git</strong> and have worked with <strong>Jira</strong>.
+                </li>
+                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
+                    CMS development on <strong>Drupal</strong>, <strong>Shopify</strong> and cloud services
+                    <strong>Firebase</strong>.
+                </li>
+                <li class="bg-white dark:bg-slate-800 p-4 rounded hover:drop-shadow-md">
+                    Creating a prototype in <strong>Figma</strong>. Working with raster and vector graphics and 3D
+                    modeling.
+                </li>
+            </ul>
+        </article>
+    </section>
+
+
+    <!-- <section class="cv skills mb-10">
+        <h2 class="text-2xl text-center">Skills</h2>
+        <article>
+            <ul class="flex flex-col md:flex-row mx-auto w-max">
+                <li class="flex flex-col items-center p-6 text-center">
+                    Markup 65%
+                    <meter value="0.75"></meter>
+                </li>
+                <li class="flex flex-col items-center p-6 text-center">
+                    Programming 35%
+                    <meter value="0.25"></meter>
+                </li>
+            </ul>
+        </article>
+    </section> -->
+
+
+    <section class="cv working-experience drop-shadow-md mb-10">
+        <h2 class="text-2xl text-center">Working experience</h2>
+        <article class="relative">
+            <canvas id="canvas"></canvas>
+            <div ref="wrapperForExperienceBlock" class="h-max pl-10 md:pl-0 text-lg">
+                <dl ref="experience_item_1" class="border p-3 dark:bg-slate-800 dark:border-slate-800">
+                    <dt class="underline">Front-end developer ( Freelance ) 6+ months.</dt>
+                    <dd>Some period of freelance jobs and test cases. Prototyping. Markup on
+                        Vue-Vite-Tailwind. Rest
+                        and Crud (Axios, Express, PostgreSQL).</dd>
+                    <dd class="text-slate-400">Markup, Vue, Vite, Tailwind, REST, CRUD, Express, Firebase, Smacss,
+                        Figma.</dd>
+                </dl>
+                <dl ref="experience_item_2" class="border p-3 dark:bg-slate-800 dark:border-slate-800">
+                    <dt class="underline">Front-end developer ( experience_item_2 ) 4 months.</dt>
+                    <dd>Work on existing company websites. Development of new functionality. Correction of existing
+                        bugs. Creating svg in Figma. Teamwork in Git.</dd>
+                    <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
+                </dl>
+
+                <dl ref="experience_item_3" class="border p-3 dark:bg-slate-800 dark:border-slate-800">
+                    <dt class="underline">junior Shopify developer ( InTechSoft ) 4 months.</dt>
+                    <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
+                    <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
+                </dl>
+                <dl ref="experience_item_4" class="border p-3 dark:bg-slate-800 dark:border-slate-800">
+                    <dt class="underline">junior Front-end developer ( Art-coral ) 2 years.</dt>
+                    <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
+                    <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
+                        Photoshop.</dd>
+                </dl>
+            </div>
+        </article>
+    </section>
+
+    <section class="cv drop-shadow-md mb-10">
         <h2 class="text-2xl text-center">Contact info</h2>
         <article class="flex flex-col md:flex-row items-center justify-around">
-            <ul class="divide-y divide-slate-400/10 w-max">
+            <ul class="divide-y divide-slate-400/10 w-max text-lg">
                 <li class="py-3 flex flex-col md:flex-row items-center md:items-start">
                     <span class="block text-teal-500 mr-2 w-7 text-center">
                         <i class="fa-solid fa-house"></i>
@@ -62,102 +161,14 @@
         </article>
     </section>
 
-    <section class="cv drop-shadow-md">
-        <h2 class="text-2xl text-center">Skills</h2>
-        <article>
-            <ul class="flex flex-col md:flex-row mx-auto w-max">
-                <li class="flex flex-col items-center p-6 text-center">
-                    Markup 65%
-                    <meter value="0.75"></meter>
-                </li>
-                <li class="flex flex-col items-center p-6 text-center">
-                    Programming 35%
-                    <meter value="0.25"></meter>
-                </li>
-            </ul>
-        </article>
-    </section>
-
-    <section class="cv drop-shadow-md">
-        <article>
-            <h2 class="text-2xl text-center">Knowledge</h2>
-            <ul class="w-full md:w-max mx-auto">
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Client-side development for a web application
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    I create responsive web design with semantic markup.
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Using BEM-naming. Familiar with Twig, Liquid.
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Can work with Sass preprocessor and Smacss architecture.
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Used css libraries like: TailwindCSS, ElementUI+, UiKit and some other.
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Programming in Javascript (ES6+), can work with jQuery and have basic PHP skills.
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    In SPA development I prefer to use Vue.js.
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    Using build tools Vite.js and Gulp.js. Some experience with Webpack.js.
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    I use Git and have worked with Jira.
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded">
-                    CMS development on Drupal, Shopify and cloud services Firebase.
-                </li>
-                <li class="bg-white dark:bg-slate-800 p-4 rounded">
-                    Creating a prototype in Figma. Working with raster and vector graphics and 3D modeling.
-                </li>
-            </ul>
-        </article>
-    </section>
-
-    <section class="cv working-experience drop-shadow-md">
-        <h2 class="text-2xl text-center">Working experience</h2>
-        <article class="relative">
-            <canvas id="canvas"></canvas>
-            <div ref="wrapperForExperienceBlock" class="h-max pl-10 md:pl-0">
-                <dl ref="experience_item_1" class="border p-3">
-                    <dt class="underline">Front-end developer ( Freelance ) 6+ months.</dt>
-                    <dd>Some period of freelance jobs and test cases. Prototyping. Markup on
-                        Vue-Vite-Tailwind. Rest
-                        and Crud (Axios, Express, PostgreSQL).</dd>
-                    <dd class="text-slate-400">Markup, Vue, Vite, Tailwind, REST, CRUD, Express, Firebase, Smacss,
-                        Figma.</dd>
-                </dl>
-                <dl ref="experience_item_2" class="border p-3">
-                    <dt class="underline">Front-end developer ( experience_item_2 ) 4 months.</dt>
-                    <dd>Work on existing company websites. Development of new functionality. Correction of existing
-                        bugs. Creating svg in Figma. Teamwork in Git.</dd>
-                    <dd class="text-slate-400">Markup, BEM, Scss, Git, Gitlab, Gulp, Php, Figma.</dd>
-                </dl>
-
-                <dl ref="experience_item_3" class="border p-3">
-                    <dt class="underline">junior Shopify developer ( InTechSoft ) 4 months.</dt>
-                    <dd>Internship. Learning Shopify eCommerce. Performing Jira training tasks.</dd>
-                    <dd class="text-slate-400">Shopify, Liquid, Markup, Git, Jira.</dd>
-                </dl>
-                <dl ref="experience_item_4" class="border p-3">
-                    <dt class="underline">junior Front-end developer ( Art-coral ) 2 years.</dt>
-                    <dd>CMS Drupal development. Markup. Content management. Prototyping in Figma.</dd>
-                    <dd class="text-slate-400">Drupal, Html/Css/Sass, Twig, jQuery, REST, Gulp, Figma, Jira,
-                        Photoshop.</dd>
-                </dl>
-            </div>
-        </article>
-    </section>
-
-    <section class="cv drop-shadow-md">
+    <section class="cv drop-shadow-md mb-10">
         <article>
             <h2 class="text-2xl text-center">Summary</h2>
-            <ul class="w-full md:w-max mx-auto">
+            <ul class="w-full md:w-max mx-auto text-lg">
+                <li class="mb-3"><span class="font-semibold">Self-Study:</span> Freecodecamp, Hexlet, Sololearn,
+                    Codewars,
+                    learn_javascript, w3schools etc.
+                </li>
                 <li class="mb-3"><span class="font-semibold">Course:</span> SourceIT 'Java and Web technologies'
                 </li>
                 <li class="mb-3"><span class="font-semibold">University:</span> Kharkiv National University of Civil
@@ -206,6 +217,15 @@ export default {
 </script>
 
 <style>
+.main-skill li {
+    /* font-family: 'Signika Negative', sans-serif;
+    @apply not-italic font-light; */
+}
+
+.main-skill li strong {
+    @apply font-extrabold;
+}
+
 .working-experience {
     overflow: hidden;
 }
@@ -232,6 +252,7 @@ export default {
 
 dl {
     height: auto;
+    @apply bg-white;
 }
 
 .cv .avatar img {
@@ -241,9 +262,12 @@ dl {
 
 .cv :is(dl, dt, dd) {
     margin: revert;
+    /* font-family: 'Signika Negative', sans-serif;
+    @apply not-italic font-light bg-white; */
 }
 
-.cv article :is(ul, p, td, dt, dd) {
+/* .cv article :is(ul, p, td, dt, dd) { */
+.cv article :is(p) {
     font-family: "dm", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
     font-style: italic;
 }

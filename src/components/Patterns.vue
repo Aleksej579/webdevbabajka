@@ -456,7 +456,7 @@ export default {
 }
 
 .pattern span {
-    @apply text-teal-500 font-mono;
+    @apply text-teal-500;
 }
 
 .pattern li {

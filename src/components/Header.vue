@@ -3,7 +3,7 @@
     class="header-middle text-center px-2 pt-7 pb-5 h-40 text-2xl xsm:text-3xl xsm:h-80 sm:text-4xl font-extrabold uppercase">
     <p class="header-middle-text mx-auto inline"></p>
     <Splide :options="{ rewind: true, autoplay: true, pagination: false, }" aria-label="My Favorite Images"
-      class="font-bold tracking-widest text-lg sm:text-xl md:w-2/4 mx-auto opacity-50">
+      class="tracking-widest text-lg sm:text-base md:w-2/4 mx-auto opacity-50">
       <SplideSlide>HTML5 & CSS3</SplideSlide>
       <SplideSlide>BEM & SASS</SplideSlide>
       <SplideSlide>JAVASCRIPT & ES6+</SplideSlide>
