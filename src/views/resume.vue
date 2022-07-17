@@ -168,8 +168,16 @@
         <article>
             <h2 class="text-2xl text-center">Summary</h2>
             <ul class="w-full md:w-max mx-auto text-lg">
-                <li class="mb-3"><span class="font-semibold">Self-Study:</span> Freecodecamp, Hexlet, Sololearn,
-                    Codewars, learn_javascript, w3schools etc.
+                <li class="mb-3">
+                    <span class="font-semibold">Self-Study: </span>
+                    <a href="https://www.freecodecamp.org/aleksej579" target="_blank" class="underline">Freecodecamp
+                    </a>,
+                    <a href="https://ru.hexlet.io/u/aleksej579" target="_blank" class="underline">Hexlet </a>,
+                    <a href="https://www.sololearn.com/profile/16638599" target="_blank" class="underline">Sololearn
+                    </a>,
+                    <a href="https://www.codewars.com/users/Aleksej579" target="_blank" class="underline">Codewars </a>,
+                    w3schools,
+                    learn_javascript, etc.
                 </li>
                 <li class="mb-3"><span class="font-semibold">Course:</span> SourceIT 'Java and Web technologies'
                 </li>
