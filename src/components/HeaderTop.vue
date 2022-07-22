@@ -76,7 +76,7 @@
         <button class="modal-close" @click="showModalLi = false"><i class="fa-solid fa-xmark"></i></button>
         <Popup />
         <div class="flex justify-center mb-10">
-            <a href="https://github.com/Aleksej579/webdevbabajka">
+            <a href="https://www.linkedin.com/in/aleksej579/">
                 <i class="fa-brands fa-linkedin fa-5x"></i>
             </a>
         </div>

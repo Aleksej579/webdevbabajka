@@ -22,7 +22,7 @@
 
     <section class="cv main-skill mb-10">
         <article>
-            <h2 class="text-2xl text-center">Knowledge</h2>
+            <h2 class="text-2xl text-center">Skills + Knowledge</h2>
             <ul class="text-lg w-full md:w-max mx-auto">
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
                     Client-side development for a web application
