@@ -227,6 +227,17 @@
         <ul class="column">
             <li>
                 <span>
+                    <a href="https://w-s-s.netlify.app/" target="_blank">
+                        <i class="fa-solid fa-globe fa-xl"></i>
+                    </a>
+                    <a href="https://github.com/Aleksej579/w-s-s" target="_blank">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>
+                </span>
+                <img src="/src/assets/web_work/wss.webp" alt="Web">
+            </li>
+            <li>
+                <span>
                     <a href="https://test-yoga.netlify.app/" target="_blank">
                         <i class="fa-solid fa-globe fa-xl"></i>
                     </a>
