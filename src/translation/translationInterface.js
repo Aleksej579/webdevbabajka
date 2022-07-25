@@ -1,7 +1,7 @@
 const translationInterface = {
     en: {
         sbbi: "Small busines BIG Impact",
-        programming: "PROGRAMMING",
+        programming: "PROGRAMMING-NOTES",
         library: "PORTFOLIO",
         cv: "RESUME",
         warning: "WARNING",
@@ -27,7 +27,7 @@ const translationInterface = {
     },
     ru: {
         sbbi: "Малый бизнес Большое влияние",
-        programming: "ПРОГРАММИРОВАНИЕ",
+        programming: "ПРОГРАММИРОВАНИЕ-ЗАМЕТКИ",
         library: "ПОРТФОЛИО",
         cv: "РЕЗЮМЕ",
         warning: "ПРЕДУПРЕЖДЕНИЕ",

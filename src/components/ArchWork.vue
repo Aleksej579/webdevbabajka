@@ -1,76 +1,76 @@
 <template>
     <div class="archwork row after:dark:to-slate-900" @click="showImghArchWork" ref="archwork">
         <div class="column">
-            <img src="/src/assets/arch_work/1.jpg" alt="Architect">
-            <img src="/src/assets/arch_work/2.jpg" alt="Architect">
-            <img src="/src/assets/arch_work/3.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/4.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/5.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/6.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/7.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/8.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/9.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/10.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/11.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/12.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/13.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/14.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/15.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/16.jpg" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/1.webp" alt="Architect">
+            <img src="/src/assets/arch_work/2.webp" alt="Architect">
+            <img src="/src/assets/arch_work/3.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/4.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/5.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/6.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/7.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/8.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/9.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/10.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/11.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/12.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/13.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/14.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/15.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/16.webp" loading="lazy" alt="Architect">
         </div>
         <div class="column">
-            <img src="/src/assets/arch_work/17.jpg" alt="Architect">
-            <img src="/src/assets/arch_work/18.jpg" alt="Architect">
-            <img src="/src/assets/arch_work/19.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/20.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/21.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/22.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/23.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/24.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/25.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/26.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/27.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/28.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/29.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/30.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/31.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/32.jpg" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/17.webp" alt="Architect">
+            <img src="/src/assets/arch_work/18.webp" alt="Architect">
+            <img src="/src/assets/arch_work/19.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/20.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/21.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/22.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/23.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/24.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/25.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/26.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/27.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/28.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/29.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/30.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/31.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/32.webp" loading="lazy" alt="Architect">
         </div>
         <div class="column">
-            <img src="/src/assets/arch_work/33.jpg" alt="Architect">
-            <img src="/src/assets/arch_work/34.jpg" alt="Architect">
-            <img src="/src/assets/arch_work/35.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/36.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/37.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/38.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/39.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/40.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/41.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/42.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/43.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/44.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/45.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/46.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/47.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/48.jpg" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/33.webp" alt="Architect">
+            <img src="/src/assets/arch_work/34.webp" alt="Architect">
+            <img src="/src/assets/arch_work/35.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/36.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/37.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/38.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/39.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/40.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/41.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/42.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/43.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/44.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/45.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/46.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/47.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/48.webp" loading="lazy" alt="Architect">
         </div>
         <div class="column">
-            <img src="/src/assets/arch_work/49.jpg" alt="Architect">
-            <img src="/src/assets/arch_work/50.jpg" alt="Architect">
-            <img src="/src/assets/arch_work/51.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/52.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/53.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/54.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/55.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/56.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/57.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/58.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/59.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/60.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/61.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/62.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/63.jpg" loading="lazy" alt="Architect">
-            <img src="/src/assets/arch_work/64.jpg" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/49.webp" alt="Architect">
+            <img src="/src/assets/arch_work/50.webp" alt="Architect">
+            <img src="/src/assets/arch_work/51.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/52.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/53.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/54.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/55.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/56.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/57.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/58.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/59.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/60.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/61.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/62.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/63.webp" loading="lazy" alt="Architect">
+            <img src="/src/assets/arch_work/64.webp" loading="lazy" alt="Architect">
         </div>
     </div>
     <button @click="showMore" ref="archworkBtn"

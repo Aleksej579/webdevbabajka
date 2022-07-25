@@ -2,7 +2,7 @@
     <section class="cv p-5 flex justify-center drop-shadow-md mb-10">
         <article class="flex flex-col md:flex-row items-center gap-6 w-full md:w-2/3">
             <figure class="avatar p-4 w-full md:w-1/3">
-                <img class="mx-auto" src="/src/assets/ava_sq.jpg" width="250" height="auto"
+                <img class="mx-auto" src="/src/assets/ava_sq.webp" width="250" height="auto"
                     alt="Aleksej Eremenko photo">
                 <figcaption></figcaption>
             </figure>
