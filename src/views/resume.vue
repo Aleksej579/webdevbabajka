@@ -28,20 +28,16 @@
                     Client-side development for a web application
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
-                    I create <strong>responsive</strong> web design with <strong>semantic</strong> markup.
-                </li>
-                <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
-                    Using <strong>BEM</strong>-naming. Familiar with <strong>Twig</strong>, <strong>Liquid</strong>.
+                    I create <strong>responsive</strong> web design with <strong>semantic</strong> markup. Using <strong>BEM</strong>-naming.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
                     Can work with <strong>Sass</strong> preprocessor and <strong>Smacss</strong> architecture.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
-                    Used css libraries like: <strong>TailwindCSS</strong>, <strong>ElementUI+</strong>,
-                    <strong>UiKit</strong> and some other.
+                    Used css libraries like: <strong>TailwindCSS</strong> and some other.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
-                    Programming in <strong>Javascript</strong> (ES6+), can work with <strong>jQuery</strong> and have
+                    Programming in <strong>Javascript</strong>, can work with <strong>jQuery</strong> and have
                     basic <strong>PHP</strong> skills.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
@@ -55,8 +51,7 @@
                     I use <strong>Git</strong> and have worked with <strong>Jira</strong>.
                 </li>
                 <li class="bg-white dark:bg-slate-800 mb-3 p-4 rounded hover:drop-shadow-md">
-                    CMS development on <strong>Drupal</strong>, <strong>Shopify</strong> and cloud services
-                    <strong>Firebase</strong>.
+                    <strong>Shopify</strong> + <strong>Liquid</strong> development.
                 </li>
                 <li class="bg-white dark:bg-slate-800 p-4 rounded hover:drop-shadow-md">
                     Creating a prototype in <strong>Figma</strong>. Working with raster and vector graphics and 3D
